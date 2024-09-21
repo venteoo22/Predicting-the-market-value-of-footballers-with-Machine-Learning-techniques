@@ -1,0 +1,685 @@
+,Player,value,age,club,position
+0,"
+Thibaut Courtois ",€45.00m ,31,Real Madrid,Portero
+1,"
+Marc-André ter Stegen ",€35.00m ,31,FC Barcelona,Portero
+2,"
+Jan Oblak ",€35.00m ,30,Atlético de Madrid,Portero
+3,"
+Giorgi Mamardashvili ",€30.00m ,23,Valencia CF,Portero
+4,"
+Álex Remiro ",€25.00m ,28,Real Sociedad,Portero
+5,"
+Unai Simón ",€25.00m ,26,Athletic Bilbao,Portero
+6,"
+Kepa Arrizabalaga ",€18.00m ,29,Real Madrid,Portero
+7,"
+Rui Silva ",€15.00m ,29,Real Betis Balompié,Portero
+8,"
+Predrag Rajkovic ",€10.00m ,28,RCD Mallorca,Portero
+9,"
+Conan Ledesma ",€8.00m ,30,Cádiz CF,Portero
+10,"
+David Soria ",€8.00m ,30,Getafe CF,Portero
+11,"
+Sergio Herrera ",€6.00m ,30,CA Osasuna,Portero
+12,"
+Luís Maximiano ",€6.00m ,24,UD Almería,Portero
+13,"
+Filip Jörgensen ",€5.00m ,21,Villarreal CF,Portero
+14,"
+Andriy Lunin ",€5.00m ,24,Real Madrid,Portero
+15,"
+Julen Agirrezabala ",€5.00m ,22,Athletic Bilbao,Portero
+16,"
+Iñaki Peña ",€4.00m ,24,FC Barcelona,Portero
+17,"
+Álvaro Valles ",€4.00m ,26,UD Las Palmas,Portero
+18,"
+Stole Dimitrievski ",€4.00m ,29,Rayo Vallecano,Portero
+19,"
+Ivo Grbic ",€3.50m ,27,Atlético de Madrid,Portero
+20,"
+Aitor Fernández ",€3.00m ,32,CA Osasuna,Portero
+21,"
+Paulo Gazzaniga ",€3.00m ,31,Girona FC,Portero
+22,"
+Iván Villar ",€2.00m ,26,Celta de Vigo,Portero
+23,"
+Marko Dmitrović ",€2.00m ,31,Sevilla FC,Portero
+24,"
+Dani Cárdenas ",€2.00m ,26,Rayo Vallecano,Portero
+25,"
+Dominik Greif ",€1.50m ,26,RCD Mallorca,Portero
+26,"
+Fernando Martínez ",€1.50m ,33,UD Almería,Portero
+27,"
+Agustín Marchesín ",€1.50m ,35,Celta de Vigo,Portero
+28,"
+Antonio Sivera ",€1.20m ,27,Deportivo Alavés,Portero
+29,"
+Claudio Bravo ",€1.00m ,40,Real Betis Balompié,Portero
+30,"
+Aarón Escandell ",€1.00m ,28,UD Las Palmas,Portero
+31,"
+Ørjan Nyland ",€1.00m ,33,Sevilla FC,Portero
+32,"
+Daniel Fuzato ",€1.00m ,26,Getafe CF,Portero
+33,"
+Jaume Doménech ",€1.00m ,33,Valencia CF,Portero
+34,"
+Vicente Guaita ",€1.00m ,36,Celta de Vigo,Portero
+35,"
+André Ferreira ",€800k ,27,Granada CF,Portero
+36,"
+David Gil ",€700k ,29,Cádiz CF,Portero
+37,"
+Pepe Reina ",€700k ,41,Villarreal CF,Portero
+38,"
+Ander Astralaga ",€500k ,19,FC Barcelona,Portero
+39,"
+Raúl Fernández ",€300k ,35,Granada CF,Portero
+40,"
+Diego Mariño ",€300k ,33,UD Almería,Portero
+41,"
+Unai Marrero ",€300k ,22,Real Sociedad,Portero
+42,"
+Juan Carlos ",€300k ,35,Girona FC,Portero
+43,"
+Toni Fuidias ",€300k ,22,Girona FC,Portero
+44,"
+Cristian Rivero ",€200k ,25,Valencia CF,Portero
+45,"
+Jesús Owono ",€200k ,22,Deportivo Alavés,Portero
+46,"
+Iván Cuéllar ",€100k ,39,RCD Mallorca,Portero
+47,"
+Ronald Araújo ",€70.00m ,24,FC Barcelona,Defensa
+48,"
+Éder Militão ",€70.00m ,25,Real Madrid,Defensa
+49,"
+Jules Koundé ",€60.00m ,24,FC Barcelona,Defensa
+50,"
+João Cancelo ",€50.00m ,29,FC Barcelona,Defensa
+51,"
+Nahuel Molina ",€50.00m ,25,Atlético de Madrid,Defensa
+52,"
+Alejandro Balde ",€50.00m ,20,FC Barcelona,Defensa
+53,"
+Andreas Christensen ",€40.00m ,27,FC Barcelona,Defensa
+54,"
+David Alaba ",€40.00m ,31,Real Madrid,Defensa
+55,"
+Robin Le Normand ",€35.00m ,26,Real Sociedad,Defensa
+56,"
+José María Giménez ",€35.00m ,28,Atlético de Madrid,Defensa
+57,"
+Antonio Rüdiger ",€32.00m ,30,Real Madrid,Defensa
+58,"
+José Gayà ",€30.00m ,28,Valencia CF,Defensa
+59,"
+Kieran Tierney ",€25.00m ,26,Real Sociedad,Defensa
+60,"
+Juan Foyth ",€25.00m ,25,Villarreal CF,Defensa
+61,"
+Mario Hermoso ",€20.00m ,28,Atlético de Madrid,Defensa
+62,"
+Ferland Mendy ",€20.00m ,28,Real Madrid,Defensa
+63,"
+Reinildo Mandava ",€20.00m ,29,Atlético de Madrid,Defensa
+64,"
+Igor Zubeldia ",€18.00m ,26,Real Sociedad,Defensa
+65,"
+Çağlar Söyüncü ",€15.00m ,27,Atlético de Madrid,Defensa
+66,"
+Miguel Gutiérrez ",€15.00m ,22,Girona FC,Defensa
+67,"
+Fran García ",€15.00m ,24,Real Madrid,Defensa
+68,"
+Dani Vivian ",€15.00m ,24,Athletic Bilbao,Defensa
+69,"
+David García ",€15.00m ,29,CA Osasuna,Defensa
+70,"
+Arnau Martínez ",€15.00m ,20,Girona FC,Defensa
+71,"
+Daniel Carvajal ",€12.00m ,31,Real Madrid,Defensa
+72,"
+Javi Galán ",€12.00m ,28,Atlético de Madrid,Defensa
+73,"
+Eric García ",€12.00m ,22,Girona FC,Defensa
+74,"
+Loïc Badé ",€12.00m ,23,Sevilla FC,Defensa
+75,"
+Alfonso Pedraza ",€12.00m ,27,Villarreal CF,Defensa
+77,"
+Hamari Traoré ",€10.00m ,31,Real Sociedad,Defensa
+78,"
+Aritz Elustondo ",€10.00m ,29,Real Sociedad,Defensa
+79,"
+Juan Miranda ",€9.00m ,23,Real Betis Balompié,Defensa
+80,"
+Pablo Maffeo ",€8.00m ,26,RCD Mallorca,Defensa
+81,"
+Marcos Acuña ",€8.00m ,32,Sevilla FC,Defensa
+82,"
+Sergio Akieme ",€8.00m ,25,UD Almería,Defensa
+83,"
+Manu Sánchez ",€8.00m ,23,Celta de Vigo,Defensa
+84,"
+Thierry Correia ",€8.00m ,24,Valencia CF,Defensa
+85,"
+Yan Couto ",€8.00m ,21,Girona FC,Defensa
+86,"
+Aitor Paredes ",€8.00m ,23,Athletic Bilbao,Defensa
+87,"
+Iñigo Martínez ",€8.00m ,32,FC Barcelona,Defensa
+88,"
+Jon Pacheco ",€8.00m ,22,Real Sociedad,Defensa
+89,"
+Héctor Bellerín ",€8.00m ,28,Real Betis Balompié,Defensa
+90,"
+Abner ",€7.00m ,23,Real Betis Balompié,Defensa
+91,"
+Álvaro Carreras ",€7.00m ,20,Granada CF,Defensa
+92,"
+Lucas Vázquez ",€6.00m ,32,Real Madrid,Defensa
+93,"
+Unai Núñez ",€6.00m ,26,Celta de Vigo,Defensa
+94,"
+Stefan Savic ",€6.00m ,32,Atlético de Madrid,Defensa
+95,"
+Joseph Aidoo ",€6.00m ,28,Celta de Vigo,Defensa
+96,"
+Mouctar Diakhaby ",€6.00m ,26,Valencia CF,Defensa
+98,"
+César Montes ",€6.00m ,26,UD Almería,Defensa
+99,"
+Marcão ",€6.00m ,27,Sevilla FC,Defensa
+100,"
+Aihen Muñoz ",€6.00m ,26,Real Sociedad,Defensa
+101,"
+Alejandro Catena ",€6.00m ,29,CA Osasuna,Defensa
+102,"
+Axel Witsel ",€5.00m ,34,Atlético de Madrid,Defensa
+103,"
+César Azpilicueta ",€5.00m ,34,Atlético de Madrid,Defensa
+104,"
+Matteo Gabbia ",€5.00m ,24,Villarreal CF,Defensa
+105,"
+Nacho Fernández ",€5.00m ,33,Real Madrid,Defensa
+106,"
+Gastón Álvarez ",€5.00m ,23,Getafe CF,Defensa
+107,"
+Germán Pezzella ",€5.00m ,32,Real Betis Balompié,Defensa
+108,"
+Cenk Özkacar ",€5.00m ,23,Valencia CF,Defensa
+109,"
+Carl Starfelt ",€5.00m ,28,Celta de Vigo,Defensa
+110,"
+Youssouf Sabaly ",€5.00m ,30,Real Betis Balompié,Defensa
+111,"
+Adrià Pedrosa ",€5.00m ,25,Sevilla FC,Defensa
+112,"
+Jorge Cuenca ",€5.00m ,23,Villarreal CF,Defensa
+113,"
+Martin Valjent ",€4.50m ,27,RCD Mallorca,Defensa
+114,"
+Álvaro Odriozola ",€4.00m ,27,Real Sociedad,Defensa
+115,"
+Florian Lejeune ",€4.00m ,32,Rayo Vallecano,Defensa
+116,"
+Siebe Van der Heyden ",€4.00m ,25,RCD Mallorca,Defensa
+117,"
+Julián Araujo ",€4.00m ,22,UD Las Palmas,Defensa
+118,"
+Federico Gattoni ",€4.00m ,24,Sevilla FC,Defensa
+119,"
+Sergio Ramos ",€4.00m ,37,Sevilla FC,Defensa
+120,"
+Sergi Roberto ",€4.00m ,31,FC Barcelona,Defensa
+121,"
+Nemanja Gudelj ",€4.00m ,31,Sevilla FC,Defensa
+122,"
+Djené ",€4.00m ,31,Getafe CF,Defensa
+123,"
+Andoni Gorosabel ",€4.00m ,27,Deportivo Alavés,Defensa
+124,"
+José Ángel Carmona ",€4.00m ,21,Getafe CF,Defensa
+125,"
+Edgar González ",€4.00m ,26,UD Almería,Defensa
+126,"
+Iván Balliu ",€4.00m ,31,Rayo Vallecano,Defensa
+127,"
+Alfonso Espino ",€3.50m ,31,Rayo Vallecano,Defensa
+128,"
+Domingos Duarte ",€3.00m ,28,Getafe CF,Defensa
+129,"
+Óscar Mingueza ",€3.00m ,24,Celta de Vigo,Defensa
+130,"
+Jesús Navas ",€3.00m ,37,Sevilla FC,Defensa
+131,"
+David López ",€3.00m ,34,Girona FC,Defensa
+132,"
+José Copete ",€3.00m ,24,RCD Mallorca,Defensa
+133,"
+Nacho Vidal ",€3.00m ,28,CA Osasuna,Defensa
+134,"
+Kaiky ",€3.00m ,19,UD Almería,Defensa
+135,"
+Omar Alderete ",€3.00m ,26,Getafe CF,Defensa
+136,"
+Juanlu Sánchez ",€3.00m ,20,Sevilla FC,Defensa
+137,"
+Alejandro Pozo ",€3.00m ,24,UD Almería,Defensa
+138,"
+Iñigo Lekue ",€3.00m ,30,Athletic Bilbao,Defensa
+139,"
+Marc Bartra ",€3.00m ,32,Real Betis Balompié,Defensa
+140,"
+Rafa Marín ",€3.00m ,21,Deportivo Alavés,Defensa
+141,"
+Johan Mojica ",€3.00m ,31,CA Osasuna,Defensa
+142,"
+Marcos Alonso ",€3.00m ,32,FC Barcelona,Defensa
+143,"
+Javi Hernández ",€3.00m ,25,Cádiz CF,Defensa
+144,"
+Daley Blind ",€3.00m ,33,Girona FC,Defensa
+145,"
+Diego Rico ",€3.00m ,30,Getafe CF,Defensa
+146,"
+Álex Sola ",€3.00m ,24,Deportivo Alavés,Defensa
+147,"
+Jude Bellingham ",€150.00m ,20,Real Madrid,Centrocampista
+148,"
+Pedri ",€100.00m ,20,FC Barcelona,Centrocampista
+149,"
+Federico Valverde ",€100.00m ,25,Real Madrid,Centrocampista
+150,"
+Gavi ",€90.00m ,19,FC Barcelona,Centrocampista
+151,"
+Aurélien Tchouaméni ",€90.00m ,23,Real Madrid,Centrocampista
+152,"
+Frenkie de Jong ",€90.00m ,26,FC Barcelona,Centrocampista
+153,"
+Eduardo Camavinga ",€90.00m ,20,Real Madrid,Centrocampista
+154,"
+Mikel Merino ",€50.00m ,27,Real Sociedad,Centrocampista
+155,"
+Rodrigo de Paul ",€40.00m ,29,Atlético de Madrid,Centrocampista
+156,"
+Martín Zubimendi ",€40.00m ,24,Real Sociedad,Centrocampista
+157,"
+Marcos Llorente ",€35.00m ,28,Atlético de Madrid,Centrocampista
+158,"
+Oihan Sancet ",€30.00m ,23,Athletic Bilbao,Centrocampista
+159,"
+Brais Méndez ",€30.00m ,26,Real Sociedad,Centrocampista
+160,"
+Guido Rodríguez ",€28.00m ,29,Real Betis Balompié,Centrocampista
+161,"
+Djibril Sow ",€22.00m ,26,Sevilla FC,Centrocampista
+162,"
+Brahim Díaz ",€20.00m ,24,Real Madrid,Centrocampista
+163,"
+Javi Guerra ",€20.00m ,20,Valencia CF,Centrocampista
+164,"
+Álex Baena ",€20.00m ,22,Villarreal CF,Centrocampista
+165,"
+Pablo Barrios ",€20.00m ,20,Atlético de Madrid,Centrocampista
+166,"
+İlkay Gündoğan ",€20.00m ,33,FC Barcelona,Centrocampista
+167,"
+André Almeida ",€20.00m ,23,Valencia CF,Centrocampista
+168,"
+Koke ",€16.00m ,31,Atlético de Madrid,Centrocampista
+169,"
+Sergi Darder ",€16.00m ,29,RCD Mallorca,Centrocampista
+170,"
+Nabil Fekir ",€15.00m ,30,Real Betis Balompié,Centrocampista
+171,"
+Arda Güler ",€15.00m ,18,Real Madrid,Centrocampista
+172,"
+Toni Kroos ",€15.00m ,33,Real Madrid,Centrocampista
+175,"
+Aimar Oroz ",€15.00m ,21,CA Osasuna,Centrocampista
+176,"
+Boubakary Soumaré ",€15.00m ,24,Sevilla FC,Centrocampista
+177,"
+Saúl Ñíguez ",€12.00m ,28,Atlético de Madrid,Centrocampista
+178,"
+Jon Moncayola ",€12.00m ,25,CA Osasuna,Centrocampista
+179,"
+Dani Ceballos ",€12.00m ,27,Real Madrid,Centrocampista
+180,"
+Máximo Perrone ",€10.00m ,20,UD Las Palmas,Centrocampista
+181,"
+Aleix García ",€10.00m ,26,Girona FC,Centrocampista
+182,"
+Fran Beltrán ",€10.00m ,24,Celta de Vigo,Centrocampista
+183,"
+Luka Modric ",€10.00m ,38,Real Madrid,Centrocampista
+184,"
+Yangel Herrera ",€10.00m ,25,Girona FC,Centrocampista
+185,"
+Marc Roca ",€10.00m ,26,Real Betis Balompié,Centrocampista
+186,"
+William Carvalho ",€9.00m ,31,Real Betis Balompié,Centrocampista
+187,"
+Hugo Guillamón ",€9.00m ,23,Valencia CF,Centrocampista
+188,"
+Iker Muniain ",€9.00m ,30,Athletic Bilbao,Centrocampista
+189,"
+Pepelu ",€8.00m ,25,Valencia CF,Centrocampista
+190,"
+Rodri Sánchez ",€8.00m ,23,Real Betis Balompié,Centrocampista
+191,"
+Isco ",€8.00m ,31,Real Betis Balompié,Centrocampista
+192,"
+Lucas Torró ",€8.00m ,29,CA Osasuna,Centrocampista
+193,"
+Fermín López ",€8.00m ,20,FC Barcelona,Centrocampista
+194,"
+Sergio Arribas ",€8.00m ,22,UD Almería,Centrocampista
+195,"
+Santi Comesaña ",€7.50m ,27,Villarreal CF,Centrocampista
+196,"
+Lucas Robertone ",€7.00m ,26,UD Almería,Centrocampista
+197,"
+Dion Lopy ",€6.00m ,21,UD Almería,Centrocampista
+198,"
+Mauro Arambarri ",€6.00m ,28,Getafe CF,Centrocampista
+199,"
+Nemanja Maksimovic ",€6.00m ,28,Getafe CF,Centrocampista
+200,"
+Mikel Vesga ",€6.00m ,30,Athletic Bilbao,Centrocampista
+201,"
+Óliver Torres ",€6.00m ,28,Sevilla FC,Centrocampista
+202,"
+Carles Aleñá ",€6.00m ,25,Getafe CF,Centrocampista
+203,"
+Joan Jordán ",€6.00m ,29,Sevilla FC,Centrocampista
+204,"
+Beñat Turrientes ",€5.00m ,21,Real Sociedad,Centrocampista
+205,"
+Óscar Valentín ",€5.00m ,29,Rayo Vallecano,Centrocampista
+206,"
+Óscar Rodríguez ",€5.00m ,25,Getafe CF,Centrocampista
+207,"
+Antonio Blanco ",€5.00m ,23,Deportivo Alavés,Centrocampista
+208,"
+Iker Muñoz ",€5.00m ,21,CA Osasuna,Centrocampista
+209,"
+Renato Tapia ",€5.00m ,28,Celta de Vigo,Centrocampista
+210,"
+Alberto Moleiro ",€5.00m ,20,UD Las Palmas,Centrocampista
+211,"
+Samú Costa ",€5.00m ,22,RCD Mallorca,Centrocampista
+212,"
+Oriol Romeu ",€5.00m ,32,FC Barcelona,Centrocampista
+213,"
+Kike Pérez ",€4.50m ,26,Rayo Vallecano,Centrocampista
+214,"
+Dani Parejo ",€4.00m ,34,Villarreal CF,Centrocampista
+215,"
+Ivan Rakitic ",€4.00m ,35,Sevilla FC,Centrocampista
+216,"
+Ramón Terrats ",€4.00m ,23,Villarreal CF,Centrocampista
+217,"
+Ianis Hagi ",€4.00m ,25,Deportivo Alavés,Centrocampista
+218,"
+Iván Martín ",€4.00m ,24,Girona FC,Centrocampista
+219,"
+Rominigue Kouamé ",€4.00m ,26,Cádiz CF,Centrocampista
+220,"
+Gerard Gumbau ",€3.50m ,28,Granada CF,Centrocampista
+221,"
+Unai López ",€3.50m ,28,Rayo Vallecano,Centrocampista
+222,"
+Robert Navarro ",€3.00m ,21,Cádiz CF,Centrocampista
+223,"
+Gonzalo Melero ",€3.00m ,29,UD Almería,Centrocampista
+224,"
+Luca de la Torre ",€3.00m ,25,Celta de Vigo,Centrocampista
+225,"
+Iñigo Ruiz de Galarreta ",€3.00m ,30,Athletic Bilbao,Centrocampista
+226,"
+Fernando ",€3.00m ,36,Sevilla FC,Centrocampista
+227,"
+Carlos Dotor ",€3.00m ,22,Celta de Vigo,Centrocampista
+228,"
+Williot Swedberg ",€3.00m ,19,Celta de Vigo,Centrocampista
+229,"
+Jhon Solís ",€3.00m ,19,Girona FC,Centrocampista
+230,"
+Pathé Ciss ",€3.00m ,29,Rayo Vallecano,Centrocampista
+231,"
+Álex Fernández ",€3.00m ,31,Cádiz CF,Centrocampista
+232,"
+Gonzalo Villar ",€2.80m ,25,Granada CF,Centrocampista
+233,"
+Ander Herrera ",€2.50m ,34,Athletic Bilbao,Centrocampista
+234,"
+Pablo Ibáñez ",€2.50m ,25,CA Osasuna,Centrocampista
+235,"
+Antonio Sánchez ",€2.50m ,26,RCD Mallorca,Centrocampista
+236,"
+Iddrisu Baba ",€2.50m ,27,UD Almería,Centrocampista
+237,"
+Óscar Trejo ",€2.50m ,35,Rayo Vallecano,Centrocampista
+238,"
+Francis Coquelin ",€2.50m ,32,Villarreal CF,Centrocampista
+239,"
+Selim Amallah ",€2.50m ,26,Valencia CF,Centrocampista
+240,"
+Denis Suárez ",€2.50m ,29,Villarreal CF,Centrocampista
+241,"
+Luis Milla ",€2.50m ,29,Getafe CF,Centrocampista
+242,"
+Manu Trigueros ",€2.50m ,32,Villarreal CF,Centrocampista
+243,"
+Ander Guevara ",€2.50m ,26,Deportivo Alavés,Centrocampista
+244,"
+Kirian Rodríguez ",€2.50m ,27,UD Las Palmas,Centrocampista
+245,"
+Pablo Torre ",€2.50m ,20,Girona FC,Centrocampista
+246,"
+Enzo Loiodice ",€2.50m ,22,UD Las Palmas,Centrocampista
+247,"
+Vinicius Junior ",€150.00m ,23,Real Madrid,Delantero
+248,"
+Rodrygo ",€100.00m ,22,Real Madrid,Delantero
+249,"
+Raphinha ",€60.00m ,26,FC Barcelona,Delantero
+250,"
+João Félix ",€50.00m ,23,FC Barcelona,Delantero
+251,"
+Takefusa Kubo ",€50.00m ,22,Real Sociedad,Delantero
+252,"
+Lamine Yamal ",€50.00m ,16,FC Barcelona,Delantero
+253,"
+Mikel Oyarzabal ",€40.00m ,26,Real Sociedad,Delantero
+254,"
+Nico Williams ",€40.00m ,21,Athletic Bilbao,Delantero
+255,"
+Yéremy Pino ",€35.00m ,21,Villarreal CF,Delantero
+256,"
+Ferran Torres ",€35.00m ,23,FC Barcelona,Delantero
+257,"
+Robert Lewandowski ",€30.00m ,35,FC Barcelona,Delantero
+258,"
+Ángel Correa ",€30.00m ,28,Atlético de Madrid,Delantero
+259,"
+Enes Ünal ",€25.00m ,26,Getafe CF,Delantero
+260,"
+Antoine Griezmann ",€25.00m ,32,Atlético de Madrid,Delantero
+261,"
+Iñaki Williams ",€25.00m ,29,Athletic Bilbao,Delantero
+262,"
+Viktor Tsygankov ",€22.00m ,25,Girona FC,Delantero
+263,"
+Sávio ",€20.00m ,19,Girona FC,Delantero
+264,"
+Jonathan Bamba ",€20.00m ,27,Celta de Vigo,Delantero
+265,"
+Samuel Lino ",€20.00m ,23,Atlético de Madrid,Delantero
+266,"
+Youssef En-Nesyri ",€20.00m ,26,Sevilla FC,Delantero
+267,"
+Álvaro Morata ",€20.00m ,31,Atlético de Madrid,Delantero
+268,"
+Rodrigo Riquelme ",€18.00m ,23,Atlético de Madrid,Delantero
+269,"
+Umar Sadiq ",€16.00m ,26,Real Sociedad,Delantero
+270,"
+Dodi Lukébakio ",€15.00m ,26,Sevilla FC,Delantero
+271,"
+Abde Ezzalzouli ",€15.00m ,21,Real Betis Balompié,Delantero
+272,"
+Vedat Muriqi ",€15.00m ,29,RCD Mallorca,Delantero
+273,"
+Luiz Henrique ",€15.00m ,22,Real Betis Balompié,Delantero
+274,"
+Gerard Moreno ",€15.00m ,31,Villarreal CF,Delantero
+275,"
+Álex Berenguer ",€15.00m ,28,Athletic Bilbao,Delantero
+276,"
+Artem Dovbyk ",€15.00m ,26,Girona FC,Delantero
+277,"
+Ander Barrenetxea ",€15.00m ,21,Real Sociedad,Delantero
+278,"
+Alexander Sørloth ",€14.00m ,27,Villarreal CF,Delantero
+279,"
+Memphis Depay ",€14.00m ,29,Atlético de Madrid,Delantero
+280,"
+André Silva ",€12.00m ,28,Real Sociedad,Delantero
+281,"
+Jørgen Strand Larsen ",€12.00m ,23,Celta de Vigo,Delantero
+282,"
+Isi Palazón ",€12.00m ,28,Rayo Vallecano,Delantero
+283,"
+Anastasios Douvikas ",€12.00m ,24,Celta de Vigo,Delantero
+284,"
+Lucas Ocampos ",€12.00m ,29,Sevilla FC,Delantero
+285,"
+Mohamed-Ali Cho ",€10.00m ,19,Real Sociedad,Delantero
+286,"
+Diego López ",€10.00m ,21,Valencia CF,Delantero
+287,"
+Lucas Boyé ",€10.00m ,27,Granada CF,Delantero
+288,"
+Borja Iglesias ",€10.00m ,30,Real Betis Balompié,Delantero
+289,"
+Ben Brereton Díaz ",€10.00m ,24,Villarreal CF,Delantero
+290,"
+Myrto Uzuni ",€9.00m ,28,Granada CF,Delantero
+291,"
+Borja Mayoral ",€9.00m ,26,Getafe CF,Delantero
+292,"
+Luis Suárez ",€8.00m ,25,UD Almería,Delantero
+293,"
+Assane Diao ",€8.00m ,18,Real Betis Balompié,Delantero
+294,"
+Bryan Zaragoza ",€8.00m ,22,Granada CF,Delantero
+295,"
+Jorge de Frutos ",€8.00m ,26,Rayo Vallecano,Delantero
+296,"
+Erik Lamela ",€7.00m ,31,Sevilla FC,Delantero
+297,"
+Raúl de Tomás ",€6.00m ,29,Rayo Vallecano,Delantero
+298,"
+Willian José ",€6.00m ,31,Real Betis Balompié,Delantero
+299,"
+Largie Ramazani ",€6.00m ,22,UD Almería,Delantero
+300,"
+Suso ",€6.00m ,29,Sevilla FC,Delantero
+301,"
+Álvaro García ",€6.00m ,31,Rayo Vallecano,Delantero
+302,"
+Ayoze Pérez ",€6.00m ,30,Real Betis Balompié,Delantero
+303,"
+Joselu ",€6.00m ,33,Real Madrid,Delantero
+304,"
+Rafa Mir ",€6.00m ,26,Sevilla FC,Delantero
+305,"
+Samu Omorodion ",€6.00m ,19,Deportivo Alavés,Delantero
+306,"
+Chimy Ávila ",€5.00m ,29,CA Osasuna,Delantero
+307,"
+Fran Pérez ",€5.00m ,21,Valencia CF,Delantero
+308,"
+Mason Greenwood ",€5.00m ,22,Getafe CF,Delantero
+309,"
+Moi Gómez ",€5.00m ,29,CA Osasuna,Delantero
+310,"
+Cyle Larin ",€5.00m ,28,RCD Mallorca,Delantero
+311,"
+Aitor Ruibal ",€5.00m ,27,Real Betis Balompié,Delantero
+312,"
+Iago Aspas ",€5.00m ,36,Celta de Vigo,Delantero
+313,"
+Sergio Camello ",€5.00m ,22,Rayo Vallecano,Delantero
+314,"
+Carles Pérez ",€5.00m ,25,Celta de Vigo,Delantero
+315,"
+Hugo Duro ",€5.00m ,23,Valencia CF,Delantero
+316,"
+Ante Budimir ",€5.00m ,32,CA Osasuna,Delantero
+317,"
+Lázaro ",€4.00m ,21,UD Almería,Delantero
+318,"
+Adnan Januzaj ",€4.00m ,28,Sevilla FC,Delantero
+319,"
+Rubén García ",€4.00m ,30,CA Osasuna,Delantero
+320,"
+Gorka Guruzeta ",€4.00m ,27,Athletic Bilbao,Delantero
+321,"
+Roman Yaremchuk ",€4.00m ,27,Valencia CF,Delantero
+323,"
+Maxi Gómez ",€4.00m ,27,Cádiz CF,Delantero
+324,"
+Sergi Canós ",€4.00m ,26,Valencia CF,Delantero
+325,"
+Portu ",€3.50m ,31,Girona FC,Delantero
+326,"
+Antonio Puertas ",€3.00m ,31,Granada CF,Delantero
+327,"
+Raúl García ",€3.00m ,23,CA Osasuna,Delantero
+328,"
+Carlos Fernández ",€3.00m ,27,Real Sociedad,Delantero
+329,"
+Darwin Machís ",€3.00m ,30,Cádiz CF,Delantero
+330,"
+Ilias Akhomach ",€3.00m ,19,Villarreal CF,Delantero
+331,"
+Luis Rioja ",€3.00m ,30,Deportivo Alavés,Delantero
+332,"
+Juanmi Latasa ",€3.00m ,22,Getafe CF,Delantero
+333,"
+Jon Karrikaburu ",€3.00m ,21,Deportivo Alavés,Delantero
+334,"
+Shon Weissman ",€3.00m ,27,Granada CF,Delantero
+335,"
+Giuliano Simeone ",€2.50m ,20,Deportivo Alavés,Delantero
+336,"
+Raúl García ",€2.50m ,37,Athletic Bilbao,Delantero
+337,"
+Franco Cervi ",€2.50m ,29,Celta de Vigo,Delantero
+338,"
+Asier Villalibre ",€2.50m ,26,Athletic Bilbao,Delantero
+339,"
+Valery Fernández ",€2.50m ,23,Girona FC,Delantero
+340,"
+Toni Villa ",€2.50m ,28,Girona FC,Delantero
+341,"
+Kike Barja ",€2.50m ,26,CA Osasuna,Delantero
+342,"
+José Luis Morales ",€2.50m ,36,Villarreal CF,Delantero
+343,"
+Adrián Embarba ",€2.50m ,31,UD Almería,Delantero
+344,"
+José Manuel Arnáiz ",€2.50m ,28,CA Osasuna,Delantero
+345,"
+Chris Ramos ",€2.50m ,26,Cádiz CF,Delantero
+346,"
+Abdón Prats ",€2.00m ,30,RCD Mallorca,Delantero

@@ -1,0 +1,681 @@
+,Player,value,age,club,position
+0,"
+Mike Maignan ",€45.00m ,28,AC Milan,Portero
+1,"
+Alex Meret ",€18.00m ,26,SSC Napoli,Portero
+2,"
+Marco Carnesecchi ",€13.00m ,23,Atalanta BC,Portero
+3,"
+Ivan Provedel ",€12.00m ,29,SS Lazio,Portero
+4,"
+Wojciech Szczesny ",€10.00m ,33,Juventus FC,Portero
+5,"
+Juan Musso ",€8.00m ,29,Atalanta BC,Portero
+6,"
+Michele Di Gregorio ",€8.00m ,26,AC Monza,Portero
+7,"
+Vanja Milinković-Savić ",€6.00m ,26,Torino FC,Portero
+8,"
+Elia Caprile ",€6.00m ,22,FC Empoli,Portero
+9,"
+Emil Audero ",€6.00m ,26,Inter Milan,Portero
+10,"
+Wladimiro Falcone ",€5.00m ,28,US Lecce,Portero
+11,"
+Marco Silvestri ",€5.00m ,32,Udinese Calcio,Portero
+12,"
+Yann Sommer ",€5.00m ,34,Inter Milan,Portero
+13,"
+Rui Patrício ",€5.00m ,35,AS Roma,Portero
+14,"
+Pierluigi Gollini ",€4.50m ,28,SSC Napoli,Portero
+15,"
+Stefano Turati ",€4.50m ,22,Frosinone Calcio,Portero
+16,"
+Oliver Christensen ",€4.00m ,24,ACF Fiorentina,Portero
+17,"
+Lorenzo Montipò ",€4.00m ,27,Hellas Verona,Portero
+18,"
+Mattia Perin ",€4.00m ,30,Juventus FC,Portero
+19,"
+Josep Martínez ",€3.50m ,25,Genoa CFC,Portero
+20,"
+Lukasz Skorupski ",€3.50m ,32,Bologna FC 1909,Portero
+21,"
+Alessio Cragno ",€3.00m ,29,US Sassuolo,Portero
+22,"
+Maduka Okoye ",€2.00m ,24,Udinese Calcio,Portero
+23,"
+Simone Scuffet ",€2.00m ,27,Cagliari Calcio,Portero
+24,"
+Pietro Terracciano ",€2.00m ,33,ACF Fiorentina,Portero
+25,"
+Guillermo Ochoa ",€1.50m ,38,US Salernitana 1919,Portero
+26,"
+Boris Radunović ",€1.50m ,27,Cagliari Calcio,Portero
+27,"
+Mile Svilar ",€1.50m ,24,AS Roma,Portero
+28,"
+Marco Sportiello ",€1.50m ,31,AC Milan,Portero
+29,"
+Benoît Costil ",€1.00m ,36,US Salernitana 1919,Portero
+30,"
+Andrea Consigli ",€1.00m ,36,US Sassuolo,Portero
+31,"
+Luigi Sepe ",€1.00m ,32,SS Lazio,Portero
+32,"
+Christos Mandas ",€1.00m ,22,SS Lazio,Portero
+33,"
+Mihai Popa ",€1.00m ,23,Torino FC,Portero
+34,"
+Stefano Gori ",€900k ,27,AC Monza,Portero
+35,"
+Nicola Leali ",€900k ,30,Genoa CFC,Portero
+36,"
+Samuele Perisan ",€800k ,26,FC Empoli,Portero
+37,"
+Michele Cerofolini ",€500k ,24,Frosinone Calcio,Portero
+38,"
+Nikita Contini ",€500k ,27,SSC Napoli,Portero
+39,"
+Alessandro Sorrentino ",€500k ,21,AC Monza,Portero
+40,"
+Federico Ravaglia ",€450k ,23,Bologna FC 1909,Portero
+41,"
+Etrit Berisha ",€400k ,34,FC Empoli,Portero
+42,"
+Raffaele Di Gennaro ",€350k ,30,Inter Milan,Portero
+43,"
+Luca Gemello ",€300k ,23,Torino FC,Portero
+44,"
+Michele Avella ",€250k ,23,Frosinone Calcio,Portero
+45,"
+Lovro Stubljar ",€200k ,19,FC Empoli,Portero
+46,"
+Carlo Pinsoglio ",€200k ,33,Juventus FC,Portero
+47,"
+Nicola Bagnolini ",€200k ,19,Bologna FC 1909,Portero
+48,"
+Simone Perilli ",€200k ,28,Hellas Verona,Portero
+49,"
+Vincenzo Fiorillo ",€200k ,33,US Salernitana 1919,Portero
+50,"
+Theo Hernández ",€60.00m ,26,AC Milan,Defensa
+51,"
+Alessandro Bastoni ",€60.00m ,24,Inter Milan,Defensa
+52,"
+Federico Dimarco ",€45.00m ,25,Inter Milan,Defensa
+53,"
+Benjamin Pavard ",€40.00m ,27,Inter Milan,Defensa
+54,"
+Giorgio Scalvini ",€40.00m ,19,Atalanta BC,Defensa
+55,"
+Bremer ",€40.00m ,26,Juventus FC,Defensa
+56,"
+Fikayo Tomori ",€40.00m ,25,AC Milan,Defensa
+57,"
+Malick Thiaw ",€30.00m ,22,AC Milan,Defensa
+58,"
+Evan Ndicka ",€28.00m ,24,AS Roma,Defensa
+59,"
+Giovanni Di Lorenzo ",€25.00m ,30,SSC Napoli,Defensa
+60,"
+Amir Rrahmani ",€25.00m ,29,SSC Napoli,Defensa
+61,"
+Pierre Kalulu ",€25.00m ,23,AC Milan,Defensa
+62,"
+Perr Schuurs ",€25.00m ,23,Torino FC,Defensa
+63,"
+Nicolò Casale ",€22.00m ,25,SS Lazio,Defensa
+64,"
+Alessandro Buongiorno ",€20.00m ,24,Torino FC,Defensa
+65,"
+Davide Calabria ",€20.00m ,26,AC Milan,Defensa
+66,"
+Dodô ",€20.00m ,24,ACF Fiorentina,Defensa
+67,"
+Alessio Romagnoli ",€18.00m ,28,SS Lazio,Defensa
+68,"
+Gianluca Mancini ",€18.00m ,27,AS Roma,Defensa
+69,"
+Mathías Olivera ",€18.00m ,26,SSC Napoli,Defensa
+70,"
+Nikola Milenković ",€18.00m ,26,ACF Fiorentina,Defensa
+71,"
+Danilo ",€15.00m ,32,Juventus FC,Defensa
+72,"
+Stefan Posch ",€14.00m ,26,Bologna FC 1909,Defensa
+73,"
+Rasmus Kristensen ",€13.00m ,26,AS Roma,Defensa
+74,"
+Victor Kristiansen ",€12.00m ,20,Bologna FC 1909,Defensa
+75,"
+Jhon Lucumí ",€12.00m ,25,Bologna FC 1909,Defensa
+76,"
+Federico Gatti ",€12.00m ,25,Juventus FC,Defensa
+77,"
+Jaka Bijol ",€10.00m ,24,Udinese Calcio,Defensa
+78,"
+Berat Djimsiti ",€10.00m ,30,Atalanta BC,Defensa
+79,"
+Yerry Mina ",€10.00m ,29,ACF Fiorentina,Defensa
+80,"
+Leo Østigård ",€10.00m ,23,SSC Napoli,Defensa
+81,"
+Nehuén Pérez ",€10.00m ,23,Udinese Calcio,Defensa
+82,"
+Fabiano Parisi ",€10.00m ,23,ACF Fiorentina,Defensa
+83,"
+Radu Drăgușin ",€10.00m ,21,Genoa CFC,Defensa
+84,"
+Andrea Cambiaso ",€10.00m ,23,Juventus FC,Defensa
+85,"
+Lucas Martínez Quarta ",€10.00m ,27,ACF Fiorentina,Defensa
+86,"
+Leonardo Spinazzola ",€10.00m ,30,AS Roma,Defensa
+87,"
+Natan ",€10.00m ,22,SSC Napoli,Defensa
+88,"
+Sam Beukema ",€10.00m ,24,Bologna FC 1909,Defensa
+89,"
+Isak Hien ",€9.00m ,24,Hellas Verona,Defensa
+90,"
+Diego Llorente ",€8.00m ,30,AS Roma,Defensa
+91,"
+Lorenzo Pirola ",€8.00m ,21,US Salernitana 1919,Defensa
+92,"
+Zeki Çelik ",€8.00m ,26,AS Roma,Defensa
+93,"
+Flavius Daniliuc ",€8.00m ,22,US Salernitana 1919,Defensa
+94,"
+Stefan de Vrij ",€8.00m ,31,Inter Milan,Defensa
+95,"
+Josh Doig ",€8.00m ,21,Hellas Verona,Defensa
+96,"
+Adam Marusic ",€8.00m ,31,SS Lazio,Defensa
+97,"
+Chris Smalling ",€8.00m ,33,AS Roma,Defensa
+98,"
+Matías Viña ",€8.00m ,26,US Sassuolo,Defensa
+99,"
+Caleb Okoli ",€8.00m ,22,Frosinone Calcio,Defensa
+100,"
+Mário Rui ",€8.00m ,32,SSC Napoli,Defensa
+101,"
+Hassane Kamara ",€8.00m ,29,Udinese Calcio,Defensa
+102,"
+Marash Kumbulla ",€8.00m ,23,AS Roma,Defensa
+103,"
+Federico Baschirotto ",€8.00m ,27,US Lecce,Defensa
+104,"
+Sead Kolasinac ",€8.00m ,30,Atalanta BC,Defensa
+105,"
+Marcus Pedersen ",€7.00m ,23,US Sassuolo,Defensa
+106,"
+Yann Bisseck ",€7.00m ,22,Inter Milan,Defensa
+107,"
+Domagoj Bradaric ",€7.00m ,23,US Salernitana 1919,Defensa
+108,"
+Mattia Viti ",€7.00m ,21,US Sassuolo,Defensa
+109,"
+Rick Karsdorp ",€7.00m ,28,AS Roma,Defensa
+110,"
+Aarón Martín ",€7.00m ,26,Genoa CFC,Defensa
+111,"
+Jordan Zemura ",€6.00m ,23,Udinese Calcio,Defensa
+112,"
+Alessandro Zanoli ",€6.00m ,23,SSC Napoli,Defensa
+113,"
+Rafael Tolói ",€6.00m ,33,Atalanta BC,Defensa
+114,"
+Matteo Lovato ",€6.00m ,23,US Salernitana 1919,Defensa
+115,"
+Patric ",€5.00m ,30,SS Lazio,Defensa
+116,"
+Riccardo Calafiori ",€5.00m ,21,Bologna FC 1909,Defensa
+117,"
+David Zima ",€5.00m ,23,Torino FC,Defensa
+118,"
+Cristiano Biraghi ",€5.00m ,31,ACF Fiorentina,Defensa
+119,"
+Pablo Marí ",€5.00m ,30,AC Monza,Defensa
+120,"
+Elseid Hysaj ",€5.00m ,29,SS Lazio,Defensa
+121,"
+Martin Erlic ",€5.00m ,25,US Sassuolo,Defensa
+122,"
+Michael Kayode ",€5.00m ,19,ACF Fiorentina,Defensa
+123,"
+Pasquale Mazzocchi ",€4.50m ,28,US Salernitana 1919,Defensa
+124,"
+Jeremy Toljan ",€4.50m ,29,US Sassuolo,Defensa
+125,"
+Luca Pellegrini ",€4.50m ,24,SS Lazio,Defensa
+126,"
+Enzo Ebosse ",€4.50m ,24,Udinese Calcio,Defensa
+127,"
+Ruan Tressoldi ",€4.50m ,24,US Sassuolo,Defensa
+128,"
+Mateusz Wieteska ",€4.00m ,26,Cagliari Calcio,Defensa
+129,"
+Valentin Gendrey ",€4.00m ,23,US Lecce,Defensa
+130,"
+Koni De Winter ",€4.00m ,21,Genoa CFC,Defensa
+131,"
+Matteo Darmian ",€4.00m ,33,Inter Milan,Defensa
+132,"
+Johan Vásquez ",€4.00m ,25,Genoa CFC,Defensa
+133,"
+Luca Ranieri ",€4.00m ,24,ACF Fiorentina,Defensa
+134,"
+Marin Pongracic ",€4.00m ,26,US Lecce,Defensa
+135,"
+Francesco Acerbi ",€4.00m ,35,Inter Milan,Defensa
+136,"
+Diego Coppola ",€4.00m ,19,Hellas Verona,Defensa
+137,"
+Andrea Carboni ",€4.00m ,22,AC Monza,Defensa
+138,"
+Pantelis Hatzidiakos ",€4.00m ,26,Cagliari Calcio,Defensa
+139,"
+Simon Kjaer ",€3.50m ,34,AC Milan,Defensa
+140,"
+Ardian Ismajli ",€3.50m ,27,FC Empoli,Defensa
+141,"
+Junior Sambia ",€3.50m ,27,US Salernitana 1919,Defensa
+142,"
+Ricardo Rodríguez ",€3.50m ,31,Torino FC,Defensa
+143,"
+Marco Pellegrino ",€3.50m ,21,AC Milan,Defensa
+144,"
+Juan Jesus ",€3.50m ,32,SSC Napoli,Defensa
+145,"
+Silvan Hefti ",€3.40m ,26,Genoa CFC,Defensa
+146,"
+Adama Soumaoro ",€3.00m ,31,Bologna FC 1909,Defensa
+147,"
+Mario Gila ",€3.00m ,23,SS Lazio,Defensa
+148,"
+Mattia De Sciglio ",€3.00m ,31,Juventus FC,Defensa
+149,"
+Giangiacomo Magnani ",€3.00m ,28,Hellas Verona,Defensa
+150,"
+Nicolò Barella ",€75.00m ,26,Inter Milan,Centrocampista
+151,"
+Adrien Rabiot ",€40.00m ,28,Juventus FC,Centrocampista
+152,"
+Hakan Calhanoglu ",€40.00m ,29,Inter Milan,Centrocampista
+153,"
+Stanislav Lobotka ",€40.00m ,28,SSC Napoli,Centrocampista
+154,"
+Frank Anguissa ",€40.00m ,27,SSC Napoli,Centrocampista
+155,"
+Ismaël Bennacer ",€38.00m ,25,AC Milan,Centrocampista
+156,"
+Nicolò Fagioli ",€35.00m ,22,Juventus FC,Centrocampista
+157,"
+Piotr Zielinski ",€35.00m ,29,SSC Napoli,Centrocampista
+158,"
+Teun Koopmeiners ",€35.00m ,25,Atalanta BC,Centrocampista
+159,"
+Davide Frattesi ",€30.00m ,24,Inter Milan,Centrocampista
+160,"
+Lorenzo Pellegrini ",€30.00m ,27,AS Roma,Centrocampista
+161,"
+Manuel Locatelli ",€30.00m ,25,Juventus FC,Centrocampista
+162,"
+Denzel Dumfries ",€28.00m ,27,Inter Milan,Centrocampista
+163,"
+Jesper Lindstrøm ",€28.00m ,23,SSC Napoli,Centrocampista
+164,"
+Daichi Kamada ",€27.00m ,27,SS Lazio,Centrocampista
+165,"
+Eljif Elmas ",€26.00m ,24,SSC Napoli,Centrocampista
+166,"
+Ruben Loftus-Cheek ",€25.00m ,27,AC Milan,Centrocampista
+167,"
+Charles De Ketelaere ",€25.00m ,22,Atalanta BC,Centrocampista
+168,"
+Samuele Ricci ",€20.00m ,22,Torino FC,Centrocampista
+169,"
+Lazar Samardžić ",€20.00m ,21,Udinese Calcio,Centrocampista
+170,"
+Bryan Cristante ",€20.00m ,28,AS Roma,Centrocampista
+171,"
+Tijjani Reijnders ",€20.00m ,25,AC Milan,Centrocampista
+172,"
+Mattéo Guendouzi ",€20.00m ,24,SS Lazio,Centrocampista
+173,"
+Éderson ",€20.00m ,24,Atalanta BC,Centrocampista
+174,"
+Weston McKennie ",€20.00m ,25,Juventus FC,Centrocampista
+177,"
+Ivan Ilić ",€19.00m ,22,Torino FC,Centrocampista
+178,"
+Luis Alberto ",€18.00m ,31,SS Lazio,Centrocampista
+179,"
+Nicolò Rovella ",€18.00m ,21,SS Lazio,Centrocampista
+180,"
+Mario Pasalic ",€17.00m ,28,Atalanta BC,Centrocampista
+181,"
+Filip Kostić ",€15.00m ,31,Juventus FC,Centrocampista
+182,"
+Fabio Miretti ",€15.00m ,20,Juventus FC,Centrocampista
+183,"
+Arthur Melo ",€15.00m ,27,ACF Fiorentina,Centrocampista
+184,"
+Nikola Vlašić ",€15.00m ,26,Torino FC,Centrocampista
+185,"
+Tommaso Baldanzi ",€15.00m ,20,FC Empoli,Centrocampista
+186,"
+Carlos Augusto ",€15.00m ,24,Inter Milan,Centrocampista
+187,"
+Matteo Pessina ",€15.00m ,26,AC Monza,Centrocampista
+188,"
+Renato Sanches ",€14.00m ,26,AS Roma,Centrocampista
+189,"
+Tommaso Pobega ",€14.00m ,24,AC Milan,Centrocampista
+190,"
+Timothy Weah ",€14.00m ,23,Juventus FC,Centrocampista
+191,"
+Houssem Aouar ",€13.00m ,25,AS Roma,Centrocampista
+192,"
+Lewis Ferguson ",€12.00m ,24,Bologna FC 1909,Centrocampista
+193,"
+Kristjan Asllani ",€12.00m ,21,Inter Milan,Centrocampista
+194,"
+Maxime López ",€12.00m ,25,ACF Fiorentina,Centrocampista
+195,"
+Jens Cajuste ",€10.00m ,24,SSC Napoli,Centrocampista
+196,"
+Rolando Mandragora ",€10.00m ,26,ACF Fiorentina,Centrocampista
+197,"
+Sandi Lovrić ",€10.00m ,25,Udinese Calcio,Centrocampista
+198,"
+Davy Klaassen ",€10.00m ,30,Inter Milan,Centrocampista
+199,"
+Matheus Henrique ",€10.00m ,25,US Sassuolo,Centrocampista
+204,"
+Ruslan Malinovskyi ",€10.00m ,30,Genoa CFC,Centrocampista
+205,"
+Antonin Barak ",€10.00m ,28,ACF Fiorentina,Centrocampista
+206,"
+Matteo Ruggeri ",€9.00m ,21,Atalanta BC,Centrocampista
+207,"
+Mitchel Bakker ",€9.00m ,23,Atalanta BC,Centrocampista
+208,"
+Leandro Paredes ",€9.00m ,29,AS Roma,Centrocampista
+209,"
+Aleksey Miranchuk ",€9.00m ,28,Atalanta BC,Centrocampista
+210,"
+Andrea Colpani ",€9.00m ,24,AC Monza,Centrocampista
+211,"
+Gaetano Castrovilli ",€8.00m ,26,ACF Fiorentina,Centrocampista
+212,"
+Daniel Boloca ",€8.00m ,24,US Sassuolo,Centrocampista
+213,"
+Yacine Adli ",€8.00m ,23,AC Milan,Centrocampista
+214,"
+Simone Pafundi ",€8.00m ,17,Udinese Calcio,Centrocampista
+215,"
+Stefano Sensi ",€8.00m ,28,Inter Milan,Centrocampista
+216,"
+Nedim Bajrami ",€7.50m ,24,US Sassuolo,Centrocampista
+217,"
+Manuel Lazzari ",€7.50m ,29,SS Lazio,Centrocampista
+218,"
+Kristian Thorstvedt ",€7.50m ,24,US Sassuolo,Centrocampista
+219,"
+Davide Zappacosta ",€7.00m ,31,Atalanta BC,Centrocampista
+220,"
+Brandon Soppy ",€7.00m ,21,Torino FC,Centrocampista
+221,"
+Emil Holm ",€7.00m ,23,Atalanta BC,Centrocampista
+222,"
+Walace ",€7.00m ,28,Udinese Calcio,Centrocampista
+223,"
+Lucien Agoumé ",€7.00m ,21,Inter Milan,Centrocampista
+224,"
+Raoul Bellanova ",€7.00m ,23,Torino FC,Centrocampista
+225,"
+Remo Freuler ",€6.50m ,31,Bologna FC 1909,Centrocampista
+226,"
+Nikola Moro ",€6.50m ,25,Bologna FC 1909,Centrocampista
+227,"
+Joan González ",€6.00m ,21,US Lecce,Centrocampista
+228,"
+Adrien Tamèze ",€6.00m ,29,Torino FC,Centrocampista
+229,"
+Henrikh Mkhitaryan ",€6.00m ,34,Inter Milan,Centrocampista
+230,"
+Morten Frendrup ",€6.00m ,22,Genoa CFC,Centrocampista
+231,"
+Hans Hateboer ",€6.00m ,29,Atalanta BC,Centrocampista
+232,"
+Giovanni Fabbian ",€6.00m ,20,Bologna FC 1909,Centrocampista
+233,"
+Giulio Maggiore ",€5.50m ,25,US Salernitana 1919,Centrocampista
+234,"
+Patrick Ciurria ",€5.00m ,28,AC Monza,Centrocampista
+235,"
+Valentín Carboni ",€5.00m ,18,AC Monza,Centrocampista
+236,"
+Cristian Volpato ",€5.00m ,19,US Sassuolo,Centrocampista
+237,"
+Valentino Lazaro ",€5.00m ,27,Torino FC,Centrocampista
+238,"
+Lassana Coulibaly ",€5.00m ,27,US Salernitana 1919,Centrocampista
+239,"
+Uroš Račić ",€5.00m ,25,US Sassuolo,Centrocampista
+240,"
+Nahitan Nández ",€5.00m ,27,Cagliari Calcio,Centrocampista
+241,"
+Răzvan Marin ",€5.00m ,27,FC Empoli,Centrocampista
+242,"
+Youssef Maleh ",€4.50m ,25,FC Empoli,Centrocampista
+243,"
+Matías Vecino ",€4.50m ,32,SS Lazio,Centrocampista
+244,"
+Gianluca Gaetano ",€4.50m ,23,SSC Napoli,Centrocampista
+245,"
+Toma Bašić ",€4.50m ,26,SS Lazio,Centrocampista
+246,"
+Festy Ebosele ",€4.50m ,21,Udinese Calcio,Centrocampista
+247,"
+Suat Serdar ",€4.50m ,26,Hellas Verona,Centrocampista
+248,"
+Morten Thorsby ",€4.00m ,27,Genoa CFC,Centrocampista
+249,"
+Luca Lipani ",€4.00m ,18,US Sassuolo,Centrocampista
+250,"
+Victor Osimhen ",€120.00m ,24,SSC Napoli,Delantero
+251,"
+Lautaro Martínez ",€100.00m ,26,Inter Milan,Delantero
+252,"
+Rafael Leão ",€90.00m ,24,AC Milan,Delantero
+253,"
+Khvicha Kvaratskhelia ",€85.00m ,22,SSC Napoli,Delantero
+254,"
+Dušan Vlahović ",€70.00m ,23,Juventus FC,Delantero
+255,"
+Federico Chiesa ",€45.00m ,26,Juventus FC,Delantero
+256,"
+Marcus Thuram ",€40.00m ,26,Inter Milan,Delantero
+257,"
+Romelu Lukaku ",€40.00m ,30,AS Roma,Delantero
+258,"
+Tammy Abraham ",€35.00m ,26,AS Roma,Delantero
+259,"
+Giacomo Raspadori ",€35.00m ,23,SSC Napoli,Delantero
+260,"
+Nicolás González ",€35.00m ,25,ACF Fiorentina,Delantero
+261,"
+Paulo Dybala ",€30.00m ,29,AS Roma,Delantero
+262,"
+Ademola Lookman ",€30.00m ,26,Atalanta BC,Delantero
+263,"
+Mattia Zaccagni ",€30.00m ,28,SS Lazio,Delantero
+264,"
+Samuel Chukwueze ",€25.00m ,24,AC Milan,Delantero
+265,"
+Christian Pulisic ",€25.00m ,25,AC Milan,Delantero
+266,"
+Gianluca Scamacca ",€25.00m ,24,Atalanta BC,Delantero
+267,"
+Boulaye Dia ",€22.00m ,26,US Salernitana 1919,Delantero
+268,"
+El Bilal Touré ",€20.00m ,22,Atalanta BC,Delantero
+269,"
+Domenico Berardi ",€20.00m ,29,US Sassuolo,Delantero
+270,"
+Noah Okafor ",€20.00m ,23,AC Milan,Delantero
+271,"
+Armand Laurienté ",€18.00m ,24,US Sassuolo,Delantero
+272,"
+Moise Kean ",€18.00m ,23,Juventus FC,Delantero
+273,"
+Jonathan Ikoné ",€16.00m ,25,ACF Fiorentina,Delantero
+274,"
+Mateo Retegui ",€16.00m ,24,Genoa CFC,Delantero
+275,"
+Taty Castellanos ",€15.00m ,25,SS Lazio,Delantero
+276,"
+Matteo Politano ",€15.00m ,30,SSC Napoli,Delantero
+277,"
+Ciro Immobile ",€15.00m ,33,SS Lazio,Delantero
+278,"
+Giovanni Simeone ",€15.00m ,28,SSC Napoli,Delantero
+279,"
+Andrea Pinamonti ",€15.00m ,24,US Sassuolo,Delantero
+280,"
+Felipe Anderson ",€15.00m ,30,SS Lazio,Delantero
+281,"
+Jesper Karlsson ",€14.00m ,25,Bologna FC 1909,Delantero
+282,"
+Joshua Zirkzee ",€13.00m ,22,Bologna FC 1909,Delantero
+283,"
+Lucas Beltrán ",€12.00m ,22,ACF Fiorentina,Delantero
+284,"
+Albert Gudmundsson ",€12.00m ,26,Genoa CFC,Delantero
+285,"
+Gustav Isaksen ",€12.00m ,22,SS Lazio,Delantero
+286,"
+Christian Kouamé ",€12.00m ,25,ACF Fiorentina,Delantero
+287,"
+Riccardo Orsolini ",€12.00m ,26,Bologna FC 1909,Delantero
+288,"
+Sardar Azmoun ",€12.00m ,28,AS Roma,Delantero
+289,"
+Antonio Sanabria ",€10.00m ,27,Torino FC,Delantero
+290,"
+Gabriel Strefezza ",€10.00m ,26,US Lecce,Delantero
+291,"
+M'Bala Nzola ",€10.00m ,27,ACF Fiorentina,Delantero
+292,"
+Alexis Saelemaekers ",€10.00m ,24,Bologna FC 1909,Delantero
+293,"
+Gerard Deulofeu ",€10.00m ,29,Udinese Calcio,Delantero
+294,"
+Samuel Iling Junior ",€9.00m ,20,Juventus FC,Delantero
+295,"
+Dan Ndoye ",€8.50m ,23,Bologna FC 1909,Delantero
+296,"
+Gianluca Caprari ",€8.00m ,30,AC Monza,Delantero
+297,"
+Duván Zapata ",€8.00m ,32,Torino FC,Delantero
+298,"
+Brenner ",€8.00m ,23,Udinese Calcio,Delantero
+299,"
+Arkadiusz Milik ",€8.00m ,29,Juventus FC,Delantero
+300,"
+Riccardo Sottil ",€8.00m ,24,ACF Fiorentina,Delantero
+301,"
+Nicolò Cambiaghi ",€8.00m ,22,FC Empoli,Delantero
+306,"
+Andrea Petagna ",€7.50m ,28,Cagliari Calcio,Delantero
+307,"
+Walid Cheddira ",€7.50m ,25,Frosinone Calcio,Delantero
+308,"
+Dany Mota ",€6.00m ,25,AC Monza,Delantero
+309,"
+Cyril Ngonge ",€6.00m ,23,Hellas Verona,Delantero
+310,"
+Sydney van Hooijdonk ",€6.00m ,23,Bologna FC 1909,Delantero
+311,"
+Eldor Shomurodov ",€6.00m ,28,Cagliari Calcio,Delantero
+312,"
+Stephan El Shaarawy ",€5.00m ,31,AS Roma,Delantero
+313,"
+Nikola Krstović ",€5.00m ,23,US Lecce,Delantero
+314,"
+Zito Luvumbo ",€5.00m ,21,Cagliari Calcio,Delantero
+315,"
+Lorenzo Lucca ",€5.00m ,23,Udinese Calcio,Delantero
+316,"
+Lorenzo Colombo ",€5.00m ,21,AC Monza,Delantero
+317,"
+Luis Muriel ",€5.00m ,32,Atalanta BC,Delantero
+318,"
+Marko Arnautović ",€5.00m ,34,Inter Milan,Delantero
+319,"
+Matteo Cancellieri ",€5.00m ,21,FC Empoli,Delantero
+320,"
+Josip Brekalo ",€5.00m ,25,ACF Fiorentina,Delantero
+321,"
+Junior Messias ",€4.50m ,32,Genoa CFC,Delantero
+322,"
+Samuele Mulattieri ",€4.50m ,23,US Sassuolo,Delantero
+323,"
+Federico Bonazzoli ",€4.00m ,26,Hellas Verona,Delantero
+324,"
+Olivier Giroud ",€4.00m ,37,AC Milan,Delantero
+325,"
+Nemanja Radonjić ",€4.00m ,27,Torino FC,Delantero
+326,"
+Lameck Banda ",€4.00m ,22,US Lecce,Delantero
+327,"
+Alexis Sánchez ",€4.00m ,34,Inter Milan,Delantero
+328,"
+Thomas Henry ",€4.00m ,29,Hellas Verona,Delantero
+329,"
+Alessio Zerbin ",€4.00m ,24,SSC Napoli,Delantero
+330,"
+Isaac Success ",€4.00m ,27,Udinese Calcio,Delantero
+331,"
+Rémi Oudin ",€4.00m ,26,US Lecce,Delantero
+332,"
+Erik Botheim ",€3.50m ,23,US Salernitana 1919,Delantero
+333,"
+Yann Karamoh ",€3.50m ,25,Torino FC,Delantero
+334,"
+Jovane ",€3.50m ,25,US Salernitana 1919,Delantero
+335,"
+Pietro Pellegri ",€3.50m ,22,Torino FC,Delantero
+336,"
+Florian Thauvin ",€3.50m ,30,Udinese Calcio,Delantero
+337,"
+Roberto Piccoli ",€3.50m ,22,US Lecce,Delantero
+338,"
+Kaio Jorge ",€3.00m ,21,Frosinone Calcio,Delantero
+339,"
+Keinan Davis ",€3.00m ,25,Udinese Calcio,Delantero
+340,"
+Samu Castillejo ",€3.00m ,28,US Sassuolo,Delantero
+341,"
+Luka Romero ",€3.00m ,18,AC Milan,Delantero
+342,"
+Giuseppe Caso ",€3.00m ,24,Frosinone Calcio,Delantero
+343,"
+Pontus Almqvist ",€3.00m ,24,US Lecce,Delantero
+344,"
+Gianluca Lapadula ",€2.70m ,33,Cagliari Calcio,Delantero
+345,"
+Demba Seck ",€2.70m ,22,Torino FC,Delantero
+346,"
+Emil Konradsen Ceide ",€2.50m ,22,US Sassuolo,Delantero
+347,"
+George Pușcaș ",€2.50m ,27,Genoa CFC,Delantero
+348,"
+Loum Tchaouna ",€2.40m ,20,US Salernitana 1919,Delantero
+349,"
+Emmanuel Gyasi ",€2.00m ,29,FC Empoli,Delantero

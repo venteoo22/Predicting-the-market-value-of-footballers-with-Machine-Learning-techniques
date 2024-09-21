@@ -1,0 +1,697 @@
+,Player,value,age,club,position
+0,"
+Diogo Costa ",€45.00m ,24,FC Porto,Portero
+1,"
+Anatoliy Trubin ",€22.00m ,22,SL Benfica,Portero
+2,"
+Matheus ",€6.00m ,31,SC Braga,Portero
+3,"
+Júnior Reis ",€4.00m ,22,FC Famalicão,Portero
+4,"
+Bruno Varela ",€4.00m ,29,Vitória Guimarães SC,Portero
+5,"
+Samuel Soares ",€3.00m ,21,SL Benfica,Portero
+6,"
+Andrew ",€2.50m ,22,Gil Vicente FC,Portero
+7,"
+Franco Israel ",€2.50m ,23,Sporting CP,Portero
+8,"
+Lukas Hornicek ",€2.00m ,21,SC Braga,Portero
+9,"
+Ignacio de Arruabarrena ",€1.50m ,26,FC Arouca,Portero
+10,"
+Hugo Souza ",€1.50m ,24,GD Chaves,Portero
+11,"
+Dani Figueira ",€1.50m ,25,GD Estoril Praia,Portero
+12,"
+Cláudio Ramos ",€1.50m ,31,FC Porto,Portero
+13,"
+Samuel Portugal ",€1.50m ,29,FC Porto,Portero
+14,"
+Vinícius ",€1.20m ,29,Portimonense SC,Portero
+15,"
+Stanislav Kritsyuk ",€1.20m ,32,Gil Vicente FC,Portero
+16,"
+Diego Callai ",€1.00m ,19,Sporting CP,Portero
+17,"
+Antonio Adán ",€1.00m ,36,Sporting CP,Portero
+18,"
+Celton Biai ",€1.00m ,23,Vitória Guimarães SC,Portero
+19,"
+Kosuke Nakamura ",€800k ,28,Portimonense SC,Portero
+20,"
+Fabijan Buntic ",€800k ,26,FC Vizela,Portero
+21,"
+Tiago Sá ",€800k ,28,SC Braga,Portero
+22,"
+Jhonatan ",€800k ,32,Rio Ave FC,Portero
+23,"
+Kewin ",€750k ,28,Moreirense FC,Portero
+24,"
+João Gonçalves ",€500k ,23,Boavista FC,Portero
+25,"
+Ricardo Velho ",€450k ,25,SC Farense,Portero
+26,"
+Marcelo Carné ",€300k ,33,GD Estoril Praia,Portero
+27,"
+Ivan Zlobin ",€300k ,26,FC Famalicão,Portero
+28,"
+Francesco Ruberto ",€300k ,30,FC Vizela,Portero
+29,"
+Luiz Felipe ",€300k ,26,SC Farense,Portero
+30,"
+João Valido ",€250k ,23,FC Arouca,Portero
+31,"
+Thiago Silva ",€200k ,27,FC Arouca,Portero
+32,"
+Brian Araújo ",€200k ,23,Gil Vicente FC,Portero
+33,"
+Gabriel Souza ",€200k ,19,Portimonense SC,Portero
+34,"
+Vinícius ",€200k ,26,Gil Vicente FC,Portero
+35,"
+Rodrigo Moura ",€200k ,27,GD Chaves,Portero
+36,"
+Bruno Brígido ",€200k ,32,CF Estrela Amadora SAD,Portero
+37,"
+Magrão ",€200k ,23,Rio Ave FC,Portero
+38,"
+Charles ",€200k ,29,Vitória Guimarães SC,Portero
+39,"
+Lucas Paes ",€200k ,25,Casa Pia AC,Portero
+40,"
+Diogo Dias ",€200k ,20,GD Estoril Praia,Portero
+41,"
+Rafa ",€200k ,20,Vitória Guimarães SC,Portero
+42,"
+Leo Kokubo ",€125k ,22,SL Benfica,Portero
+43,"
+Caio Secco ",€125k ,32,Moreirense FC,Portero
+44,"
+César ",€100k ,31,Boavista FC,Portero
+45,"
+Gonçalo Pinto ",€100k ,23,GD Chaves,Portero
+46,"
+Ricardo Batista ",€100k ,36,Casa Pia AC,Portero
+47,"
+Lucas Flores ",€100k ,21,Rio Ave FC,Portero
+48,"
+Miguel Carvalho ",€100k ,27,SC Farense,Portero
+49,"
+Afonso Monteiro ",€100k ,18,Casa Pia AC,Portero
+50,"
+António Silva ",€45.00m ,20,SL Benfica,Defensa
+51,"
+Gonçalo Inácio ",€30.00m ,22,Sporting CP,Defensa
+52,"
+Ousmane Diomande ",€25.00m ,19,Sporting CP,Defensa
+53,"
+João Mário ",€16.00m ,23,FC Porto,Defensa
+54,"
+Iván Fresneda ",€15.00m ,19,Sporting CP,Defensa
+55,"
+Alexander Bah ",€14.00m ,25,SL Benfica,Defensa
+56,"
+Nuno Santos ",€14.00m ,28,Sporting CP,Defensa
+57,"
+David Carmo ",€14.00m ,24,FC Porto,Defensa
+58,"
+Morato ",€13.00m ,22,SL Benfica,Defensa
+59,"
+Juan Bernat ",€10.00m ,30,SL Benfica,Defensa
+60,"
+Jerry St. Juste ",€10.00m ,27,Sporting CP,Defensa
+61,"
+David Jurásek ",€8.00m ,23,SL Benfica,Defensa
+62,"
+Matheus Reis ",€8.00m ,28,Sporting CP,Defensa
+63,"
+Víctor Gómez ",€7.00m ,23,SC Braga,Defensa
+64,"
+João Victor ",€7.00m ,25,SL Benfica,Defensa
+65,"
+Zaidu ",€6.00m ,26,FC Porto,Defensa
+66,"
+Tomás Araújo ",€5.00m ,21,SL Benfica,Defensa
+67,"
+Wendell ",€5.00m ,30,FC Porto,Defensa
+68,"
+Jorge Sánchez ",€5.00m ,25,FC Porto,Defensa
+69,"
+Sebastián Coates ",€5.00m ,33,Sporting CP,Defensa
+70,"
+Fábio Cardoso ",€4.00m ,29,FC Porto,Defensa
+71,"
+Pedro Malheiro ",€4.00m ,22,Boavista FC,Defensa
+72,"
+Sikou Niakaté ",€4.00m ,24,SC Braga,Defensa
+73,"
+Francisco Moura ",€3.50m ,24,FC Famalicão,Defensa
+74,"
+Chidozie Awaziem ",€3.50m ,26,Boavista FC,Defensa
+75,"
+Leonardo Lelo ",€3.50m ,23,Casa Pia AC,Defensa
+76,"
+Filipe Relvas ",€3.50m ,24,Portimonense SC,Defensa
+77,"
+Bruno Onyemaechi ",€3.50m ,24,Boavista FC,Defensa
+78,"
+Ricardo Esgaio ",€3.50m ,30,Sporting CP,Defensa
+79,"
+Fabiano ",€3.00m ,23,Moreirense FC,Defensa
+80,"
+Riccieli ",€3.00m ,25,FC Famalicão,Defensa
+81,"
+Costinha ",€3.00m ,23,Rio Ave FC,Defensa
+82,"
+Paulo Oliveira ",€2.50m ,31,SC Braga,Defensa
+83,"
+Eduardo Quaresma ",€2.50m ,21,Sporting CP,Defensa
+84,"
+Maga ",€2.50m ,20,Vitória Guimarães SC,Defensa
+85,"
+Serdar Saatçı ",€2.00m ,20,SC Braga,Defensa
+86,"
+Mikel Villanueva ",€2.00m ,30,Vitória Guimarães SC,Defensa
+87,"
+Nathan ",€2.00m ,22,FC Famalicão,Defensa
+88,"
+Cristián Borja ",€2.00m ,30,SC Braga,Defensa
+89,"
+Nicolás Otamendi ",€2.00m ,35,SL Benfica,Defensa
+90,"
+Zé Carlos ",€2.00m ,22,Vitória Guimarães SC,Defensa
+91,"
+Pedro Mendes ",€1.80m ,33,CF Estrela Amadora SAD,Defensa
+92,"
+Enea Mihaj ",€1.50m ,25,FC Famalicão,Defensa
+93,"
+Gabriel Pereira ",€1.50m ,23,Gil Vicente FC,Defensa
+94,"
+Bruno Langa ",€1.50m ,26,GD Chaves,Defensa
+95,"
+Joe Mendes ",€1.50m ,20,SC Braga,Defensa
+96,"
+Bruno Rodrigues ",€1.50m ,22,GD Chaves,Defensa
+97,"
+Martín Aguirregabiria ",€1.50m ,27,FC Famalicão,Defensa
+98,"
+Afonso Freitas ",€1.50m ,23,Vitória Guimarães SC,Defensa
+99,"
+Adrián Marín ",€1.50m ,26,SC Braga,Defensa
+100,"
+Ricardo Mangas ",€1.50m ,25,Vitória Guimarães SC,Defensa
+101,"
+Quaresma ",€1.50m ,27,FC Arouca,Defensa
+102,"
+Otávio ",€1.50m ,21,FC Famalicão,Defensa
+103,"
+Leonardo Buta ",€1.50m ,21,Gil Vicente FC,Defensa
+104,"
+Bernardo Vital ",€1.30m ,22,GD Estoril Praia,Defensa
+105,"
+Pedro Álvaro ",€1.20m ,23,GD Estoril Praia,Defensa
+106,"
+Javi Montero ",€1.20m ,24,FC Arouca,Defensa
+107,"
+Pedrão ",€1.20m ,26,Portimonense SC,Defensa
+108,"
+Pepe ",€1.00m ,40,FC Porto,Defensa
+109,"
+Toni Borevkovic ",€1.00m ,26,Vitória Guimarães SC,Defensa
+110,"
+Fábio Ronaldo ",€1.00m ,22,Rio Ave FC,Defensa
+111,"
+Tomás Ribeiro ",€1.00m ,24,Vitória Guimarães SC,Defensa
+112,"
+Kialonda Gaspar ",€1.00m ,26,CF Estrela Amadora SAD,Defensa
+113,"
+Erick Cabaco ",€1.00m ,28,GD Estoril Praia,Defensa
+114,"
+Jorge Fernandes ",€1.00m ,26,Vitória Guimarães SC,Defensa
+115,"
+Tiago Esgaio ",€900k ,28,FC Arouca,Defensa
+116,"
+Anderson ",€900k ,28,FC Vizela,Defensa
+117,"
+Bruno Wilson ",€900k ,26,FC Vizela,Defensa
+118,"
+Gaizka Larrazabal ",€800k ,25,Casa Pia AC,Defensa
+119,"
+Carraça ",€800k ,30,GD Chaves,Defensa
+120,"
+Rodrigo Abascal ",€800k ,29,Boavista FC,Defensa
+121,"
+Ponck ",€800k ,28,Moreirense FC,Defensa
+122,"
+Artur Jorge ",€800k ,29,SC Farense,Defensa
+123,"
+Mamadou Tounkara ",€800k ,21,Vitória Guimarães SC,Defensa
+124,"
+Patrick William ",€800k ,26,Rio Ave FC,Defensa
+125,"
+João Correia ",€750k ,27,GD Chaves,Defensa
+126,"
+Zé Carlos ",€700k ,25,Gil Vicente FC,Defensa
+127,"
+Eliaquim Mangala ",€700k ,32,GD Estoril Praia,Defensa
+128,"
+Matheus Pereira ",€700k ,22,FC Vizela,Defensa
+129,"
+Godfried Frimpong ",€700k ,24,Moreirense FC,Defensa
+130,"
+Rafael Fernandes ",€700k ,21,FC Arouca,Defensa
+131,"
+Nino Galovic ",€700k ,31,FC Arouca,Defensa
+132,"
+Volnei ",€650k ,23,GD Estoril Praia,Defensa
+133,"
+Weverson ",€600k ,23,FC Arouca,Defensa
+134,"
+Justin de Haas ",€600k ,23,FC Famalicão,Defensa
+135,"
+Josué Sá ",€600k ,31,Rio Ave FC,Defensa
+136,"
+Tomás Silva ",€600k ,24,FC Vizela,Defensa
+137,"
+Moustapha Seck ",€600k ,27,Portimonense SC,Defensa
+138,"
+Tiago Araújo ",€600k ,22,GD Estoril Praia,Defensa
+139,"
+José Fonte ",€600k ,39,SC Braga,Defensa
+140,"
+Renato Pantalon ",€600k ,26,Rio Ave FC,Defensa
+141,"
+João Nunes ",€500k ,27,Casa Pia AC,Defensa
+142,"
+Talys ",€500k ,24,SC Farense,Defensa
+143,"
+Rodrigo Escoval ",€500k ,26,FC Vizela,Defensa
+144,"
+Jean Felipe ",€500k ,29,CF Estrela Amadora SAD,Defensa
+145,"
+Joaquín Novillo ",€500k ,25,FC Vizela,Defensa
+146,"
+Maracás ",€500k ,29,Moreirense FC,Defensa
+147,"
+João Muniz ",€500k ,18,Sporting CP,Defensa
+148,"
+Iván Marcano ",€500k ,36,FC Porto,Defensa
+149,"
+Pedro Amador ",€500k ,24,Moreirense FC,Defensa
+150,"
+Orkun Kökçü ",€35.00m ,22,SL Benfica,Centrocampista
+151,"
+Morten Hjulmand ",€24.00m ,24,Sporting CP,Centrocampista
+152,"
+Fredrik Aursnes ",€20.00m ,27,SL Benfica,Centrocampista
+153,"
+Florentino ",€20.00m ,24,SL Benfica,Centrocampista
+154,"
+João Neves ",€20.00m ,19,SL Benfica,Centrocampista
+155,"
+Al-Musrati ",€16.00m ,27,SC Braga,Centrocampista
+156,"
+João Mário ",€14.00m ,30,SL Benfica,Centrocampista
+157,"
+Stephen Eustaquio ",€12.00m ,26,FC Porto,Centrocampista
+158,"
+Hidemasa Morita ",€12.00m ,28,Sporting CP,Centrocampista
+159,"
+Nico González ",€10.00m ,21,FC Porto,Centrocampista
+160,"
+Iván Jaime ",€10.00m ,23,FC Porto,Centrocampista
+161,"
+Alan Varela ",€9.00m ,22,FC Porto,Centrocampista
+162,"
+Marko Grujić ",€9.00m ,27,FC Porto,Centrocampista
+163,"
+Chiquinho ",€6.00m ,28,SL Benfica,Centrocampista
+164,"
+André Horta ",€6.00m ,27,SC Braga,Centrocampista
+165,"
+Vitor Carvalho ",€5.00m ,26,SC Braga,Centrocampista
+166,"
+Daniel Bragança ",€5.00m ,24,Sporting CP,Centrocampista
+167,"
+Zaydou Youssouf ",€4.00m ,24,FC Famalicão,Centrocampista
+168,"
+Rodrigo Zalazar ",€4.00m ,24,SC Braga,Centrocampista
+169,"
+André Franco ",€4.00m ,25,FC Porto,Centrocampista
+170,"
+Tomás Händel ",€3.00m ,22,Vitória Guimarães SC,Centrocampista
+171,"
+Gaius Makouta ",€3.00m ,26,Boavista FC,Centrocampista
+172,"
+Kanya Fujimoto ",€3.00m ,24,Gil Vicente FC,Centrocampista
+173,"
+Guga ",€3.00m ,26,Rio Ave FC,Centrocampista
+174,"
+Mirko Topic ",€2.50m ,22,FC Famalicão,Centrocampista
+176,"
+Pizzi ",€2.00m ,34,SC Braga,Centrocampista
+177,"
+Dani Silva ",€2.00m ,23,Vitória Guimarães SC,Centrocampista
+178,"
+Dário Essugo ",€2.00m ,18,Sporting CP,Centrocampista
+179,"
+Seba Pérez ",€2.00m ,30,Boavista FC,Centrocampista
+180,"
+Tom Lacoux ",€1.80m ,21,FC Famalicão,Centrocampista
+181,"
+Lucas Piazón ",€1.60m ,29,SC Braga,Centrocampista
+182,"
+Tiago Silva ",€1.50m ,30,Vitória Guimarães SC,Centrocampista
+183,"
+Nuno Santos ",€1.50m ,24,Vitória Guimarães SC,Centrocampista
+184,"
+Morlaye Sylla ",€1.50m ,25,FC Arouca,Centrocampista
+185,"
+Gustavo Sá ",€1.50m ,18,FC Famalicão,Centrocampista
+186,"
+João Moutinho ",€1.50m ,37,SC Braga,Centrocampista
+187,"
+Romário Baró ",€1.50m ,23,FC Porto,Centrocampista
+188,"
+Mateus Fernandes ",€1.50m ,19,GD Estoril Praia,Centrocampista
+189,"
+Gonçalo Franco ",€1.50m ,22,Moreirense FC,Centrocampista
+190,"
+Martim Neto ",€1.30m ,20,Gil Vicente FC,Centrocampista
+191,"
+Telmo Arcanjo ",€1.00m ,22,Vitória Guimarães SC,Centrocampista
+192,"
+João Marques ",€1.00m ,21,GD Estoril Praia,Centrocampista
+193,"
+Koba Koindredi ",€1.00m ,22,GD Estoril Praia,Centrocampista
+194,"
+Alan ",€1.00m ,23,Moreirense FC,Centrocampista
+195,"
+Jesús Castillo ",€1.00m ,22,Gil Vicente FC,Centrocampista
+196,"
+Facundo Cáseres ",€1.00m ,22,SC Farense,Centrocampista
+197,"
+Houssem Mrezigue ",€1.00m ,23,FC Vizela,Centrocampista
+198,"
+Samu ",€1.00m ,27,FC Vizela,Centrocampista
+199,"
+Aleksandar Busnic ",€1.00m ,25,FC Vizela,Centrocampista
+200,"
+Dener ",€900k ,31,Portimonense SC,Centrocampista
+201,"
+Mor Ndiaye ",€850k ,22,GD Estoril Praia,Centrocampista
+202,"
+Lawrence Ofori ",€800k ,25,Moreirense FC,Centrocampista
+203,"
+Maxime Dominguez ",€800k ,27,Gil Vicente FC,Centrocampista
+204,"
+Kelechi Nwakali ",€800k ,25,GD Chaves,Centrocampista
+205,"
+Wallisson ",€800k ,26,Moreirense FC,Centrocampista
+206,"
+João Mendes ",€800k ,29,Vitória Guimarães SC,Centrocampista
+207,"
+Carlinhos ",€800k ,29,Portimonense SC,Centrocampista
+208,"
+Alex Méndez ",€700k ,23,FC Vizela,Centrocampista
+209,"
+Rafael Barbosa ",€700k ,27,SC Farense,Centrocampista
+210,"
+Mory Gbane ",€700k ,22,Gil Vicente FC,Centrocampista
+211,"
+Guima ",€600k ,27,GD Chaves,Centrocampista
+212,"
+Pedro Aparício ",€600k ,28,Moreirense FC,Centrocampista
+213,"
+Manu ",€600k ,22,Vitória Guimarães SC,Centrocampista
+214,"
+Lucas Ventura ",€600k ,25,Portimonense SC,Centrocampista
+215,"
+Otso Liimatta ",€600k ,19,FC Famalicão,Centrocampista
+216,"
+Beni ",€600k ,21,Casa Pia AC,Centrocampista
+217,"
+Eboue Kouassi ",€600k ,25,FC Arouca,Centrocampista
+218,"
+Luquinha ",€600k ,23,Portimonense SC,Centrocampista
+219,"
+Ibrahima ",€600k ,24,Boavista FC,Centrocampista
+220,"
+Pedro Sá ",€500k ,29,CF Estrela Amadora SAD,Centrocampista
+221,"
+Jhon Velásquez ",€500k ,28,SC Farense,Centrocampista
+222,"
+Paulo Estrela ",€500k ,24,Portimonense SC,Centrocampista
+223,"
+Pablo Roberto ",€500k ,23,Casa Pia AC,Centrocampista
+224,"
+Cafú Phete ",€500k ,29,GD Chaves,Centrocampista
+225,"
+Uri Busquets ",€500k ,24,FC Arouca,Centrocampista
+226,"
+Miguel Reisinho ",€500k ,24,Boavista FC,Centrocampista
+227,"
+Jordan Holsgrove ",€500k ,24,GD Estoril Praia,Centrocampista
+228,"
+Masa ",€500k ,24,Boavista FC,Centrocampista
+229,"
+Telasco Segovia ",€500k ,20,Casa Pia AC,Centrocampista
+230,"
+João Pedro ",€500k ,30,GD Chaves,Centrocampista
+231,"
+Claudio Falcão ",€450k ,29,SC Farense,Centrocampista
+232,"
+Ilija Vukotic ",€400k ,24,Boavista FC,Centrocampista
+233,"
+Dennis Adeniran ",€400k ,24,Portimonense SC,Centrocampista
+234,"
+André André ",€400k ,34,Vitória Guimarães SC,Centrocampista
+235,"
+João Graça ",€400k ,28,Rio Ave FC,Centrocampista
+236,"
+Aloísio ",€400k ,27,CF Estrela Amadora SAD,Centrocampista
+237,"
+Léo Cordeiro ",€400k ,28,CF Estrela Amadora SAD,Centrocampista
+238,"
+Rafael Bustamante ",€400k ,24,FC Vizela,Centrocampista
+239,"
+Vitinho ",€400k ,23,FC Arouca,Centrocampista
+240,"
+Osama Rashid ",€400k ,31,FC Vizela,Centrocampista
+241,"
+Mattheus ",€400k ,29,SC Farense,Centrocampista
+242,"
+Rafael Brito ",€350k ,21,Casa Pia AC,Centrocampista
+243,"
+Vitó ",€350k ,26,CF Estrela Amadora SAD,Centrocampista
+244,"
+Hélder Morim ",€350k ,22,GD Chaves,Centrocampista
+245,"
+Alex Soares ",€300k ,32,GD Estoril Praia,Centrocampista
+246,"
+Gonçalo Nogueira ",€300k ,19,Vitória Guimarães SC,Centrocampista
+247,"
+Roan Wilson ",€300k ,21,Gil Vicente FC,Centrocampista
+248,"
+Amine ",€300k ,31,Rio Ave FC,Centrocampista
+249,"
+Ivan Pavlic ",€300k ,21,GD Estoril Praia,Centrocampista
+250,"
+Viktor Gyökeres ",€32.00m ,25,Sporting CP,Delantero
+251,"
+Pedro Gonçalves ",€32.00m ,25,Sporting CP,Delantero
+252,"
+Marcus Edwards ",€30.00m ,24,Sporting CP,Delantero
+253,"
+Pepê ",€25.00m ,26,FC Porto,Delantero
+254,"
+David Neres ",€25.00m ,26,SL Benfica,Delantero
+255,"
+Gonçalo Guedes ",€23.00m ,26,SL Benfica,Delantero
+256,"
+Rafa ",€22.00m ,30,SL Benfica,Delantero
+257,"
+Evanilson ",€22.00m ,24,FC Porto,Delantero
+258,"
+Arthur Cabral ",€20.00m ,25,SL Benfica,Delantero
+259,"
+Galeno ",€20.00m ,26,FC Porto,Delantero
+260,"
+Ricardo Horta ",€20.00m ,29,SC Braga,Delantero
+261,"
+Mehdi Taremi ",€18.00m ,31,FC Porto,Delantero
+262,"
+Abel Ruiz ",€14.00m ,23,SC Braga,Delantero
+263,"
+Fran Navarro ",€13.00m ,25,FC Porto,Delantero
+264,"
+Trincão ",€12.00m ,23,Sporting CP,Delantero
+265,"
+Gabriel Veron ",€11.00m ,21,FC Porto,Delantero
+266,"
+Francisco Conceição ",€8.00m ,20,FC Porto,Delantero
+267,"
+Simon Banza ",€8.00m ,27,SC Braga,Delantero
+268,"
+Petar Musa ",€8.00m ,25,SL Benfica,Delantero
+269,"
+Ángel Di María ",€8.00m ,35,SL Benfica,Delantero
+270,"
+Toni Martínez ",€7.00m ,26,FC Porto,Delantero
+271,"
+Bruma ",€6.50m ,29,SC Braga,Delantero
+272,"
+Paulinho ",€6.50m ,31,Sporting CP,Delantero
+273,"
+Casper Tengstedt ",€6.00m ,23,SL Benfica,Delantero
+274,"
+Róbert Bozeník ",€5.00m ,23,Boavista FC,Delantero
+276,"
+Danny Namaso ",€5.00m ,23,FC Porto,Delantero
+277,"
+Henrique Araújo ",€4.50m ,21,FC Famalicão,Delantero
+278,"
+Rony Lopes ",€4.00m ,27,SC Braga,Delantero
+279,"
+Álvaro Djaló ",€4.00m ,24,SC Braga,Delantero
+280,"
+Tiago Gouveia ",€3.50m ,22,SL Benfica,Delantero
+281,"
+Roger ",€3.50m ,17,SC Braga,Delantero
+282,"
+Rodrigo Ribeiro ",€3.00m ,18,Sporting CP,Delantero
+283,"
+Rodrigo Gomes ",€3.00m ,20,GD Estoril Praia,Delantero
+284,"
+André Silva ",€2.00m ,26,Vitória Guimarães SC,Delantero
+285,"
+Tiago Morais ",€2.00m ,20,Boavista FC,Delantero
+286,"
+Jason ",€2.00m ,29,FC Arouca,Delantero
+287,"
+Cristo ",€2.00m ,26,FC Arouca,Delantero
+288,"
+Chiquinho ",€2.00m ,23,FC Famalicão,Delantero
+289,"
+Jhonder Cádiz ",€2.00m ,28,FC Famalicão,Delantero
+290,"
+Rafael Camacho ",€1.80m ,23,Sporting CP,Delantero
+291,"
+Alex Dobre ",€1.50m ,25,FC Famalicão,Delantero
+292,"
+Puma ",€1.50m ,25,FC Famalicão,Delantero
+293,"
+Jota Silva ",€1.50m ,24,Vitória Guimarães SC,Delantero
+294,"
+Alberto Soro ",€1.50m ,24,FC Vizela,Delantero
+295,"
+Rafa Mújica ",€1.50m ,25,FC Arouca,Delantero
+296,"
+Geny Catamo ",€1.50m ,22,Sporting CP,Delantero
+297,"
+Bruno Duarte ",€1.30m ,27,SC Farense,Delantero
+298,"
+Dylan Saint-Louis ",€1.20m ,28,FC Vizela,Delantero
+299,"
+Yuki Soma ",€1.20m ,26,Casa Pia AC,Delantero
+300,"
+Ali Alipour ",€1.20m ,27,Gil Vicente FC,Delantero
+301,"
+Kobamelo Kodisang ",€1.20m ,24,Moreirense FC,Delantero
+302,"
+Félix Correia ",€1.20m ,22,Gil Vicente FC,Delantero
+303,"
+Léo Jabá ",€1.00m ,25,CF Estrela Amadora SAD,Delantero
+304,"
+Benji Michel ",€1.00m ,26,FC Arouca,Delantero
+305,"
+Alfonso Trezza ",€1.00m ,24,FC Arouca,Delantero
+306,"
+Rildo ",€1.00m ,23,Portimonense SC,Delantero
+307,"
+Murilo de Souza ",€1.00m ,29,Gil Vicente FC,Delantero
+308,"
+Rafik Guitane ",€1.00m ,24,GD Estoril Praia,Delantero
+309,"
+Ronie Carrillo ",€1.00m ,27,Portimonense SC,Delantero
+310,"
+Nélson da Luz ",€1.00m ,25,Vitória Guimarães SC,Delantero
+311,"
+Rui Costa ",€800k ,27,SC Farense,Delantero
+312,"
+Samuel Essende ",€800k ,25,FC Vizela,Delantero
+313,"
+Roko Baturina ",€800k ,23,Gil Vicente FC,Delantero
+314,"
+Ronald ",€800k ,22,CF Estrela Amadora SAD,Delantero
+315,"
+Rúben Lameiras ",€800k ,28,GD Chaves,Delantero
+316,"
+Héctor Hernández ",€800k ,28,GD Chaves,Delantero
+317,"
+Zinho ",€700k ,20,Portimonense SC,Delantero
+318,"
+Rodrigo Martins ",€700k ,25,GD Estoril Praia,Delantero
+319,"
+Nuno Moreira ",€700k ,24,FC Vizela,Delantero
+320,"
+Clayton ",€700k ,24,Casa Pia AC,Delantero
+321,"
+Emmanuel Boateng ",€700k ,27,Rio Ave FC,Delantero
+322,"
+André Bukia ",€650k ,28,FC Arouca,Delantero
+323,"
+André Luis ",€650k ,29,Moreirense FC,Delantero
+324,"
+Issah Abass ",€600k ,25,GD Chaves,Delantero
+325,"
+Bruno Lourenço ",€600k ,25,Boavista FC,Delantero
+326,"
+Belloumi ",€600k ,21,SC Farense,Delantero
+327,"
+Zé Luís ",€600k ,32,SC Farense,Delantero
+328,"
+Cristian Ponde ",€600k ,28,SC Farense,Delantero
+329,"
+Jajá ",€600k ,22,Casa Pia AC,Delantero
+330,"
+Fernando Andrade ",€600k ,30,Casa Pia AC,Delantero
+331,"
+Heri Tavares ",€600k ,26,GD Estoril Praia,Delantero
+332,"
+Yusuf Lawal ",€600k ,25,FC Arouca,Delantero
+333,"
+Dele ",€500k ,22,GD Estoril Praia,Delantero
+334,"
+Alisson Safira ",€500k ,28,Vitória Guimarães SC,Delantero
+335,"
+Hélio Varela ",€500k ,21,Portimonense SC,Delantero
+336,"
+Jeriel de Santis ",€500k ,21,Boavista FC,Delantero
+337,"
+Pablo ",€500k ,19,FC Famalicão,Delantero
+338,"
+Jeremy Antonisse ",€500k ,21,Moreirense FC,Delantero
+339,"
+Alejandro Marqués ",€500k ,23,GD Estoril Praia,Delantero
+340,"
+Matías Lacava ",€500k ,21,FC Vizela,Delantero
+341,"
+Hernâni ",€500k ,22,Moreirense FC,Delantero
+342,"
+João Carlos ",€500k ,28,GD Estoril Praia,Delantero
+343,"
+Kikas ",€475k ,25,CF Estrela Amadora SAD,Delantero
+344,"
+João Camacho ",€475k ,29,Moreirense FC,Delantero
+345,"
+Paulo Victor ",€450k ,22,GD Chaves,Delantero
+346,"
+Joca ",€450k ,27,Rio Ave FC,Delantero
+347,"
+Jardel ",€425k ,26,FC Vizela,Delantero
+348,"
+Felippe Cardoso ",€400k ,25,Casa Pia AC,Delantero
+349,"
+Régis N'Do ",€400k ,22,CF Estrela Amadora SAD,Delantero

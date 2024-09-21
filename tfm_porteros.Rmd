@@ -1,0 +1,931 @@
+---
+title: "tfm_r"
+output: word_document
+date: "2023-11-08"
+---
+
+```{r}
+library(stringi)
+library(stringr)
+library(dplyr)
+library(tidyverse)
+df<-read.csv('advanced_goalkeeping.csv')
+colnames(df)[4]<-'Player'
+colnames(df)[5]<-'Nation'
+colnames(df)[6]<-'Pos'
+colnames(df)[7]<-'Age'
+df$Player = stri_trans_general(str = df$Player, id = "Latin-ASCII")
+df<-df[df$Player!='Squad Total',]
+df<-df[df$Player!='Opponent',]
+df<-df[df$Player!='Opponent Total',]
+df<-df[df$Season=='2022-2023',]
+```
+
+#Dataset porteros por cada liga
+```{r}
+spain<-read.csv('spain.csv')
+spain$Player = stri_trans_general(str = spain$Player, id = "Latin-ASCII")
+spain$Player<-str_trim(spain$Player, side = c("right"))
+spain$Player<-str_replace_all(spain$Player, "[\n]" , "")
+spain<-spain[spain$position=='Portero',]
+spain$Player[duplicated(spain$Player)]
+```
+
+
+
+```{r}
+england<-read.csv('england.csv')
+england$Player = stri_trans_general(str = england$Player, id = "Latin-ASCII")
+england$Player<-str_trim(england$Player, side = c("right"))
+england$Player<-str_replace_all(england$Player, "[\n]" , "")
+england<-england[england$position=='Portero',]
+england$Player[duplicated(england$Player)]
+```
+
+
+```{r}
+france<-read.csv('france.csv')
+france$Player = stri_trans_general(str = france$Player, id = "Latin-ASCII")
+france$Player<-str_trim(france$Player, side = c("right"))
+france$Player<-str_replace_all(france$Player, "[\n]" , "")
+france<-france[france$position=='Portero',]
+france$Player[duplicated(france$Player)]
+```
+
+
+
+```{r}
+germany<-read.csv('germany.csv')
+germany$Player = stri_trans_general(str = germany$Player, id = "Latin-ASCII")
+germany$Player<-str_trim(germany$Player, side = c("right"))
+germany$Player<-str_replace_all(germany$Player, "[\n]" , "")
+germany<-germany[germany$position=='Portero',]
+germany$Player[duplicated(germany$Player)]
+```
+
+
+
+```{r}
+italy<-read.csv('italy.csv')
+italy$Player = stri_trans_general(str = italy$Player, id = "Latin-ASCII")
+italy$Player<-str_trim(italy$Player, side = c("right"))
+italy$Player<-str_replace_all(italy$Player, "[\n]" , "")
+italy<-italy[italy$position=='Portero',]
+italy$Player[duplicated(italy$Player)]
+```
+
+
+```{r}
+netherlands<-read.csv('netherlands.csv')
+netherlands$Player = stri_trans_general(str = netherlands$Player, id = "Latin-ASCII")
+netherlands$Player<-str_trim(netherlands$Player, side = c("right"))
+netherlands$Player<-str_replace_all(netherlands$Player, "[\n]" , "")
+netherlands<-netherlands[netherlands$position=='Portero',]
+netherlands$Player[duplicated(netherlands$Player)]
+```
+
+```{r}
+portugal<-read.csv('portugal.csv')
+portugal$Player = stri_trans_general(str = portugal$Player, id = "Latin-ASCII")
+portugal$Player<-str_trim(portugal$Player, side = c("right"))
+portugal$Player<-str_replace_all(portugal$Player, "[\n]" , "")
+portugal<-portugal[portugal$position=='Portero',]
+portugal$Player[duplicated(portugal$Player)]
+portugal<-portugal[!duplicated(portugal$Player),]
+```
+
+```{r}
+spain$Liga<-'La Liga'
+england$Liga<-'Premier League'
+italy$Liga<-'Serie A'
+germany$Liga<-'Bundesliga'
+france$Liga<-'Ligue 1'
+netherlands$Liga<-'Eredivisie'
+portugal$Liga<-'Liga Portugal'
+df_p<-rbind(spain,england,france,germany,italy,netherlands,portugal)
+df_porteros=merge(x=df_p,y=df,by='Player')
+df_porteros<-subset(df_porteros,select=-c(X,Unnamed..30_level_0_Matches))
+df_porteros[duplicated(df_porteros[c('Player','value','age','club','position','Season','Nation','Pos','Age')]),] 
+```
+```{r}
+df_porteros<-df_porteros %>%
+   group_by(Player,value,age,club,position,Liga,Season,Nation,Pos,Age) %>% 
+   summarise_if(is.numeric, mean)
+
+df_porteros %>%  filter_at(-1, any_vars(is.na(.))) %>% nrow
+```
+Solo hay 4 jugadores que tengan NA. Los quitamos. 
+```{r}
+df_porteros[unique(which(is.na(df_porteros), arr.ind=TRUE)[,1]),]
+```
+```{r}
+ df_porteros<-df_porteros[unique(-which(is.na(df_porteros), arr.ind=TRUE)[,1]),]
+```
+
+Nos quedamos con el club, edad y liga actual del jugador (2023-2024) que es de cuando se extrae el valor de mercado. Eliminamos el club, edad y liga obtenido en el kaggle de la temporada 2022-2023, ya que son diferentes. 
+```{r}
+df_porteros<-df_porteros %>% relocate(Liga, .after = club)
+df_porteros<-subset(df_porteros,select=-c(Pos,Season,Age))
+```
+
+Modificamos la variable Nation y value, esta útlima para que represente el valor del jugador en millones. 
+```{r}
+df_porteros$value<-str_trim(df_porteros$value, side = c("right"))
+df_porteros$millon<-str_sub(df_porteros$value, start= -1)
+df_porteros$Nation<-sub(".*? ", "", df_porteros$Nation)
+df_porteros$value<-sub("€","",df_porteros$value)
+df_porteros$value<-sub("m","",df_porteros$value)
+df_porteros$value<-str_trim(df_porteros$value, side = c("right"))
+df_porteros$value<-sub("k","",df_porteros$value)
+df_porteros$value<-as.numeric(df_porteros$value)
+for(i in 1:nrow(df_porteros)) {       
+  if(df_porteros$millon[i]=='k'){
+    df_porteros$value[i]<-df_porteros$value[i]/1000
+  } 
+}
+df_porteros<-subset(df_porteros,select=-millon)
+```
+
+
+```{r}
+sapply(df_porteros, class)
+```
+Normalizamos variables
+```{r}
+df_porteros$GoalsGA.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goals_GA/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$GoalsFK.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goals_FK/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$GoalsPKA.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goals_PKA/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$GoalsCK.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goals_CK/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$GoalsOG.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goals_OG/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Expected_PSxG.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Expected_PSxG/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Expected_PSxG....MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Expected_PSxG.../df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Launched_Cmp.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Launched_Cmp/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Launched_Att.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Launched_Att/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Passes_Att.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Passes_Att/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Passes_Thr.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Passes_Thr/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Goal.Kicks_Att.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Goal.Kicks_Att/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Crosses_Opp.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Crosses_Opp/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Crosses_Stp.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Crosses_Stp/df_porteros$Unnamed..4_level_0_90s)
+df_porteros$Sweeper_.OPA.MP<-ifelse(df_porteros$Unnamed..4_level_0_90s==0,0,df_porteros$Sweeper_.OPA/df_porteros$Unnamed..4_level_0_90s)
+rownames(df_porteros) <- NULL
+```
+
+
+Normalizamos la variable precio para defensas. 
+```{r}
+colnames(df_porteros)[8]<-'partidos'
+library(caret)
+ss <- preProcess(as.data.frame(df_porteros$value), method=c("range"))
+ 
+normvalue_ <- predict(ss, as.data.frame(df_porteros$value))
+colnames(normvalue_)[1]<-'normvalue'
+df_porteros<-cbind(df_porteros,normvalue_)
+df_porteros<-df_porteros %>% relocate(normvalue, .after = value)
+```
+
+Vamos a usar boxplot e histograma para visualizar los outliers en la variable **precio**. 
+```{r}
+boxplot(df_porteros$normvalue, main='Precio porteros', xlab='Posición',ylab='Precio',frame=F)
+```
+Identificar outliers en cada posición por precio y marcarlo en una nueva columna **outliersprecio**
+
+```{r}
+boxplot.stats(df_porteros$normvalue)$out
+out <- boxplot.stats(df_porteros$normvalue)$out
+out_ind <- which(df_porteros$normvalue %in% c(out))
+out_ind
+```
+
+```{r}
+df_porteros$outliersprecio<-ifelse(rownames(df_porteros) %in%out_ind,1,0)
+```
+
+
+Identificar outliers por variables estadísticas en cada posición y marcarlo en una nueva columna **outliersestad**
+```{r}
+outliers_score<-lof(df_porteros[c(16,18,21,24,25,27,28,31,33:49 )],k=10)
+plot(density(outliers_score))
+```
+```{r}
+names(outliers_score) <- 1:nrow(df_porteros)
+df_porteros$outliers_score<-outliers_score
+df_porteros<-as.data.frame(df_porteros)
+```
+
+```{r}
+df_porteros[df_porteros$outliers_score>quantile(outliers_score,probs=c(0.95)),]
+```
+```{r}
+df_porteros$outliersestad<-ifelse(rownames(df_porteros) %in%rownames(df_porteros[df_porteros$outliers_score>quantile(outliers_score,probs=c(0.95)),]),1,0)
+```
+
+Ver si hay correlación entre precio normalizado y outlier_score de las variables relativas. 
+```{r}
+# Creamos el gráfico
+plot(df_porteros$normvalue, df_porteros$outliers_score, pch = 19, col = "lightblue")
+title('Correlación Pearson precio y outlier_score porteros')
+
+# Línea de regresión
+abline(lm(df_porteros$outliers_score ~ df_porteros$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(df_porteros$normvalue, df_porteros$outliers_score), 2)), x = 0.5, y = 2)
+```
+```{r}
+paste0('Correlación de Pearson Defensas: ',cor(df_porteros$normvalue, df_porteros$outliers_score))
+```
+Como hemos visto tanto en las gráficas como en el valor de Correlación de Pearson, vemos que no existe una relación entre ambos. Esto quiere decir que, si un jugador su valor es muy elevado, no es debido a que sus estadísticas sean mucho superior tampoco.
+
+Además vamos a obtener cual para observar cual es el porcentaje de jugadores que es outlier por precio y por valor estadístico. 
+
+```{r}
+paste0('Porcentaje de defensas que han sido identificados como outliers a nivel de precio y estadística: ',(nrow(df_porteros[df_porteros$outliersprecio=='1' & df_porteros$outliersestad=='1',])/nrow(df_porteros[df_porteros$outliersprecio=='1' | df_porteros$outliersestad=='1',]))*100)
+```
+Vemos que los jugadores que son detectados como outliers a nivel precio y estadistica, son 0. 
+
+Verificamos la distribución de la variable objetivo. Es sesgada a la derecha y no sigue una distribución normal.
+
+```{r}
+library(ggplot2)
+
+# Histogram with normal distribution curve
+ggplot(df_porteros, aes(x = value)) +
+  geom_histogram(aes(y = ..density..), binwidth = 1, fill = "blue", alpha = 0.7) +
+  geom_density(colour = "red", size = 1)+
+  ggtitle('Histograma precio porteros')
+
+# Q-Q Plot
+qqnorm(df_porteros$value)
+qqline(df_porteros$value, col = "red")
+
+```
+Comenzamos el proceso de modelado. Tenemos variables numéricas y categóricas en nuestros datos, pero por ahora nos enfocaremos solo en las variables numéricas Más adelante, consideraremos si agregar las variables categóricas tiene un impacto significativo en nuestros modelos. La inclusión de variables como ligas o país podría introducir ruido en nuestro análisis. Si no manejamos cuidadosamente esta variable, podríamos inflar artificialmente su precio. 
+
+```{r}
+#Seleccionamos variables numéricas para Defensas  
+porteros_numérica <- df_porteros[, sapply(df_porteros, is.numeric)]
+print(porteros_numérica)
+```
+```{r}
+# Utilizamos pearson para variables numéricas.
+
+matriz_correlacion<- cor(porteros_numérica, method = "pearson")
+
+# Variables con correlación sobre el 90%
+Variables_correlacionadas <- which(abs(matriz_correlacion) > 0.9 & matriz_correlacion != 1, arr.ind = TRUE)
+Variables_correlacionadas
+```
+
+
+```{r}
+porteros_numérica_reducido <- porteros_numérica[, !(names(porteros_numérica) %in% c(
+  "outliersprecio", 
+  "outliers_score",
+  "outliersestad",
+  "normvalue",
+  "Goals_GA",
+  "Goals_PKA",
+  "Goals_FK",
+  "Goals_CK",
+  "Goals_OG",
+  "Expected_PSxG",
+  "Expected_PSxG...",
+  "Launched_Cmp",
+  "Launched_Cmp.",
+  "Launched_Att",
+  "Passes_Att",
+  "Passes_Thr",
+  "Goal.Kicks_Att",
+  "Crosses_Opp",
+  "Crosses_Stp",
+  "Sweeper_.OPA"
+))]
+
+# Verificamos el resultado
+print(porteros_numérica_reducido)
+```
+
+Primero consideramos un GLM, teniendo en cuenta la naturaleza de nuestra variable dependiente 'value', que es continua y no está limitada a un rango específico. El resultado de tu prueba de Shapiro-Wilk indica que el valor de W es 0.68995 y el p-valor es menor que 2.2e-16, lo cual es significativamente menor que 0.05. Esto sugiere que la distribución de la variable value en tu conjunto de datos defensas_numérica_reducido no sigue una distribución normal.
+
+Por lo tanto, elegimos la familia de distribución Gamma debido a que los valores de mercado suelen ser variables continuas y positivas. La distribución Gamma puede capturar la asimetría en los datos.
+
+```{r}
+library(gamlss)
+
+#Shapiro test 
+shapiro_result <- shapiro.test(porteros_numérica_reducido$value)
+print(shapiro_result)
+
+#Modelo Gamma (link = log)
+glm_modelo_log <- glm(value ~ ., data = porteros_numérica_reducido, Gamma(link = "log"))
+
+summary(glm_modelo_log)
+```
+
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(porteros_numérica_reducido)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(porteros_numérica_reducido, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value ~ ., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la media de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Mediana MAE:", median_mae))
+print(paste("Mediana MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAPE a través de las particiones (Porteros)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+```{r}
+# Calculamos los residuos del modelo
+residuos_glm_log <- residuals(glm_modelo_log)
+plot(residuos_glm_log, main = "Residuos Modelo Gamma link log (Porteros)")
+```
+
+Considerando la mediana, las predicciones del modelo se desvían de los valores reales en aproximadamente 6.59 unidades en la escala de la variable de respuesta (miliones). El MAPE de 249.93% sugiere que hay un error de predicción del 249.93% en relación con los valores reales. Los residuos parecen estar dispersos alrededor de la línea cero sin ningún patrón obvio, lo que  indica un buen ajuste con el modelo Gamma y link long.
+
+Probamos el enlace identity para comprobar qué enlace se adapta mejor a nuestro modelo Gamma.
+
+
+Modelo Gamma link = identity
+glm_modelo_identity <- glm(value ~ ., data = porteros_numérica_reducido, family = Gamma(link = "identity"))
+
+summary(glm_modelo_identity)
+
+
+El link de identity puede no ser adecuado para nuestros datos, especialmente si la variable de respuesta tiene una distribución Gamma. Las distribuciones Gamma se utilizan normalmente para modelar datos no negativos con sesgo positivo. El enlace de identidad no obliga a que los valores predichos sean positivos, lo que puede dar lugar a predicciones que no son física o lógicamente factibles (como los valores negativos).
+
+Probamos el enlace inverse para comprobar qué enlace se adapta mejor a nuestro modelo Gamma.La función de enlace inversa suele utilizarse cuando se espera que la variable de respuesta tenga una relación no lineal con los predictores. El recíproco (inverso) del valor esperado de la variable de respuesta se modela como una combinación lineal de los predictores.
+
+
+#Modelo Gamma link = inverse
+glm_modelo_inverse <- glm(value ~ ., 
+                           data = porteros_numérica_reducido, 
+                           family = Gamma(link = "inverse"))
+
+summary(glm_modelo_inverse)
+
+
+El link de inverse puede no ser adecuado para nuestros datos, especialmente si la variable de respuesta tiene una distribución Gamma. Las distribuciones Gamma se utilizan normalmente para modelar datos no negativos con sesgo positivo.
+
+
+Por este motivo, optamos por seguir con el modelo gamma con enlace log.  Ajustamos un modelo GLM sólo con variables estadísticamente significativas.
+
+```{r}
+#Ajuste modelo Gamma log sólo con variables estadísticamente significativas
+numVars = 27
+for (i in c(1:numVars)){
+  nuevo_modelo_glm <- glm(value ~ ., data = porteros_numérica_reducido, Gamma(link = "log"))
+  maxVar = max(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"])
+  if (maxVar > 0.05){
+    j = which(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+    porteros_numérica_reducido = porteros_numérica_reducido[, -(j+1)]
+  }
+  numVars = numVars - 1
+}
+
+summary(nuevo_modelo_glm)
+```
+
+```{r}
+
+numVars = length(porteros_numérica_reducido)
+for (i in c(1:numVars)){
+  nuevo_modelo_glm <- glm(value ~ ., data = porteros_numérica_reducido, Gamma(link = "log"))
+  maxVar = max(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"])
+  if (maxVar > 0.01){
+    j = which(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+    porteros_numérica_reducido = porteros_numérica_reducido[, -(j+1)]
+  }
+  numVars = numVars - 1
+}
+
+nuevo_modelo_glm = glm(value ~ ., data = porteros_numérica_reducido, Gamma(link = "log"))
+summary(nuevo_modelo_glm)
+```
+
+
+```{r}
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(porteros_numérica_reducido)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(porteros_numérica_reducido, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value ~ ., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la media de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Mediana MAE:", median_mae))
+print(paste("Mediana MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAPE a través de las particiones (Porteros)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+Quedandonos sólo con las variables estadísticamente significativas, el modelo obtiene mejores resultados en términos de MAE y MAPE. Ambos se han visto reducidos respecto al modelo con todas las variables, esto podia hacer que alguna variable que no era significativa interfiriera en el resultado. 
+
+Utilizamos la selección paso a paso para afinar aún más nuestro modelo. Comparamos cómo cambian los coeficientes Beta en términos porcentuales cuando se utilizan diferentes direcciones en la regresión stepAIC. Primero realizamos la regresión por pasos en cada una de las tres direcciones ("forward", "backward" y "both") y, a continuación, calculamos el cambio porcentual de los coeficientes Beta de cada variable entre estos modelos.
+
+```{r}
+# Selección paso a paso - forward
+library(MASS)
+stepwise_forward <- stepAIC(nuevo_modelo_glm, direction = "forward", trace = FALSE)
+summary(stepwise_forward)
+```
+```{r}
+# Selección paso a paso - backward
+library(MASS)
+stepwise_backward<- stepAIC(nuevo_modelo_glm, direction = "backward", trace = FALSE)
+summary(stepwise_backward)
+```
+
+```{r}
+# Selección paso a paso - both
+library(MASS)
+stepwise_both <- stepAIC(nuevo_modelo_glm, direction = "both", trace = FALSE)
+summary(stepwise_both)
+```
+
+```{r}
+# Extraemos coeficientes
+coef_foward <- coef(stepwise_forward)
+coef_backward <- coef(stepwise_backward)
+coef_both <- coef(stepwise_both)
+
+# Función para comparar coeficientes
+comparar_coeficientes <- function(coef1, coef2) {
+  variables_comunes <- intersect(names(coef1), names(coef2))
+  cambio_porcentual <- (coef1[variables_comunes] - coef2[variables_comunes]) / coef2[variables_comunes] * 100
+  return(cambio_porcentual)
+}
+
+# Calcular cambios porcentuales
+cambio_porcentual_forward_backward <- comparar_coeficientes(coef_foward, coef_backward)
+cambio_porcentual_forward_both <- comparar_coeficientes(coef_foward, coef_both)
+cambio_porcentual_backward_both <- comparar_coeficientes(coef_backward, coef_both)
+
+# Ver los cambios porcentuales
+cambio_porcentual_forward_backward
+cambio_porcentual_forward_both
+cambio_porcentual_backward_both
+```
+
+Todos los cambios porcentuales de los coeficientes de las variables, incluido el intercepto, aparecen como cero. Esto sugiere que los coeficientes Beta de estas variables son exactamente los mismos en los tres modelos  (forward, backward, y both). Como no hay cambios en los coeficientes estimados de estas variables, independientemente de la dirección del "stepwise", utilizamos el primer modelo para proceder al análisis residual.
+
+Creamos un gráfico de residuos en comparación con los valores ajustados (predichos) para el modelo ajustado usando stepwise_forward. Este gráfico es útil para evaluar la adecuación del modelo. Idealmente, los residuos deben estar distribuidos aleatoriamente alrededor de la línea horizontal en y = 0, sin formar patrones discernibles. Si los residuos muestran patrones, puede indicar problemas con el modelo, como no linealidad p heterocedasticidad.
+
+```{r}
+# Gráfico de Residuos vs Valores Ajustados
+plot(fitted(stepwise_forward), residuals(stepwise_forward, type = "pearson"),
+     xlab = "Valores Ajustados", ylab = "Residuos",
+     main = "Residuos vs Valores Ajustados Porteros")
+abline(h = 0, col = "red")
+```
+Los residuos parecen estar dispersos aleatoriamente alrededor de la línea horizontal, lo que es una buena señal. No hay un patrón claro, lo que sugiere que no hay no linealidad o heteroscedasticidad evidentes. Hay algunos puntos con residuos más altos, sobre todo por encima de la línea horizontal, que podrían ser valores atípicos o puntos influyentes. Hay una agrupación notable de residuos cerca de la línea cero para los valores ajustados más bajos.
+
+```{r}
+library(car)
+library(lmtest)
+
+# Calculamos los residuos del modelo
+residuos <- residuals(stepwise_forward, type = "deviance")
+
+# Creamos un gráfico Q-Q para los residuos
+qqnorm(residuos)
+qqline(residuos, col = "red")
+
+#Dwtest
+dwtest(stepwise_forward)
+```
+La mayoría de los puntos en la gráfica Q-Q siguen la tendencia de la línea roja, lo que sugiere que los residuos del modelo se distribuyen de forma aproximadamente normal. Sin embargo, se observa una cierta desviación en los extremos (particularmente entre -3 y -1, y el 2 y 3 en el eje x), indicando posibles desviaciones de la normalidad en las colas de la distribución de los residuos.
+
+El valor del estadístico Durbin-Watson es 1.7197 implica una auto correlación positiva en los residuos del modelo. Esto contradice la suposición de independencia de los residuos, una suposición clave en la regresión lineal.
+
+
+
+```{r}
+# Cargamos la librería necesaria
+library(car)
+
+# Calculamos el número de observaciones y el número de coeficientes del modelo
+n <- nrow(porteros_numérica_reducido)
+p <- length(coef(stepwise_forward))
+
+# Calculamos el límite para la distancia de Cook
+cutoff <- 4 / (n - p)
+
+# Calculamos la distancia de Cook para cada observación en el modelo
+cooks_distance <- cooks.distance(stepwise_forward)
+
+# Identificamos los puntos con una distancia de Cook mayor que el límite
+puntos_influyentes <- which(cooks_distance > cutoff)
+
+# Gráfico de Residuos vs Apalancamiento (Leverage)
+plot(stepwise_forward, which = 5, cook.levels = c(0.5, 1))
+
+# Agregamos líneas de distancia de Cook al gráfico
+abline(h = cutoff, col = "red", lwd = 2, lty = 2)
+
+# Gráfico de la distancia de Cook para cada observación
+plot(cooks_distance, pch = 19, type = "h", main = "Distancia de Cook")
+abline(h = cutoff, col = "red", lwd = 2, lty = 2)
+
+# Mostramos los puntos influyentes
+print(puntos_influyentes)
+```
+El gráfico muestra algunas observaciones con alta influencia, lo que indica puntos con un mayor efecto en el modelo. El gráfico de la distancia de Cook resalta que la mayoría de las observaciones tienen una influencia baja, sin embargo, hay un pequeño número que excede el umbral de influencia sugerido por la línea roja discontinua. Estas observaciones particulares podrían estar afectando de manera desproporcionada la estimación de los coeficientes del modelo.
+
+Creamos un conjunto de datos en el que cada fila corresponde a uno de los puntos influyentes identificados por la distancia de Cook y su correspondiente categoría de valores atípicos según la columna "outliersestad".  De este modo, podemos saber si los puntos influyentes también están marcados como valores atípicos en nuestro análisis LOF.
+
+```{r}
+# Creamos un df para ver la distancia de Cook y el estado de atípico lado a lado para los puntos influyentes
+
+lof_influyente <- df_porteros$outliersestad[puntos_influyentes]
+
+comparacion <- data.frame(
+  Indice = puntos_influyentes,
+  DistanciaCooks = cooks_distance[puntos_influyentes],
+  EstadoAtipico = lof_influyente
+)
+
+print(comparacion)
+```
+No hay ningún punto influyente coincide con los valores atípicos encontrados mediante el análisis LOF. La falta de correspondencia podría indicar que los puntos influyentes no son necesariamente valores atípicos en el sentido típico, sino que tienen un impacto significativo en el ajuste del modelo. Estos puntos podrían ser extremos en términos de las variables predictoras, pero no necesariamente en la variable de respuesta. Optamos por eliminarlos para mejorar el rendimiento y la interpretabilidad de nuestro modelo.
+
+
+```{r}
+porteros_sin_influyentes <- porteros_numérica_reducido[-puntos_influyentes, ]
+glm_modelo_sin_influyentes <- glm(value~., data = porteros_sin_influyentes, family = Gamma(link = "log"))
+
+summary(glm_modelo_sin_influyentes)
+```
+
+
+Entrenamos y validamos el modelo. Utilizamos la validación cruzada de 3 particiones: el conjunto de datos se divide en 3 partes, y el modelo se entrena y valida 3 veces, cada vez con una parte diferente como conjunto de validación. Calculamos dos métricas clave, el Error Absoluto Medio (MAE) y el Error Porcentual Absoluto Medio (MAPE), para cuantificar la precisión de las predicciones del modelo. 
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(porteros_sin_influyentes)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(porteros_sin_influyentes, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value~., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la mediana de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Median MAE:", median_mae))
+print(paste("Median MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAE y MAPE a través de las particiones (Porteros)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+Por lo general, las predicciones de nuestro modelo se alejan unas 4,77 unidades de los valores reales. De media, las predicciones del modelo se alejan un 234% del valor real. A pesar de que mediante los cambios que hemos ido implementando, estos valores han bajado, este porcentaje de error es significativo indica que el modelo no funciona bien.
+
+El MAPE podría mostrar que hay casos en los que el error relativo es alto, lo que puede ser crítico dependiendo del problema en cuestión. 
+
+La regresión lineal supone que los residuos son independientes entre sí. Una autocorrelación positiva significa que los residuos no son independientes, sino que están correlacionados secuencialmente. Esto viola uno de los supuestos fundamentales de la regresión lineal, lo que puede dar lugar a estimaciones sesgadas de los parámetros del modelo. 
+
+```{r}
+modelo_porteros <- glm(value~., data = porteros_numérica_reducido, family = Gamma(link = "log"))
+predicciones <- predict(glm_modelo_sin_influyentes, newdata = porteros_numérica_reducido, type = "response")
+error<-porteros_numérica_reducido$value - predicciones
+error_porcentual<-(porteros_numérica_reducido$value - predicciones)/porteros_numérica_reducido$value
+df_porteros$valuepred<-predicciones
+df_porteros$error<-error
+df_porteros$error_porcentual<-error_porcentual
+```
+```{r}
+options(fig.width=400, fig.height=40)
+ggplot(df_porteros, aes(x = as.numeric(row.names(df_porteros)))) +
+  geom_line(aes(x=as.numeric(row.names(df_porteros)),y = valuepred, colour = "Prediccion")) + 
+  geom_line(aes(x=as.numeric(row.names(df_porteros)),y = value, colour = "Real")) +
+  labs(title = "Predicción vs Valor Real (Porteros)",
+       y = "Valor",
+       x = "Index",
+       color='Legend') +
+  scale_color_manual(name = "Valores", values = c("Prediccion" = "orange", "Real" = "blue"))+
+  theme_classic()
+```
+```{r}
+df_porteros<-df_porteros %>% relocate(valuepred, .after = value)
+df_porteros<-df_porteros %>% relocate(error, .after = valuepred)
+df_porteros<-df_porteros %>% relocate(error_porcentual, .after = error)
+```
+
+
+Separar datos según mediana, en dos bloques. 
+```{r}
+MedianValue <- median(df_porteros$value)
+df_porteros$percentil<-ifelse(df_porteros$value>MedianValue,'Alto','Bajo')
+df_porteros$sobreinfra<-ifelse(df_porteros$error_porcentual>0,'Sobrevalorado','Infravalorado')
+
+
+sobrevalorados<-df_porteros[df_porteros$sobreinfra=='Sobrevalorado',]
+infravalorados<-df_porteros[df_porteros$sobreinfra=='Infravalorado',]
+
+ecdf_func<-ecdf(sobrevalorados$error_porcentual)
+sobrevalorados$percentiles<-ecdf_func(sobrevalorados$error_porcentual )*100
+sobrevalorados<-sobrevalorados %>% relocate(percentiles, .after = error_porcentual)
+
+ecdf_func<-ecdf(infravalorados$error_porcentual)
+infravalorados$percentiles<-ecdf_func(infravalorados$error_porcentual )*100
+infravalorados<-infravalorados %>% relocate(percentiles, .after = error_porcentual)
+```
+
+```{r}
+sobrevalorados$etiqueta<-ifelse(sobrevalorados$percentiles<95 & sobrevalorados$percentiles>70,'Venta - Fuerte',
+                                ifelse(sobrevalorados$percentiles<70 & sobrevalorados$percentiles>30,'Venta',
+                                       ifelse(sobrevalorados$percentiles<30 & sobrevalorados$percentiles>5,'Neutro','Outlier')))
+```
+
+```{r}
+infravalorados$etiqueta<-ifelse(infravalorados$percentiles<95 & infravalorados$percentiles>70,'Neutro',
+                                ifelse(infravalorados$percentiles<70 & infravalorados$percentiles>30,'Compra',
+                                       ifelse(infravalorados$percentiles<30 & infravalorados$percentiles>5,'Compra - Fuerte','Outlier')))
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Venta - Fuerte')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Venta - Fuerte')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Venta')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Venta')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+
+
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Compra')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Compra')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Compra - Fuerte')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred,error,age,Passes_Launch.,Passes_AvgLen,GoalsGA.MP,Launched_Att.MP,Passes_Att.MP,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Compra - Fuerte')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+summary(modelo_porteros)
+```
+
+
+```{r}
+explain_1 <- broken(modelo_porteros, df_porteros[144,])
+explain_1
+plot(explain_1) + ggtitle("Gráfico breakDown (Thibaut Courtois - Sobrevalorado")
+```
+```{r}
+explain_1 <- broken(modelo_porteros, df_porteros[65,])
+explain_1
+plot(explain_1) + ggtitle("Gráfico breakDown (Joao Virginia - Infravalorado)")
+```
+
+```{r}
+delete_row<-row.names(df_porteros[df_porteros$outliers_score>quantile(outliers_score,probs=c(0.95)),])
+porteros_final<-porteros_sin_influyentes[!(row.names(porteros_sin_influyentes) %in% delete_row),]
+#porteros_final <- porteros_sin_influyentes[-row.names(df_porteros[df_porteros$outliers_score>quantile(outliers_score,probs=c(0.95)),]), ]
+glm_modelo_final <- glm(value~., data = porteros_final, family = Gamma(link = "log"))
+
+summary(glm_modelo_final)
+```
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(porteros_final)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(porteros_final, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value~., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la mediana de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Median MAE:", median_mae))
+print(paste("Median MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAE y MAPE a través de las particiones (Porteros)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+
+
+
+```{r}
+porteros_numérica_reducido <- porteros_numérica[, !(names(porteros_numérica) %in% c(
+  "outliersprecio", 
+  "outliers_score",
+  "outliersestad",
+  "normvalue",
+  "Goals_GA",
+  "Goals_PKA",
+  "Goals_FK",
+  "Goals_CK",
+  "Goals_OG",
+  "Expected_PSxG",
+  "Expected_PSxG...",
+  "Launched_Cmp",
+  "Launched_Att",
+  "Passes_Att",
+  "Passes_Thr",
+  "Goal.Kicks_Att",
+  "Crosses_Opp",
+  "Crosses_Stp",
+  "Sweeper_.OPA"
+))]
+
+# Assuming your dataset is named 'your_data'
+write.csv(porteros_numérica_reducido, file = "Rforest_porteros.csv", row.names = FALSE)
+```
+```

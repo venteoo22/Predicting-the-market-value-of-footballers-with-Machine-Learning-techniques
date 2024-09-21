@@ -1,0 +1,1400 @@
+---
+title: "trabajofinalmodelo"
+output: word_document
+date: "2023-11-06"
+---
+
+```{r}
+library(stringi)
+library(stringr)
+library(dplyr)
+df<-read.csv('2022-2023 Football Player Stats.csv',sep=';')
+#df<-df[df['Comp']=='La Liga',]
+```
+
+```{r}
+df$Player = stri_trans_general(str = df$Player, id = "Latin-ASCII")
+dup<-df[duplicated(df$Player) | duplicated(df$Player, fromLast=TRUE), ]
+dup<-dup[!(duplicated(dup[c("Player","Age")]) | duplicated(dup[c("Player","Age")], fromLast = TRUE)), ]
+nrow(dup)
+```
+Hay 16 jugadores de 2686, que se llaman iguales pero corresponden a diferentes jugadores. 
+Al ser tan pocos los vamos a eliminar. 
+```{r}
+df<-df[!(as.character(df$Player) %in% as.character(dup$Player)), ]
+```
+
+
+#Dataset España
+```{r}
+spain<-read.csv('spain.csv')
+spain$Player = stri_trans_general(str = spain$Player, id = "Latin-ASCII")
+spain$Player<-str_trim(spain$Player, side = c("right"))
+spain$Player<-str_replace_all(spain$Player, "[\n]" , "")
+spain$Player[duplicated(spain$Player)]
+```
+Los jugadores que salen duplicados es porque se llaman exactamente igual. Al ser pocos los vamos a eliminar. 
+
+```{r}
+spain<-spain[!duplicated(spain$Player),]
+
+df2=merge(x=spain,y=df,by='Player',all.x=TRUE)
+df2<-subset(df2,select=-c(X,Rk))
+```
+
+
+#Dataset England
+```{r}
+england<-read.csv('england.csv')
+england$Player = stri_trans_general(str = england$Player, id = "Latin-ASCII")
+england$Player<-str_trim(england$Player, side = c("right"))
+england$Player<-str_replace_all(england$Player, "[\n]" , "")
+england$Player[duplicated(england$Player)]
+```
+
+```{r}
+england<-england[!duplicated(england$Player),]
+
+df3=merge(x=england,y=df,by='Player',all.x=TRUE)
+df3<-subset(df3,select=-c(X,Rk))
+```
+
+#Dataset Italy
+```{r}
+italy<-read.csv('italy.csv')
+italy$Player = stri_trans_general(str = italy$Player, id = "Latin-ASCII")
+italy$Player<-str_trim(italy$Player, side = c("right"))
+italy$Player<-str_replace_all(italy$Player, "[\n]" , "")
+italy$Player[duplicated(italy$Player)]
+```
+```{r}
+italy<-italy[!duplicated(italy$Player),]
+
+df4=merge(x=italy,y=df,by='Player',all.x=TRUE)
+df4<-subset(df4,select=-c(X,Rk))
+```
+
+
+#Dataset Germany
+```{r}
+germany<-read.csv('germany.csv')
+germany$Player = stri_trans_general(str = germany$Player, id = "Latin-ASCII")
+germany$Player<-str_trim(germany$Player, side = c("right"))
+germany$Player<-str_replace_all(germany$Player, "[\n]" , "")
+germany$Player[duplicated(germany$Player)]
+```
+```{r}
+germany<-germany[!duplicated(germany$Player),]
+
+df5=merge(x=germany,y=df,by='Player',all.x=TRUE)
+df5<-subset(df5,select=-c(X,Rk))
+```
+#Dataset France
+```{r}
+france<-read.csv('france.csv')
+france$Player = stri_trans_general(str = france$Player, id = "Latin-ASCII")
+france$Player<-str_trim(france$Player, side = c("right"))
+france$Player<-str_replace_all(france$Player, "[\n]" , "")
+france$Player[duplicated(france$Player)]
+```
+```{r}
+france<-france[!duplicated(france$Player),]
+
+df6=merge(x=france,y=df,by='Player',all.x=TRUE)
+df6<-subset(df6,select=-c(X,Rk))
+```
+
+#%Jugadores NA
+```{r}
+jugadores_na=list()
+jugadores_na<-append(jugadores_na,(sum(is.na(df2$Nation))/nrow(df2))*100)
+jugadores_na<-append(jugadores_na,(sum(is.na(df3$Nation))/nrow(df3))*100)
+jugadores_na<-append(jugadores_na,(sum(is.na(df4$Nation))/nrow(df4))*100)
+jugadores_na<-append(jugadores_na,(sum(is.na(df5$Nation))/nrow(df5))*100)
+jugadores_na<-append(jugadores_na,(sum(is.na(df6$Nation))/nrow(df6))*100)
+print(jugadores_na)
+```
+Porcentaje de jugadores que no hacen merge entre dataset transfermarkt y dataset Kaggle. El dataset Kaggle es de jugadores de las 5 grandes ligas de la temporada 2022-2023, y el de transfermarkt es de jugadores de las 5 grandes ligas de la temporada 2023-2024. Estos NA puede ser debido a jugadores recién ascendidos, jugadores que han debutado en estas ligas ya sea porque es su primera temporada como jugador o porque han sido fichados por otros equipos que no esten en estas 5 ligas. O también, debido a que el nombre en la base de datos no es identico y por eso no hacen merge. 
+
+#%Jugadores ascendidos de cada liga
+```{r}
+jugadores_ascendidos=list()
+jugadores_ascendidos<-append(jugadores_ascendidos,(sum(is.na(df2$Nation)&(df2$club=='UD Las Palmas'|df2$club=='Granada CF'|df2$club=='Deportivo Alavés'))/sum(is.na(df2$Nation))*100))
+jugadores_ascendidos<-append(jugadores_ascendidos,(sum(is.na(df3$Nation)&(df3$club=='Fulham FC'|df3$club=='AFC Bournemouth'|df3$club=='Nottingham Forest'))/sum(is.na(df3$Nation))*100))
+jugadores_ascendidos<-append(jugadores_ascendidos,(sum(is.na(df4$Nation)&(df4$club=='Frosinone Calcio'|df4$club=='Genoa CFC'|df4$club=='Cagliari Calcio'))/sum(is.na(df4$Nation))*100))
+jugadores_ascendidos<-append(jugadores_ascendidos,(sum(is.na(df5$Nation)&(df5$club=='1.FC Heidenheim 1846'|df5$club=='SV Darmstadt 98'))/sum(is.na(df5$Nation))*100))
+jugadores_ascendidos<-append(jugadores_ascendidos,(sum(is.na(df6$Nation)&(df6$club=='Le Havre AC'|df6$club=='	
+FC Metz'))/sum(is.na(df6$Nation))*100))
+print(jugadores_ascendidos)
+```
+De los jugadores que no aparecen de cada liga, este es el porcentaje que corresponde de aquellos jugadores que han sido ascendidos. Recordemos que el dataset de Kaggle es de la temporada 2022-2023, y el transfermarkt salen jugadores en sus equipos actuales de la temporada 2023-2024. Por lo tanto, los jugadores que hayan ascendidos a primera que aparecen en 2023-2024, no aparecen en el dataset de Kaggle 2022-2023 porque estaban en segunda. 
+El resto de los jugadores que no aparecen se debe a que al hacer merge entre el transfermarkt 2023-2024 y el kaggle 2022-2023, es por jugadores que han debutado esta temporada y la anterior no habian jugado. Jugadores que han sido fichados de ligas que no sean las 5 grandes ligas que recoge el dataset de Kaggle. O debido que el nombre en la base de datos no es identico y por eso no hacen merge. 
+
+#Jugadores duplicados porque han jugado en misma liga
+#Ejemplo liga española
+```{r}
+df2$Player[duplicated(df2$Player)]
+```
+```{r}
+df2[duplicated(df2[c('Player', 'value','Nation','Age','Born')]),] 
+```
+```{r}
+df2[duplicated(df2[c('Player', 'value','Nation','Age','Born','Squad')]),] 
+```
+Vemos que siguen siendo duplicados poniendo la condición de value, Nation, Age, Born. Pero cuando añadimos Squad no se obtiene ninguno, eso quiere decir que es el mismo jugador pero que ha jugado en diferentes equipos esa temporada.
+
+```{r}
+jugadores_duplicados=list()
+jugadores_duplicados<-append(jugadores_duplicados,length(df2$Player[duplicated(df2$Player)]))
+jugadores_duplicados<-append(jugadores_duplicados,length(df3$Player[duplicated(df3$Player)]))
+jugadores_duplicados<-append(jugadores_duplicados,length(df4$Player[duplicated(df4$Player)]))
+jugadores_duplicados<-append(jugadores_duplicados,length(df5$Player[duplicated(df5$Player)]))
+jugadores_duplicados<-append(jugadores_duplicados,length(df6$Player[duplicated(df6$Player)]))
+sum(unlist(jugadores_duplicados))
+```
+Entre las 5 grandes ligas hay un total de 84 jugadores que han jugado en dos equipos diferentes esa temporada. 
+Calculamos cuanto porcentaje han jugado en cada equipo. Y nos quedamos con el equipo donde ha jugado máximo porcentaje. 
+Vamos a ver que jugadores han jugado menos del 70% en el equipo donde más han jugado. Esto quiere decir que ha jugado practicamente el mismo número de partidos en los dos equipos. 
+
+```{r}
+df2_dup<-df2[duplicated(df2$Player) | duplicated(df2$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_max(MP_perc) %>% ungroup()
+nrow(df2_dup[df2_dup$MP_perc<0.70,])
+
+df3_dup<-df3[duplicated(df3$Player) | duplicated(df3$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_max(MP_perc) %>% ungroup()
+nrow(df3_dup[df3_dup$MP_perc<0.70,])
+
+df4_dup<-df4[duplicated(df4$Player) | duplicated(df4$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_max(MP_perc) %>% ungroup()
+nrow(df4_dup[df4_dup$MP_perc<0.70,])
+
+df5_dup<-df5[duplicated(df5$Player) | duplicated(df5$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_max(MP_perc) %>% ungroup()
+nrow(df5_dup[df5_dup$MP_perc<0.70,])
+
+df6_dup<-df6[duplicated(df6$Player) | duplicated(df6$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_max(MP_perc) %>% ungroup()
+nrow(df6_dup[df6_dup$MP_perc<0.70,])
+```
+Vemos que solo hay 13 jugadores de los 84 que hay. De estos vamos a ver si han jugado más de 6 partidos en el equipo donde más han jugado. Ya que si han jugado menos de 6, significa que han jugado muy poco 
+```{r}
+nrow(df2_dup[df2_dup$MP_perc<0.70&df2_dup$MP>6,])
+nrow(df3_dup[df3_dup$MP_perc<0.70&df3_dup$MP>6,])
+nrow(df4_dup[df4_dup$MP_perc<0.70&df4_dup$MP>6,])
+nrow(df5_dup[df5_dup$MP_perc<0.70&df5_dup$MP>6,])
+nrow(df6_dup[df6_dup$MP_perc<0.70&df6_dup$MP>6,])
+```
+Que cumplan esta casuística solo hay 4 jugadores. 71 jugadores han jugado mucho más en un equipo que en el otro, en el equipo donde más han jugado es más del 70% de sus partidos la temporada pasada. Luego hay 9 jugadores que han jugado casi los mismos partidos en ambos equipos, pero han jugado menos de 6 partidos en cada uno. Y luego solo hay 4 jugadores que que hayan jugado casi los mismos partidos en ambos equipos y han jugado más de 6 partidos en el equipo donde más han jugado. 
+Teniendo esto en cuenta, nos vamos a quedar con los datos donde más partidos han jugado porque hacer la media de las estadísticas en ambos equipos puede ensuciar los datos porque un partido bueno o dos en un solo equipo no pueden definir o hacer media con los datos donde ha jugado varios partidos. 
+```{r}
+df2_dup<-df2[duplicated(df2$Player) | duplicated(df2$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_min(MP_perc) %>% ungroup()
+df2_dup<-subset(df2_dup,select=-MP_perc)
+df2<-anti_join(df2, df2_dup)
+```
+```{r}
+df3_dup<-df3[duplicated(df3$Player) | duplicated(df3$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_min(MP_perc) %>% ungroup()
+df3_dup<-subset(df3_dup,select=-MP_perc)
+df3<-anti_join(df3, df3_dup)
+
+df4_dup<-df4[duplicated(df4$Player) | duplicated(df4$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_min(MP_perc) %>% ungroup()
+df4_dup<-subset(df4_dup,select=-MP_perc)
+df4<-anti_join(df4, df4_dup)
+
+df5_dup<-df5[duplicated(df5$Player) | duplicated(df5$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_min(MP_perc) %>% ungroup()
+df5_dup<-subset(df5_dup,select=-MP_perc)
+df5<-anti_join(df5, df5_dup)
+
+df6_dup<-df6[duplicated(df6$Player) | duplicated(df6$Player, fromLast=TRUE), ]%>% group_by(Player)%>%mutate(across("MP", proportions, .names = "MP_perc")) %>% 
+  slice_min(MP_perc) %>% ungroup()
+df6_dup<-subset(df6_dup,select=-MP_perc)
+df6<-anti_join(df6, df6_dup)
+```
+
+```{r}
+df2$League<-'La Liga'
+df3$League<-'Premier League'
+df4$League<-'Serie A'
+df5$League<-'Bundesliga'
+df6$League<-'Ligue 1'
+
+df_players<-rbind(df2,df3,df4,df5,df6)
+df_players<-df_players %>% filter(!is.na(MP))
+df_players<-df_players[df_players$position!='Portero',]
+df_players[duplicated(df_players[c('Player')]),] 
+sum(is.na(df_players))
+```
+Tenemos un dataset de 1135 players, sin duplicados ni NA y solo jugadores de campo, sin portero.
+
+Nos quedamos con el club, edad y liga actual del jugador (2023-2024) que es de cuando se extrae el valor de mercado. Eliminamos el club, edad y liga obtenido en el kaggle de la temporada 2022-2023, ya que son diferentes. 
+```{r}
+df_players<-df_players %>% relocate(League, .after = club)
+df_players<-subset(df_players,select=-c(Squad, Comp,Age))
+```
+
+
+Modificamos la variable value, para que represente el valor del jugador en millones. 
+```{r}
+df_players$value<-str_trim(df_players$value, side = c("right"))
+df_players$millon<-str_sub(df_players$value, start= -1)
+df_players$value<-sub("€","",df_players$value)
+df_players$value<-sub("m","",df_players$value)
+df_players$value<-str_trim(df_players$value, side = c("right"))
+df_players$value<-sub("k","",df_players$value)
+df_players$value<-as.numeric(df_players$value)
+for(i in 1:nrow(df_players)) {       
+  if(df_players$millon[i]=='k'){
+    df_players$value[i]<-df_players$value[i]/1000
+  } 
+}
+df_players<-subset(df_players,select=-millon)
+rownames(df_players)<-NULL
+```
+
+
+
+
+
+
+
+#Buscar outliers
+
+```{r}
+sapply(df_players, class)
+df_players$Player<-as.factor(df_players$Player)
+df_players$club<-as.factor(df_players$club)
+df_players$League<-as.factor(df_players$League)
+df_players$position<-as.factor(df_players$position)
+df_players$Nation<-as.factor(df_players$Nation)
+df_players$Pos<-as.factor(df_players$Pos)
+df_players$age<-as.numeric(df_players$age)
+df_players$Born<-as.numeric(df_players$Born)
+df_players$MP<-as.numeric(df_players$MP)
+df_players$Starts<-as.numeric(df_players$Starts)
+df_players$Goals<-as.numeric(df_players$Goals)
+df_players$G.MP<-ifelse(df_players$X90s==0,0,df_players$Goals/df_players$X90s)
+```
+
+
+
+
+Separamos el dataset por posiciones. 
+```{r}
+defensas<-df_players[df_players$position=='Defensa',]
+centrocampistas<-df_players[df_players$position=='Centrocampista',]
+delanteros<-df_players[df_players$position=='Delantero',]
+defensas<-subset(defensas,select=-position)
+centrocampistas<-subset(centrocampistas,select=-position)
+delanteros<-subset(delanteros,select=-position)
+rownames(defensas) <- NULL
+rownames(centrocampistas) <- NULL
+rownames(delanteros) <- NULL
+```
+
+Normalizamos la variable precio para defensas. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(defensas$value), method=c("range"))
+ 
+normvalue_def <- predict(ss, as.data.frame(defensas$value))
+colnames(normvalue_def)[1]<-'normvalue'
+defensas<-cbind(defensas,normvalue_def)
+defensas<-defensas %>% relocate(normvalue, .after = value)
+```
+
+Normalizamos la variable precio para centrocampistas. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(centrocampistas$value), method=c("range"))
+ 
+normvalue_cent <- predict(ss, as.data.frame(centrocampistas$value))
+colnames(normvalue_cent)[1]<-'normvalue'
+centrocampistas<-cbind(centrocampistas,normvalue_cent)
+centrocampistas<-centrocampistas %>% relocate(normvalue, .after = value)
+```
+
+Normalizamos la variable precio para delanteros. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(delanteros$value), method=c("range"))
+ 
+normvalue_del <- predict(ss, as.data.frame(delanteros$value))
+colnames(normvalue_del)[1]<-'normvalue'
+delanteros<-cbind(delanteros,normvalue_del)
+delanteros<-delanteros %>% relocate(normvalue, .after = value)
+```
+
+Vamos a usar boxplot e histograma para visualizar los outliers en la variable **precio**. 
+```{r}
+par(mar=c(5.1, 4.1, 4.1, 8.1), xpd=TRUE)
+boxplot(defensas$normvalue,centrocampistas$normvalue,delanteros$normvalue, main='Precio jugadores', xlab='Posición',ylab='Precio',col=c('blue', 'gold1','red'),frame=F)
+legend("topleft", inset=c(0.9,0),c("Defensas", "Centrocampista",'Delanteros'), border="black", fill = c("blue", "gold1",'red'))
+```
+Identificar outliers en cada posición por precio y marcarlo en una nueva columna **outliersprecio**
+
+```{r}
+#Defensas
+boxplot.stats(defensas$normvalue)$out
+out <- boxplot.stats(defensas$normvalue)$out
+out_ind <- which(defensas$normvalue %in% c(out))
+out_ind
+```
+```{r}
+defensas$outliersprecio<-ifelse(rownames(defensas) %in%out_ind,1,0)
+```
+
+
+```{r}
+#Centrocampistas
+boxplot.stats(centrocampistas$normvalue)$out
+out <- boxplot.stats(centrocampistas$normvalue)$out
+out_ind <- which(centrocampistas$normvalue %in% c(out))
+out_ind
+centrocampistas$outliersprecio<-ifelse(rownames(centrocampistas) %in%out_ind,1,0)
+```
+
+```{r}
+#Delanteros
+boxplot.stats(delanteros$normvalue)$out
+out <- boxplot.stats(delanteros$normvalue)$out
+out_ind <- which(delanteros$normvalue %in% c(out))
+out_ind
+delanteros$outliersprecio<-ifelse(rownames(delanteros) %in%out_ind,1,0)
+```
+
+Identificar outliers por variables estadísticas en cada posición y marcarlo en una nueva columna **outliersestad**
+
+**Defensas**
+```{r}
+outliers_score<-lof(defensas[c(15:126)],k=10)
+plot(density(outliers_score))
+```
+```{r}
+names(outliers_score) <- 1:nrow(defensas)
+defensas$outliers_score<-outliers_score
+```
+
+```{r}
+defensas[defensas$outliers_score>quantile(outliers_score,probs=c(0.95)),]
+```
+
+```{r}
+defensas$outliersestad<-ifelse(rownames(defensas) %in%rownames(defensas[defensas$outliers_score>quantile(outliers_score,probs=c(0.95)),]),1,0)
+```
+
+**Centrocampistas**
+```{r}
+outliers_score<-lof(centrocampistas[c(15:126)],k=10)
+plot(density(outliers_score))
+```
+```{r}
+names(outliers_score) <- 1:nrow(centrocampistas)
+centrocampistas$outliers_score<-outliers_score
+centrocampistas$outliersestad<-ifelse(rownames(centrocampistas) %in%rownames(centrocampistas[centrocampistas$outliers_score>quantile(outliers_score,probs=c(0.95)),]),1,0)
+centrocampistas[centrocampistas$outliers_score>quantile(outliers_score,probs=c(0.95)),]
+```
+**Delanteros**
+```{r}
+outliers_score<-lof(delanteros[c(15:126)],k=10)
+plot(density(outliers_score))
+```
+
+```{r}
+names(outliers_score) <- 1:nrow(delanteros)
+delanteros$outliers_score<-outliers_score
+delanteros$outliersestad<-ifelse(rownames(delanteros) %in%rownames(delanteros[delanteros$outliers_score>quantile(outliers_score,probs=c(0.95)),]),1,0)
+delanteros[delanteros$outliers_score>quantile(outliers_score,probs=c(0.95)),]
+```
+
+Ver si hay correlación entre precio normalizado y outlier_score de las variables relativas. 
+```{r}
+# Creamos el gráfico
+plot(defensas$normvalue, defensas$outliers_score, pch = 19, col = "lightblue")
+title('Correlación Pearson precio y outlier_score defensas')
+
+# Línea de regresión
+abline(lm(defensas$outliers_score ~ defensas$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(defensas$normvalue, defensas$outliers_score), 2)), x = 0.5, y = 1)
+```
+```{r}
+# Creamos el gráfico
+plot(centrocampistas$normvalue, centrocampistas$outliers_score, pch = 19, col = "lightblue")
+title('Correlación Pearson precio y outlier_score centrocampistas')
+
+# Línea de regresión
+abline(lm(centrocampistas$outliers_score ~ centrocampistas$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(centrocampistas$normvalue, centrocampistas$outliers_score), 2)), x = 0.5, y = 2)
+```
+
+```{r}
+# Creamos el gráfico
+plot(delanteros$normvalue, delanteros$outliers_score, pch = 19, col = "lightblue")
+title('Correlación Pearson precio y outlier_score delanteros')
+
+# Línea de regresión
+abline(lm(delanteros$outliers_score ~ delanteros$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(delanteros$normvalue, delanteros$outliers_score), 2)), x = 0.5, y = 2)
+```
+
+```{r}
+paste0('Correlación de Pearson Defensas: ',cor(defensas$normvalue, defensas$outliers_score))
+paste0('Correlación de Pearson Centrocampistas: ',cor(centrocampistas$normvalue, centrocampistas$outliers_score))
+paste0('Correlación de Pearson Delanteros: ',cor(delanteros$normvalue, delanteros$outliers_score))
+```
+Como hemos visto tanto en las gráficas como en el valor de Correlación de Pearson, vemos que no existe una relación entre ambos. Esto quiere decir que, si un jugador su valor es muy elevado, no es debido a que sus estadísticas sean mucho superior tampoco.
+
+Además vamos a obtener cual para observar cual es el porcentaje de jugadores que es outlier por precio y por valor estadístico. 
+```{r}
+paste0('Porcentaje de defensas que han sido identificados como outliers a nivel de precio y estadística: ',(nrow(defensas[defensas$outliersprecio=='1' & defensas$outliersestad=='1',])/nrow(defensas[defensas$outliersprecio=='1' | defensas$outliersestad=='1',]))*100)
+
+paste0('Porcentaje de centrocampistas que han sido identificados como outliers a nivel de precio y estadística: ',(nrow(centrocampistas[centrocampistas$outliersprecio=='1' & centrocampistas$outliersestad=='1',])/nrow(centrocampistas[centrocampistas$outliersprecio=='1' | centrocampistas$outliersestad=='1',]))*100)
+
+paste0('Porcentaje de delanteros que han sido identificados como outliers a nivel de precio y estadística: ',(nrow(delanteros[delanteros$outliersprecio=='1' & delanteros$outliersestad=='1',])/nrow(delanteros[delanteros$outliersprecio=='1' | delanteros$outliersestad=='1',]))*100)
+
+```
+Vemos que los jugadores que son detectados como outliers a nivel precio y estadistica, son practicamente 0. 
+
+Observamos si los precios que se pagan en sorare estan relacionados con el de transfermarkt. 
+
+```{r}
+sorare<-read.csv('ligas_position.csv',sep=',')
+sorare$Player<-gsub("-", " ", sorare$Player)
+sorare$Player<-str_to_title(sorare$Player)
+sorare_defensa=merge(x=defensas[,c('Player','value','normvalue','age','club','Pos')],y=sorare,by='Player')
+sorare_centrocampista=merge(x=centrocampistas[,c('Player','value','normvalue','age','club','Pos')],y=sorare,by='Player')
+sorare_delantero=merge(x=delanteros[,c('Player','value','normvalue','age','club','Pos')],y=sorare,by='Player')
+```
+
+Normalizamos la variable precio sorare para defensas. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(sorare_defensa$Mediana), method=c("range"))
+ 
+mediana_def <- predict(ss, as.data.frame(sorare_defensa$Mediana))
+colnames(mediana_def)[1]<-'normmediana'
+sorare_defensa<-cbind(sorare_defensa,mediana_def)
+sorare_defensa<-sorare_defensa %>% relocate(normmediana, .after = value)
+```
+
+Normalizamos la variable precio sorare para centrocampistas. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(sorare_centrocampista$Mediana), method=c("range"))
+ 
+mediana_cent <- predict(ss, as.data.frame(sorare_centrocampista$Mediana))
+colnames(mediana_cent)[1]<-'normmediana'
+sorare_centrocampista<-cbind(sorare_centrocampista,mediana_cent)
+sorare_centrocampista<-sorare_centrocampista %>% relocate(normmediana, .after = value)
+```
+
+Normalizamos la variable precio sorare para delanteros. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(sorare_delantero$Mediana), method=c("range"))
+ 
+mediana_del <- predict(ss, as.data.frame(sorare_delantero$Mediana))
+colnames(mediana_del)[1]<-'normmediana'
+sorare_delantero<-cbind(sorare_delantero,mediana_del)
+sorare_delantero<-sorare_delantero %>% relocate(normmediana, .after = value)
+```
+
+Normalizamos la variable precio sorare para delanteros. 
+```{r}
+library(caret)
+ss <- preProcess(as.data.frame(sorare_delantero$value), method=c("range"))
+ 
+mediana_prec <- predict(ss, as.data.frame(sorare_delantero$value))
+colnames(mediana_prec)[1]<-'normprecio'
+precio_delantero<-cbind(sorare_delantero,mediana_prec)
+```
+
+Ver si hay correlación entre precio normalizado de transfermarkt y sorare. 
+```{r}
+# Creamos el gráfico
+plot(sorare_defensa$normvalue, sorare_defensa$normmediana, pch = 19, col = "lightblue")
+title('Correlación Pearson precio transfermarkt y precio sorare defensas')
+
+
+# Línea de regresión
+abline(lm(sorare_defensa$normmediana ~ sorare_defensa$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(sorare_defensa$normvalue, sorare_defensa$normmediana), 2)), x = 0.5, y = 0.1)
+```
+```{r}
+# Creamos el gráfico
+plot(sorare_centrocampista$normvalue, sorare_centrocampista$normmediana, pch = 19, col = "lightblue")
+title('Correlación Pearson precio transfermarkt y precio sorare centrocampistas')
+
+# Línea de regresión
+abline(lm(sorare_centrocampista$normmediana ~ sorare_centrocampista$normvalue), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(sorare_centrocampista$normvalue, sorare_centrocampista$normmediana), 2)), x = 0.5, y = )
+```
+
+```{r}
+# Creamos el gráfico
+plot(precio_delantero$normprecio, sorare_delantero$normmediana, pch = 19, col = "lightblue")
+title('Correlación Pearson precio transfermarkt y precio sorare delanteros')
+
+# Línea de regresión
+abline(lm(sorare_delantero$normmediana ~ precio_delantero$normprecio), col = "red", lwd = 3)
+
+# Correlación de Pearson
+text(paste("Correlación:", round(cor(precio_delantero$normprecio, sorare_delantero$normmediana), 2)), x = 0.5, y = 0.5)
+```
+```{r}
+paste0('Correlación de Pearson Defensas: ',cor(sorare_defensa$normvalue, sorare_defensa$normmediana))
+paste0('Correlación de Pearson Centrocampistas: ',cor(sorare_centrocampista$normvalue, sorare_centrocampista$normmediana))
+paste0('Correlación de Pearson Delanteros: ',cor(sorare_delantero$normvalue, sorare_delantero$normmediana))
+```
+Los precios asignados en transfermarkt y los que se pagan estan correlacionados. 
+
+
+Calculamos la diferencia absoluta entre los valores normalizados de Sorare y los valores normalizados de Transfermarket en cada categoría de jugadores. Podemos utilizar estos resultados para analizar las discrepancias entre los datos de Sorare y Transfermarket en la estimación de los precios de los jugadores.
+
+```{r}
+# Calcular las diferencias absolutas para Defensas
+abs_diff_defensas <- abs(defensas$normvalue - sorare_defensa$normvalue)
+
+# Calcular las diferencias absolutas para Centrocampistas
+abs_diff_centrocampistas <- abs(centrocampistas$normvalue - sorare_centrocampista$normvalue)
+
+# Calcular las diferencias absolutas para Delanteros
+abs_diff_delanteros <- abs(delanteros$normvalue - sorare_delantero$normvalue)
+
+# Imprimir los resultados
+paste0('Diferencia Absoluta para Defensas: ', mean(abs_diff_defensas))
+paste0('Diferencia Absoluta para Centrocampistas: ', mean(abs_diff_centrocampistas))
+paste0('Diferencia Absoluta para Delanteros: ', mean(abs_diff_delanteros))
+```
+
+Usamos la función quantile para calcular los percentiles 5 y 95 de las diferencias absolutas para cada categoría (Defensas, Centrocampistas, Delanteros). Estos percentiles ayudan a identificar a los jugadores con diferencias absolutas excepcionalmente bajas (percentil 5) y altas (percentil 95).
+
+
+```{r}
+# Identificar valores extremos para Defensas
+extreme_defensas <- defensas[abs_diff_defensas > quantile(abs_diff_defensas, probs = c(0.95, 0.05)), ]
+
+# Identificar valores extremos para Centrocampistas
+extreme_centrocampistas <- centrocampistas[abs_diff_centrocampistas > quantile(abs_diff_centrocampistas, probs = c(0.95, 0.05)), ]
+
+# Identificar valores extremos para Delanteros
+extreme_delanteros <- delanteros[abs_diff_delanteros > quantile(abs_diff_delanteros, probs = c(0.95, 0.05)), ]
+
+# Imprimir los valores extremos
+print(extreme_defensas)
+
+print(extreme_centrocampistas)
+
+print(extreme_delanteros)
+```
+
+Verificamos la distribución de la variable objetivo. Es sesgada a la derecha y no sigue una distribución normal.
+
+```{r}
+library(ggplot2)
+
+# Histogram with normal distribution curve
+ggplot(defensas, aes(x = value)) +
+  geom_histogram(aes(y = ..density..), binwidth = 1, fill = "blue", alpha = 0.7) +
+  geom_density(colour = "red", size = 1)+
+  ggtitle('Histograma precio defensas')
+
+# Q-Q Plot
+qqnorm(defensas$value)
+qqline(defensas$value, col = "red")
+
+```
+Comenzamos el proceso de modelado. Tenemos variables numéricas y categóricas en nuestros datos, pero por ahora nos enfocaremos solo en las variables numéricas Más adelante, consideraremos si agregar las variables categóricas tiene un impacto significativo en nuestros modelos. La inclusión de variables como ligas o país podría introducir ruido en nuestro análisis. Si no manejamos cuidadosamente esta variable, podríamos inflar artificialmente su precio. 
+
+Construimos tres modelos lineales según la categoría del jugador. Primero empezamos con los jugadores de la defensa. 
+
+
+```{r}
+#Seleccionamos variables numéricas para Defensas  
+defensas_numérica <- defensas[, sapply(defensas, is.numeric)]
+print(defensas_numérica)
+```
+```{r}
+# Utilizamos pearson para variables numéricas.
+
+matriz_correlacion<- cor(defensas_numérica, method = "pearson")
+
+# Variables con correlación sobre el 90%
+Variables_correlacionadas <- which(abs(matriz_correlacion) > 0.9 & matriz_correlacion != 1, arr.ind = TRUE)
+Variables_correlacionadas
+```
+
+Tenemos pares de variables que están altamente correlacionadas. Al construir modelos predictivos, podemos considerar abordar la multicolinealidad eliminando una de las variables de cada par altamente correlacionada o aprovechando el método PCA. Como sería difícil interpretar los resultados del modelo si adoptamos un PCA, optamos por eliminar las variables que nos dan información redudante.
+
+Born y age. Eliminamos Born.
+
+Starts y MP 
+Starts y Min 
+MP y X90s 
+Starts y X90s 
+MP y Min 
+Min y X90s
+
+Eliminamos Starts, MP y Min,y nos quedamos con X90s. 
+
+
+PassTotCmp y PasTotAtt
+PasTotDist y PasTotCmp
+PasAtt  y PasTotCmp
+PasLive y PasTotCmp   
+Touches y PasTotCmp    
+TouLive y PasTotCmp
+Carries y PasTotCmp
+Rec y PasTotCmp
+PasAtt y PasTotAtt    
+PasLive y PasTotAtt
+PasCmp y PasTotAtt
+Touches y PasTotAtt    
+TouLive y PasTotAtt    
+Rec y PasTotAtt
+
+Eliminamos PasTotAtt y PasTotCmp, porque tenemos la variable PasTotCmp. que nos dice el porcentaje de pases completados. 
+
+PasMedCmp y PasTotDist   
+PasMedAtt y PasTotDist
+PasLive y PasTotDist   
+PasCmp y PasTotDist 
+PasShoAtt y PasShoCmp   
+PasMedAtt y PasMedCmp 
+
+Eliminamos PasShoAtt porque tenemos la variable PasShoCmp que nos dice el porcentaje de pases completados. Eliminamos PasMedAtt, porque tenemos la variable PasShoCmp que nos dice el porcentaje de pases completados. 
+
+
+SCA y PasAss  
+PasLive y PasAtt      
+PasCmp y PasAtt 
+Touches y PasAtt  
+TouLive y PasAtt  
+Rec y PasAtt
+
+Eliminamos PasAtt porque es lo mismo que PasTotAtt.
+
+PasCmp y PasLive 
+Touches y PasLive 
+TouLive y PasLive
+Rec y PasLive 
+TI y PasDead 
+Touches y PasCmp 
+TouLive y PasCmp 
+Carries y PasCmp 
+
+Rec y PasCmp
+
+Eliminamos PasCmp proque es lo mismo que PasTotCmp.
+
+
+GcaPassLive y GCA
+TklW y TklWon 
+
+Eliminamos TklW porque es lo mismo que TklWon
+
+TouLive y Touches  
+
+Eliminamos TouLive porque es igual que Touches.
+
+Rec y Touches 
+RecProg y TouAtt3rd 
+ToTkl y ToAtt 
+Rec y Carries 
+CarPrgDist y CarTotDist
+
+Eliminamos las columnas outliersprecio/outerliersestad y score  ya que sólo los hemos utilizado antes para calcular los valores atípicos.También eliminamos el valor normalizado ya que decidimos utilizar el valor como etiqueta para predecir en nuestro modelo
+
+
+```{r}
+defensas_numérica_reducido <- defensas_numérica[, !(names(defensas_numérica) %in% c(
+  "Born",       
+  "Min",       
+  "MP",            
+  "Starts",           
+  "PasTotAtt",
+  "PasTotCmp", 
+  "PasShoAtt",
+  "PasMedAtt",
+  "PasAt",
+  "PasCmp",
+  "TklW",
+  "TouLive", 
+  "outliersprecio", 
+  "outliers_score",
+  "outliersestad",
+  "normvalue"
+))]
+
+# Verificamos el resultado
+print(defensas_numérica_reducido)
+```
+Primero consideramos un GLM, teniendo en cuenta la naturaleza de nuestra variable dependiente 'value', que es continua y no está limitada a un rango específico. El resultado de tu prueba de Shapiro-Wilk indica que el valor de W es 0.79092 y el p-valor es menor que 2.2e-16, lo cual es significativamente menor que 0.05. Esto sugiere que la distribución de la variable value en tu conjunto de datos defensas_numérica_reducido no sigue una distribución normal.
+
+Por lo tanto, elegimos la familia de distribución Gamma debido a que los valores de mercado suelen ser variables continuas y positivas. La distribución Gamma puede capturar la asimetría en los datos.
+
+```{r}
+library(gamlss)
+
+#Shapiro test 
+shapiro_result <- shapiro.test(defensas_numérica_reducido$value)
+print(shapiro_result)
+
+#Modelo Gamma (link = log)
+glm_modelo_log <- glm(value ~ ., data = defensas_numérica_reducido, Gamma(link = "log"))
+
+summary(glm_modelo_log)
+```
+Las variables estadísticamente significativas, basado en el valor p, son las siguientes:
+
+age (Edad): Con un nivel de significancia muy alto (p < 2e-16), lo que indica una fuerte relación negativa con la variable respuesta.
+
+X90s: También significativa con un valor p < 0.001, mostrando una relación positiva.
+
+PasAss (Pases Asistentes): Significativa con un valor p < 0.05, sugiriendo una relación positiva.
+
+Pas3rd (Pases en el tercio de campo): Significativa con un valor p < 0.05, sugiriendo una relación positiva.
+
+TouDefPen (Toques en el área defensiva del penalti): Muy significativa con un valor p < 0.01, mostrando una fuerte relación positiva.
+
+ToAtt (Ataques Totales): Significativa con un valor p < 0.05, sugiriendo una relación positiva.
+
+ToSuc (Éxitos Totales): Significativa con un valor p < 0.05, sugiriendo una relación negativa.
+
+CarTotDist (Distancia Total de Conducción del Balón): Muy significativa con un valor p < 0.001, lo que indica una relación negativa fuerte.
+
+CarPrgDist (Distancia de Progresión con el Balón): Muy significativa con un valor p < 0.001, sugiriendo una fuerte relación positiva.
+
+CarDis (Pérdidas del Balón en Conducción): Significativa con un valor p < 0.05, sugiriendo una relación negativa.
+
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(defensas_numérica_reducido)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(defensas_numérica_reducido, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value ~ ., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la media de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Mediana MAE:", median_mae))
+print(paste("Mediana MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAPE a través de las particiones (Defensas)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+```{r}
+# Calculamos los residuos del modelo
+residuos_glm_log <- residuals(glm_modelo_log)
+plot(residuos_glm_log, main = "Residuos Modelo Gamma link log (Defensas)")
+```
+Considerando la mediana, las predicciones del modelo se desvían de los valores reales en aproximadamente 11.04 unidades en la escala de la variable de respuesta (miliones). El MAPE de 115.72% sugiere que hay un error de predicción del 115.72% en relación con los valores reales. Los residuos parecen estar dispersos alrededor de la línea cero sin ningún patrón obvio, lo que  indica un buen ajuste con el modelo Gamma y link long.
+
+Probamos el enlace identity para comprobar qué enlace se adapta mejor a nuestro modelo Gamma.
+
+
+#Modelo Gamma link = identity
+glm_modelo_identity <- glm(value ~ ., 
+                           data = defensas_numérica_reducido, 
+                           family = Gamma(link = "identity"))
+
+summary(glm_modelo_identity)
+
+```
+
+
+El link de identity puede no ser adecuado para nuestros datos, especialmente si la variable de respuesta tiene una distribución Gamma. Las distribuciones Gamma se utilizan normalmente para modelar datos no negativos con sesgo positivo. El enlace de identidad no obliga a que los valores predichos sean positivos, lo que puede dar lugar a predicciones que no son física o lógicamente factibles (como los valores negativos).
+
+Probamos el enlace inverse para comprobar qué enlace se adapta mejor a nuestro modelo Gamma.La función de enlace inversa suele utilizarse cuando se espera que la variable de respuesta tenga una relación no lineal con los predictores. El recíproco (inverso) del valor esperado de la variable de respuesta se modela como una combinación lineal de los predictores.
+
+
+#Modelo Gamma link = inverse
+glm_modelo_inverse <- glm(value ~ ., 
+                           data = defensas_numérica_reducido, 
+                           family = Gamma(link = "inverse"))
+
+summary(glm_modelo_inverse)
+
+```
+Las variables estadísticamente significativas, basado en el valor p, son:
+
+age (Edad): Muy significativa con un nivel de significancia p < 2e-16.
+
+X90s: Significativa con un valor p < 0.001.
+
+CarTotDist (Distancia Total de Conducción del Balón): Significativa con un valor p < 0.01.
+
+CarPrgDist (Distancia de Progresión con el Balón): Significativa con un valor p < 0.05.
+
+CarDis (Pérdidas del Balón en Conducción): Significativa con un valor p < 0.05.
+
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(defensas_numérica_reducido)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(defensas_numérica_reducido, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value ~ ., data = conjunto_entrenamiento, family = Gamma(link = "inverse"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la mediana de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Mediana MAE:", median_mae))
+print(paste("Mediana MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAPE a través de las particiones",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+
+El link de inverse puede no ser adecuado para nuestros datos, especialmente si la variable de respuesta tiene una distribución Gamma. Las distribuciones Gamma se utilizan normalmente para modelar datos no negativos con sesgo positivo.
+
+
+Por este motivo, optamos por seguir con el modelo gamma con enlace log.  Ajustamos un modelo GLM sólo con variables estadísticamente significativas.
+
+```{r}
+#Ajuste modelo Gamma log sólo con variables estadísticamente significativas
+numVars = 108
+for (i in c(1:numVars)){
+  nuevo_modelo_glm <- glm(value ~ ., data = defensas_numérica_reducido, Gamma(link = "log"))
+  maxVar = max(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"])
+  if (maxVar > 0.05){
+    j = which(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+    defensas_numérica_reducido = defensas_numérica_reducido[, -(j+1)]
+  }
+  numVars = numVars - 1
+}
+
+summary(nuevo_modelo_glm)
+```
+```{r}
+defensas_numérica_reducido<-defensas_numérica_reducido[,-21]
+
+numVars = length(defensas_numérica_reducido)
+for (i in c(1:numVars)){
+  nuevo_modelo_glm <- glm(value ~ ., data = defensas_numérica_reducido, Gamma(link = "log"))
+  maxVar = max(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"])
+  if (maxVar > 0.01){
+    j = which(coef(summary(nuevo_modelo_glm))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+    defensas_numérica_reducido = defensas_numérica_reducido[, -(j+1)]
+  }
+  numVars = numVars - 1
+}
+
+nuevo_modelo_glm = glm(value ~ ., data = defensas_numérica_reducido, Gamma(link = "log"))
+summary(nuevo_modelo_glm)
+```
+
+```{r}
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(defensas_numérica_reducido)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(defensas_numérica_reducido, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value ~ ., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la media de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Mediana MAE:", median_mae))
+print(paste("Mediana MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAPE a través de las particiones (Defensas)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+Quedandonos sólo con las variables estadísticamente significativas, el modelo obtiene mejores resultados en términos de MAE y MAPE. Ambos se han visto reducidos respecto al modelo con todas las variables, esto podia hacer que alguna variable que no era significativa interfiriera en el resultado. 
+
+Utilizamos la selección paso a paso para afinar aún más nuestro modelo. Comparamos cómo cambian los coeficientes Beta en términos porcentuales cuando se utilizan diferentes direcciones en la regresión stepAIC. Primero realizamos la regresión por pasos en cada una de las tres direcciones ("forward", "backward" y "both") y, a continuación, calculamos el cambio porcentual de los coeficientes Beta de cada variable entre estos modelos.
+
+```{r}
+# Selección paso a paso - forward
+library(MASS)
+stepwise_forward <- stepAIC(nuevo_modelo_glm, direction = "forward", trace = FALSE)
+summary(stepwise_forward)
+```
+
+```{r}
+# Selección paso a paso - backward
+library(MASS)
+stepwise_backward<- stepAIC(nuevo_modelo_glm, direction = "backward", trace = FALSE)
+summary(stepwise_backward)
+```
+
+```{r}
+# Selección paso a paso - both
+library(MASS)
+stepwise_both <- stepAIC(nuevo_modelo_glm, direction = "both", trace = FALSE)
+summary(stepwise_both)
+```
+
+
+```{r}
+# Extraemos coeficientes
+coef_foward <- coef(stepwise_forward)
+coef_backward <- coef(stepwise_backward)
+coef_both <- coef(stepwise_both)
+
+# Función para comparar coeficientes
+comparar_coeficientes <- function(coef1, coef2) {
+  variables_comunes <- intersect(names(coef1), names(coef2))
+  cambio_porcentual <- (coef1[variables_comunes] - coef2[variables_comunes]) / coef2[variables_comunes] * 100
+  return(cambio_porcentual)
+}
+
+# Calcular cambios porcentuales
+cambio_porcentual_forward_backward <- comparar_coeficientes(coef_foward, coef_backward)
+cambio_porcentual_forward_both <- comparar_coeficientes(coef_foward, coef_both)
+cambio_porcentual_backward_both <- comparar_coeficientes(coef_backward, coef_both)
+
+# Ver los cambios porcentuales
+cambio_porcentual_forward_backward
+cambio_porcentual_forward_both
+cambio_porcentual_backward_both
+```
+
+Todos los cambios porcentuales de los coeficientes de las variables (age, X90s, PasAss, Pas3rd, TouDefPen, ToAtt, ToSuc, CarTotDist, CarPrgDist), incluido el intercepto, aparecen como cero. Esto sugiere que los coeficientes Beta de estas variables son exactamente los mismos en los tres modelos  (forward, backward, y both). Como no hay cambios en los coeficientes estimados de estas variables, independientemente de la dirección del "stepwise", utilizamos el primer modelo para proceder al análisis residual.
+
+Creamos un gráfico de residuos en comparación con los valores ajustados (predichos) para el modelo ajustado usando stepwise_forward. Este gráfico es útil para evaluar la adecuación del modelo. Idealmente, los residuos deben estar distribuidos aleatoriamente alrededor de la línea horizontal en y = 0, sin formar patrones discernibles. Si los residuos muestran patrones, puede indicar problemas con el modelo, como no linealidad p heterocedasticidad.
+
+
+```{r}
+# Gráfico de Residuos vs Valores Ajustados
+plot(fitted(stepwise_forward), residuals(stepwise_forward, type = "pearson"),
+     xlab = "Valores Ajustados", ylab = "Residuos",
+     main = "Residuos vs Valores Ajustados (Defensas)")
+abline(h = 0, col = "red")
+```
+Los residuos parecen estar dispersos aleatoriamente alrededor de la línea horizontal, lo que es una buena señal. No hay un patrón claro, lo que sugiere que no hay no linealidad o heteroscedasticidad evidentes. Hay algunos puntos con residuos más altos, sobre todo por encima de la línea horizontal, que podrían ser valores atípicos o puntos influyentes. Hay una agrupación notable de residuos cerca de la línea cero para los valores ajustados más bajos.
+
+```{r}
+library(car)
+library(lmtest)
+
+# Calculamos los residuos del modelo
+residuos <- residuals(stepwise_forward, type = "deviance")
+
+# Creamos un gráfico Q-Q para los residuos
+qqnorm(residuos)
+qqline(residuos, col = "red")
+
+#Dwtest
+dwtest(stepwise_forward)
+```
+
+La mayoría de los puntos en la gráfica Q-Q siguen la tendencia de la línea roja, lo que sugiere que los residuos del modelo se distribuyen de forma aproximadamente normal. Sin embargo, se observa una cierta desviación en los extremos (particularmente entre -3 y -1, y el 2 y 3 en el eje x), indicando posibles desviaciones de la normalidad en las colas de la distribución de los residuos.
+
+El valor del estadístico Durbin-Watson es 1.9498 implica una auto correlación positiva en los residuos del modelo. Esto contradice la suposición de independencia de los residuos, una suposición clave en la regresión lineal.
+
+
+```{r}
+# Cargamos la librería necesaria
+library(car)
+
+# Calculamos el número de observaciones y el número de coeficientes del modelo
+n <- nrow(defensas_numérica_reducido)
+p <- length(coef(stepwise_forward))
+
+# Calculamos el límite para la distancia de Cook
+cutoff <- 4 / (n - p)
+
+# Calculamos la distancia de Cook para cada observación en el modelo
+cooks_distance <- cooks.distance(stepwise_forward)
+
+# Identificamos los puntos con una distancia de Cook mayor que el límite
+puntos_influyentes <- which(cooks_distance > cutoff)
+
+# Gráfico de Residuos vs Apalancamiento (Leverage)
+plot(stepwise_forward, which = 5, cook.levels = c(0.5, 1))
+
+# Agregamos líneas de distancia de Cook al gráfico
+abline(h = cutoff, col = "red", lwd = 2, lty = 2)
+
+# Gráfico de la distancia de Cook para cada observación
+plot(cooks_distance, pch = 19, type = "h", main = "Distancia de Cook")
+abline(h = cutoff, col = "red", lwd = 2, lty = 2)
+
+# Mostramos los puntos influyentes
+print(puntos_influyentes)
+```
+El gráfico muestra algunas observaciones con alta influencia, lo que indica puntos con un mayor efecto en el modelo. El gráfico de la distancia de Cook resalta que la mayoría de las observaciones tienen una influencia baja, sin embargo, hay un pequeño número que excede el umbral de influencia sugerido por la línea roja discontinua. Estas observaciones particulares podrían estar afectando de manera desproporcionada la estimación de los coeficientes del modelo.
+
+Creamos un conjunto de datos en el que cada fila corresponde a uno de los puntos influyentes identificados por la distancia de Cook y su correspondiente categoría de valores atípicos según la columna "outliersestad".  De este modo, podemos saber si los puntos influyentes también están marcados como valores atípicos en nuestro análisis LOF.
+
+```{r}
+# Creamos un df para ver la distancia de Cook y el estado de atípico lado a lado para los puntos influyentes
+
+lof_influyente <- defensas$outliersestad[puntos_influyentes]
+
+comparacion <- data.frame(
+  Indice = puntos_influyentes,
+  DistanciaCooks = cooks_distance[puntos_influyentes],
+  EstadoAtipico = lof_influyente
+)
+
+print(comparacion)
+```
+Sólo 1 punto influyente coincide con los valores atípicos encontrados mediante el análisis LOF (observación 271). La falta de correspondencia podría indicar que los puntos influyentes no son necesariamente valores atípicos en el sentido típico, sino que tienen un impacto significativo en el ajuste del modelo. Estos puntos podrían ser extremos en términos de las variables predictoras, pero no necesariamente en la variable de respuesta. Optamos por eliminarlos para mejorar el rendimiento y la interpretabilidad de nuestro modelo.
+
+```{r}
+defensas_sin_influyentes <- defensas_numérica_reducido[-puntos_influyentes, ]
+glm_modelo_sin_influyentes <- glm(value~., data = defensas_sin_influyentes, family = Gamma(link = "log"))
+
+summary(glm_modelo_sin_influyentes)
+```
+
+Entrenamos y validamos el modelo. Utilizamos la validación cruzada de 3 particiones: el conjunto de datos se divide en 3 partes, y el modelo se entrena y valida 3 veces, cada vez con una parte diferente como conjunto de validación. Calculamos dos métricas clave, el Error Absoluto Medio (MAE) y el Error Porcentual Absoluto Medio (MAPE), para cuantificar la precisión de las predicciones del modelo. 
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+set.seed(123) # para reproducibilidad
+
+k <- 3
+n <- nrow(defensas_sin_influyentes)
+indices <- sample(1:k, n, replace = TRUE)
+folds <- split(defensas_sin_influyentes, indices)
+
+resultados <- data.frame(Particion = integer(0), MAE = numeric(0), MAPE = numeric(0))
+
+for(i in 1:k) {
+  conjunto_entrenamiento <- do.call("rbind", folds[-i])
+  conjunto_prueba <- folds[[i]]
+
+  modelo <- glm(value~., data = conjunto_entrenamiento, family = Gamma(link = "log"))
+  predicciones <- predict(modelo, newdata = conjunto_prueba, type = "response")
+
+  mae <- mean(abs(conjunto_prueba$value - predicciones))
+  mape <- mean(abs((conjunto_prueba$value - predicciones) / conjunto_prueba$value)) * 100
+
+  resultados <- rbind(resultados, data.frame(Particion = i, MAE = mae, MAPE = mape))
+}
+
+# Calcular la mediana de MAE y MAPE
+median_mae <- median(resultados$MAE)
+median_mape <- median(resultados$MAPE)
+
+# Imprimir la media de MAE y MAPE
+print(paste("Median MAE:", median_mae))
+print(paste("Median MAPE:", median_mape))
+
+# Graficar la distribución de MAE y MAPE
+ggplot(resultados, aes(x = Particion)) +
+  geom_line(aes(y = MAPE, group = 1, colour = "MAPE")) +
+  labs(title = "Distribución de MAE y MAPE a través de las particiones (Defensas)",
+       y = "Valor",
+       colour = "Métrica") +
+  theme_minimal()
+```
+
+Por lo general, las predicciones de nuestro modelo se alejan unas 7,12 unidades de los valores reales. De media, las predicciones del modelo se alejan un 70,38% del valor real. A pesar de que mediante los cambios que hemos ido implementando, estos valoes han bajado, este porcentaje de error es significativo indica que el modelo no funciona bien.  
+
+El MAPE podría mostrar que hay casos en los que el error relativo es alto, lo que puede ser crítico dependiendo del problema en cuestión. 
+
+La regresión lineal supone que los residuos son independientes entre sí. Una autocorrelación positiva significa que los residuos no son independientes, sino que están correlacionados secuencialmente. Esto viola uno de los supuestos fundamentales de la regresión lineal, lo que puede dar lugar a estimaciones sesgadas de los parámetros del modelo. 
+
+```{r}
+modelo_defensas <- glm(value~., data = defensas_sin_influyentes, family = Gamma(link = "log"))
+#predicciones <- predict(glm_modelo_sin_influyentes, newdata = defensas_numérica_reducido, type = "response")
+summary(modelo_defensas)
+predicciones <- predict(modelo_defensas, newdata = defensas_numérica_reducido, type = "response")
+
+error<-defensas_numérica_reducido$value - predicciones
+error_porcentual<-(defensas_numérica_reducido$value - predicciones)/defensas_numérica_reducido$value
+defensas_numérica_reducido$valuepred<-predicciones
+defensas_numérica_reducido$error<-error
+defensas$valuepred<-predicciones
+defensas$error<-error
+defensas$error_porcentual<-error_porcentual
+```
+```{r}
+options(fig.width=400, fig.height=40)
+ggplot(defensas, aes(x = as.numeric(row.names(defensas)))) +
+  geom_line(aes(x=as.numeric(row.names(defensas)),y = valuepred, colour = "Prediccion")) + 
+  geom_line(aes(x=as.numeric(row.names(defensas)),y = value, colour = "Real")) +
+  labs(title = "Predicción vs Valor Real (Defensas)",
+       y = "Valor",
+       x = "Index",
+       color='Legend') +
+  scale_color_manual(name = "Valores", values = c("Prediccion" = "orange", "Real" = "blue"))+
+  theme_classic()
+```
+
+```{r}
+defensas<-defensas %>% relocate(valuepred, .after = value)
+defensas<-defensas %>% relocate(error, .after = valuepred)
+defensas<-defensas %>% relocate(error_porcentual, .after = error)
+```
+
+Separar datos según mediana, en dos bloques. 
+```{r}
+MedianValue <- median(defensas$value)
+defensas$percentil<-ifelse(defensas$value>MedianValue,'Alto','Bajo')
+defensas$sobreinfra<-ifelse(defensas$error_porcentual>0,'Sobrevalorado','Infravalorado')
+
+
+sobrevalorados<-defensas[defensas$sobreinfra=='Sobrevalorado',]
+infravalorados<-defensas[defensas$sobreinfra=='Infravalorado',]
+
+ecdf_func<-ecdf(sobrevalorados$error_porcentual)
+sobrevalorados$percentiles<-ecdf_func(sobrevalorados$error_porcentual )*100
+sobrevalorados<-sobrevalorados %>% relocate(percentiles, .after = error_porcentual)
+
+ecdf_func<-ecdf(infravalorados$error_porcentual)
+infravalorados$percentiles<-ecdf_func(infravalorados$error_porcentual )*100
+infravalorados<-infravalorados %>% relocate(percentiles, .after = error_porcentual)
+```
+
+```{r}
+sobrevalorados$etiqueta<-ifelse(sobrevalorados$percentiles<95 & sobrevalorados$percentiles>70,'Venta - Fuerte',
+                                ifelse(sobrevalorados$percentiles<70 & sobrevalorados$percentiles>30,'Venta',
+                                       ifelse(sobrevalorados$percentiles<30 & sobrevalorados$percentiles>5,'Neutro','Outlier')))
+```
+
+```{r}
+infravalorados$etiqueta<-ifelse(infravalorados$percentiles<95 & infravalorados$percentiles>70,'Neutro',
+                                ifelse(infravalorados$percentiles<70 & infravalorados$percentiles>30,'Compra',
+                                       ifelse(infravalorados$percentiles<30 & infravalorados$percentiles>5,'Compra - Fuerte','Outlier')))
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Venta - Fuerte')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Venta - Fuerte')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Venta')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Venta')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+sobrevalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_max(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Neutro')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Compra')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Compra')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Alto')%>% 
+  filter(etiqueta=='Compra - Fuerte')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+infravalorados %>%
+  group_by(error_porcentual) %>% 
+  summarise(Player, value, valuepred, error,error_porcentual,percentil,etiqueta) %>%
+  filter(percentil=='Bajo')%>% 
+  filter(etiqueta=='Compra - Fuerte')%>%
+  slice_min(n=6, order_by = error_porcentual, with_ties = TRUE)
+```
+
+```{r}
+explain_1 <- broken(modelo_defensas, defensas[136,])
+explain_1
+plot(explain_1) + ggtitle("Gráfico breakDown (Nayef Aguerd - Sobrevalorado)")
+```
+```{r}
+explain_1 <- broken(modelo_defensas, defensas[68,])
+explain_1
+plot(explain_1) + ggtitle("Gráfico breakDown (Oscar Mingueza - Infravalorado)")
+```
+```{r}
+hist(defensas$value)
+abline(v = median(defensas$value), col = "blue", lwd = 3)
+xlab('Precio (€)')
+```
+
+
+
+```{r}
+write.csv(defensas, file = "defensas.csv", row.names = FALSE)
+```
+
+
+Cambiar a un modelo Random Forest podría ser una buena estrategia si nos enfrentamos a una autocorrelación positiva en los residuos de su modelo lineal, sobre todo porque Random Forests puede capturar relaciones complejas y no lineales entre las características y la variable objetivo, así como manejar bien las variables multicolineales.
+
+
+
+```{r}
+defensas_numérica_reducido <- defensas_numérica[, !(names(defensas_numérica) %in% c(
+  "Born",       
+  "Min",       
+  "MP",            
+  "Starts",           
+  "PasTotAtt",
+  "PasTotCmp", 
+  "PasShoAtt",
+  "PasMedAtt",
+  "PasAt",
+  "PasCmp",
+  "TklW",
+  "TouLive", 
+  "outliersprecio", 
+  "outliers_score",
+  "outliersestad",
+  "normvalue"
+))]
+
+# Assuming your dataset is named 'your_data'
+write.csv(defensas_numérica_reducido, file = "Rforest_dataset.csv", row.names = FALSE)
+```

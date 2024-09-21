@@ -1,0 +1,693 @@
+,Player,value,age,club,position
+0,"
+Gregor Kobel ",€35.00m ,25,Borussia Dortmund,Portero
+1,"
+Jonas Omlin ",€9.00m ,29,Borussia Mönchengladbach,Portero
+2,"
+Kevin Trapp ",€8.50m ,33,Eintracht Frankfurt,Portero
+3,"
+Koen Casteels ",€8.00m ,31,VfL Wolfsburg,Portero
+4,"
+Alexander Nübel ",€8.00m ,27,VfB Stuttgart,Portero
+5,"
+Marvin Schwäbe ",€7.00m ,28,1.FC Köln,Portero
+6,"
+Frederik Rönnow ",€5.50m ,31,1.FC Union Berlin,Portero
+7,"
+Manuel Neuer ",€5.00m ,37,Bayern Munich,Portero
+8,"
+Matej Kovar ",€5.00m ,23,Bayer 04 Leverkusen,Portero
+9,"
+Daniel Peretz ",€5.00m ,23,Bayern Munich,Portero
+10,"
+Noah Atubolu ",€5.00m ,21,SC Freiburg,Portero
+11,"
+Robin Zentner ",€5.00m ,29,1.FSV Mainz 05,Portero
+12,"
+Janis Blaswich ",€4.00m ,32,RB Leipzig,Portero
+13,"
+Oliver Baumann ",€4.00m ,33,TSG 1899 Hoffenheim,Portero
+14,"
+Péter Gulácsi ",€3.50m ,33,RB Leipzig,Portero
+15,"
+Finn Dahmen ",€3.50m ,25,FC Augsburg,Portero
+16,"
+Jiri Pavlenka ",€3.00m ,31,SV Werder Bremen,Portero
+17,"
+Lukas Hradecky ",€2.50m ,33,Bayer 04 Leverkusen,Portero
+18,"
+Marcel Lotka ",€1.50m ,22,Borussia Dortmund,Portero
+19,"
+Fabian Bredlow ",€1.50m ,28,VfB Stuttgart,Portero
+20,"
+Marcel Schuhen ",€1.50m ,30,SV Darmstadt 98,Portero
+21,"
+Florian Müller ",€1.50m ,25,SC Freiburg,Portero
+22,"
+Kauã Santos ",€1.50m ,20,Eintracht Frankfurt,Portero
+23,"
+Manuel Riemann ",€1.00m ,35,VfL Bochum,Portero
+24,"
+Alexander Meyer ",€1.00m ,32,Borussia Dortmund,Portero
+25,"
+Tomas Koubek ",€1.00m ,31,FC Augsburg,Portero
+26,"
+Alexander Schwolow ",€900k ,31,1.FC Union Berlin,Portero
+27,"
+Moritz Nicolas ",€800k ,26,Borussia Mönchengladbach,Portero
+28,"
+Jan Olschowsky ",€800k ,21,Borussia Mönchengladbach,Portero
+29,"
+Kevin Müller ",€800k ,32,1.FC Heidenheim 1846,Portero
+30,"
+Sven Ulreich ",€700k ,35,Bayern Munich,Portero
+31,"
+Benjamin Uphoff ",€500k ,30,SC Freiburg,Portero
+32,"
+Michael Zetterer ",€500k ,28,SV Werder Bremen,Portero
+33,"
+Pavao Pervan ",€400k ,35,VfL Wolfsburg,Portero
+34,"
+Tobias Sippel ",€400k ,35,Borussia Mönchengladbach,Portero
+35,"
+Leopold Zingerle ",€400k ,29,RB Leipzig,Portero
+36,"
+Niclas Thiede ",€350k ,24,VfL Bochum,Portero
+37,"
+Daniel Batz ",€350k ,32,1.FSV Mainz 05,Portero
+38,"
+Michael Esser ",€300k ,35,VfL Bochum,Portero
+39,"
+Luca Philipp ",€300k ,22,TSG 1899 Hoffenheim,Portero
+40,"
+Philipp Pentke ",€300k ,38,1.FC Köln,Portero
+41,"
+Vitus Eicher ",€250k ,33,1.FC Heidenheim 1846,Portero
+42,"
+Niklas Lomb ",€250k ,30,Bayer 04 Leverkusen,Portero
+43,"
+Marcel Lubik ",€250k ,19,FC Augsburg,Portero
+44,"
+Jakob Busk ",€250k ,30,1.FC Union Berlin,Portero
+45,"
+Tom Hülsmann ",€250k ,19,Bayern Munich,Portero
+46,"
+Morten Behrens ",€250k ,26,SV Darmstadt 98,Portero
+47,"
+Nahuel Noll ",€250k ,20,TSG 1899 Hoffenheim,Portero
+48,"
+Dudu ",€200k ,24,SV Werder Bremen,Portero
+49,"
+Jonas Nickisch ",€200k ,19,1.FC Köln,Portero
+50,"
+Alphonso Davies ",€70.00m ,23,Bayern Munich,Defensa
+51,"
+Matthijs de Ligt ",€70.00m ,24,Bayern Munich,Defensa
+52,"
+Dayot Upamecano ",€60.00m ,25,Bayern Munich,Defensa
+53,"
+Min-jae Kim ",€60.00m ,26,Bayern Munich,Defensa
+54,"
+Jeremie Frimpong ",€45.00m ,22,Bayer 04 Leverkusen,Defensa
+55,"
+Edmond Tapsoba ",€40.00m ,24,Bayer 04 Leverkusen,Defensa
+56,"
+Nico Schlotterbeck ",€40.00m ,23,Borussia Dortmund,Defensa
+57,"
+Castello Lukeba ",€35.00m ,20,RB Leipzig,Defensa
+58,"
+Mohamed Simakan ",€35.00m ,23,RB Leipzig,Defensa
+59,"
+Piero Hincapié ",€35.00m ,21,Bayer 04 Leverkusen,Defensa
+60,"
+Niklas Süle ",€30.00m ,28,Borussia Dortmund,Defensa
+61,"
+Noussair Mazraoui ",€28.00m ,25,Bayern Munich,Defensa
+62,"
+Odilon Kossounou ",€28.00m ,22,Bayer 04 Leverkusen,Defensa
+63,"
+Alejandro Grimaldo ",€25.00m ,28,Bayer 04 Leverkusen,Defensa
+64,"
+Jonathan Tah ",€20.00m ,27,Bayer 04 Leverkusen,Defensa
+65,"
+Philipp Lienhart ",€20.00m ,27,SC Freiburg,Defensa
+66,"
+Ramy Bensebaini ",€20.00m ,28,Borussia Dortmund,Defensa
+67,"
+Benjamin Henrichs ",€20.00m ,26,RB Leipzig,Defensa
+68,"
+Robin Koch ",€18.00m ,27,Eintracht Frankfurt,Defensa
+69,"
+Matthias Ginter ",€18.00m ,29,SC Freiburg,Defensa
+70,"
+Hiroki Ito ",€17.00m ,24,VfB Stuttgart,Defensa
+71,"
+Maxence Lacroix ",€17.00m ,23,VfL Wolfsburg,Defensa
+72,"
+Danilho Doekhi ",€17.00m ,25,1.FC Union Berlin,Defensa
+73,"
+Willian Pacho ",€17.00m ,22,Eintracht Frankfurt,Defensa
+74,"
+Diogo Leite ",€15.00m ,24,1.FC Union Berlin,Defensa
+75,"
+Kiliann Sildillia ",€15.00m ,21,SC Freiburg,Defensa
+77,"
+El Chadaille Bitshiabu ",€15.00m ,18,RB Leipzig,Defensa
+78,"
+Tuta ",€15.00m ,24,Eintracht Frankfurt,Defensa
+79,"
+Ko Itakura ",€15.00m ,26,Borussia Mönchengladbach,Defensa
+80,"
+Raphaël Guerreiro ",€15.00m ,29,Bayern Munich,Defensa
+81,"
+Nico Elvedi ",€14.00m ,27,Borussia Mönchengladbach,Defensa
+82,"
+David Raum ",€14.00m ,25,RB Leipzig,Defensa
+83,"
+Joakim Maehle ",€14.00m ,26,VfL Wolfsburg,Defensa
+84,"
+Maximilian Wöber ",€14.00m ,25,Borussia Mönchengladbach,Defensa
+85,"
+Attila Szalai ",€14.00m ,25,TSG 1899 Hoffenheim,Defensa
+86,"
+Ridle Baku ",€13.00m ,25,VfL Wolfsburg,Defensa
+87,"
+Ozan Kabak ",€13.00m ,23,TSG 1899 Hoffenheim,Defensa
+88,"
+Joe Scally ",€12.00m ,20,Borussia Mönchengladbach,Defensa
+89,"
+Josip Stanisic ",€12.00m ,23,Bayer 04 Leverkusen,Defensa
+90,"
+Josip Juranovic ",€12.00m ,28,1.FC Union Berlin,Defensa
+91,"
+Anthony Rouault ",€10.00m ,22,VfB Stuttgart,Defensa
+92,"
+Willi Orbán ",€10.00m ,31,RB Leipzig,Defensa
+93,"
+Timo Hübers ",€8.50m ,27,1.FC Köln,Defensa
+94,"
+Josha Vagnoman ",€8.00m ,22,VfB Stuttgart,Defensa
+95,"
+Lukas Klostermann ",€8.00m ,27,RB Leipzig,Defensa
+96,"
+Aurélio Buta ",€8.00m ,26,Eintracht Frankfurt,Defensa
+97,"
+Marius Wolf ",€8.00m ,28,Borussia Dortmund,Defensa
+98,"
+Erhan Masovic ",€8.00m ,24,VfL Bochum,Defensa
+99,"
+Niels Nkounkou ",€7.50m ,23,Eintracht Frankfurt,Defensa
+100,"
+Moritz Jenz ",€7.50m ,24,VfL Wolfsburg,Defensa
+101,"
+Jeff Chabot ",€7.50m ,25,1.FC Köln,Defensa
+102,"
+Andreas Hanche-Olsen ",€7.50m ,26,1.FSV Mainz 05,Defensa
+103,"
+Christian Günter ",€7.50m ,30,SC Freiburg,Defensa
+104,"
+Cédric Zesiger ",€7.50m ,25,VfL Wolfsburg,Defensa
+105,"
+Rogério ",€7.50m ,25,VfL Wolfsburg,Defensa
+106,"
+Waldemar Anton ",€7.00m ,27,VfB Stuttgart,Defensa
+107,"
+Sebastiaan Bornauw ",€7.00m ,24,VfL Wolfsburg,Defensa
+108,"
+Felix Uduokhai ",€7.00m ,26,FC Augsburg,Defensa
+109,"
+Anthony Caci ",€7.00m ,26,1.FSV Mainz 05,Defensa
+110,"
+Luca Netz ",€6.50m ,20,Borussia Mönchengladbach,Defensa
+111,"
+Mitchell Weiser ",€6.00m ,29,SV Werder Bremen,Defensa
+112,"
+Mats Hummels ",€6.00m ,34,Borussia Dortmund,Defensa
+113,"
+Amos Pieper ",€6.00m ,25,SV Werder Bremen,Defensa
+114,"
+Edimilson Fernandes ",€5.50m ,27,1.FSV Mainz 05,Defensa
+115,"
+Marco Friedl ",€5.50m ,25,SV Werder Bremen,Defensa
+116,"
+Niklas Stark ",€5.50m ,28,SV Werder Bremen,Defensa
+117,"
+Dan-Axel Zagadou ",€5.50m ,24,VfB Stuttgart,Defensa
+118,"
+Iago ",€5.50m ,26,FC Augsburg,Defensa
+119,"
+Arthur ",€5.00m ,20,Bayer 04 Leverkusen,Defensa
+120,"
+Japhet Tanganga ",€5.00m ,24,FC Augsburg,Defensa
+121,"
+Robin Knoche ",€5.00m ,31,1.FC Union Berlin,Defensa
+122,"
+Paul Jaeckel ",€5.00m ,25,1.FC Union Berlin,Defensa
+123,"
+Sepp van den Berg ",€5.00m ,21,1.FSV Mainz 05,Defensa
+124,"
+Milos Veljkovic ",€4.50m ,28,SV Werder Bremen,Defensa
+125,"
+Marvin Friedrich ",€4.00m ,27,Borussia Mönchengladbach,Defensa
+126,"
+Reece Oxford ",€4.00m ,24,FC Augsburg,Defensa
+127,"
+Hrvoje Smolcic ",€4.00m ,23,Eintracht Frankfurt,Defensa
+128,"
+Maximilian Bauer ",€3.50m ,23,FC Augsburg,Defensa
+129,"
+Mads Pedersen ",€3.50m ,27,FC Augsburg,Defensa
+130,"
+Kevin Akpoguma ",€3.50m ,28,TSG 1899 Hoffenheim,Defensa
+131,"
+Silvan Widmer ",€3.50m ,30,1.FSV Mainz 05,Defensa
+132,"
+Robert Gumny ",€3.50m ,25,FC Augsburg,Defensa
+133,"
+Nicolas Cozza ",€3.50m ,24,VfL Wolfsburg,Defensa
+134,"
+Kevin Mbabu ",€3.50m ,28,FC Augsburg,Defensa
+135,"
+Keven Schlotterbeck ",€3.00m ,26,VfL Bochum,Defensa
+136,"
+Stanley Nsoki ",€3.00m ,24,TSG 1899 Hoffenheim,Defensa
+137,"
+Jérôme Roussillon ",€3.00m ,30,1.FC Union Berlin,Defensa
+138,"
+Thomas Meunier ",€3.00m ,32,Borussia Dortmund,Defensa
+139,"
+Patric Pfeiffer ",€3.00m ,24,FC Augsburg,Defensa
+140,"
+Pavel Kaderabek ",€3.00m ,31,TSG 1899 Hoffenheim,Defensa
+141,"
+Christoph Klarer ",€3.00m ,23,SV Darmstadt 98,Defensa
+142,"
+Ivan Ordets ",€3.00m ,31,VfL Bochum,Defensa
+143,"
+Kenneth Schmidt ",€3.00m ,21,SC Freiburg,Defensa
+144,"
+Jeffrey Gouweleeuw ",€3.00m ,32,FC Augsburg,Defensa
+145,"
+Stefan Lainer ",€3.00m ,31,Borussia Mönchengladbach,Defensa
+146,"
+Benno Schmitz ",€3.00m ,28,1.FC Köln,Defensa
+147,"
+Bernardo ",€3.00m ,28,VfL Bochum,Defensa
+148,"
+Leonidas Stergiou ",€3.00m ,21,VfB Stuttgart,Defensa
+149,"
+Pascal Stenzel ",€2.50m ,27,VfB Stuttgart,Defensa
+150,"
+Jamal Musiala ",€110.00m ,20,Bayern Munich,Centrocampista
+151,"
+Florian Wirtz ",€85.00m ,20,Bayer 04 Leverkusen,Centrocampista
+152,"
+Joshua Kimmich ",€75.00m ,28,Bayern Munich,Centrocampista
+153,"
+Dani Olmo ",€50.00m ,25,RB Leipzig,Centrocampista
+154,"
+Leon Goretzka ",€45.00m ,28,Bayern Munich,Centrocampista
+155,"
+Manu Koné ",€40.00m ,22,Borussia Mönchengladbach,Centrocampista
+156,"
+Julian Brandt ",€40.00m ,27,Borussia Dortmund,Centrocampista
+157,"
+Exequiel Palacios ",€35.00m ,25,Bayer 04 Leverkusen,Centrocampista
+158,"
+Konrad Laimer ",€28.00m ,26,Bayern Munich,Centrocampista
+159,"
+Xaver Schlager ",€28.00m ,26,RB Leipzig,Centrocampista
+160,"
+Lovro Majer ",€27.00m ,25,VfL Wolfsburg,Centrocampista
+161,"
+Felix Nmecha ",€25.00m ,23,Borussia Dortmund,Centrocampista
+162,"
+Christoph Baumgartner ",€24.00m ,24,RB Leipzig,Centrocampista
+163,"
+Giovanni Reyna ",€20.00m ,20,Borussia Dortmund,Centrocampista
+164,"
+Marcel Sabitzer ",€20.00m ,29,Borussia Dortmund,Centrocampista
+165,"
+Granit Xhaka ",€20.00m ,31,Bayer 04 Leverkusen,Centrocampista
+166,"
+Nicolas Seiwald ",€20.00m ,22,RB Leipzig,Centrocampista
+167,"
+Enzo Millot ",€20.00m ,21,VfB Stuttgart,Centrocampista
+168,"
+Mattias Svanberg ",€18.00m ,24,VfL Wolfsburg,Centrocampista
+169,"
+Brenden Aaronson ",€18.00m ,23,1.FC Union Berlin,Centrocampista
+170,"
+Hugo Larsson ",€17.00m ,19,Eintracht Frankfurt,Centrocampista
+171,"
+Amadou Haidara ",€17.00m ,25,RB Leipzig,Centrocampista
+172,"
+Fábio Carvalho ",€16.00m ,21,RB Leipzig,Centrocampista
+173,"
+Anton Stach ",€15.00m ,24,TSG 1899 Hoffenheim,Centrocampista
+174,"
+Robin Gosens ",€15.00m ,29,1.FC Union Berlin,Centrocampista
+175,"
+Maximilian Arnold ",€14.00m ,29,VfL Wolfsburg,Centrocampista
+176,"
+Emre Can ",€14.00m ,29,Borussia Dortmund,Centrocampista
+177,"
+Leandro Barreiro ",€14.00m ,23,1.FSV Mainz 05,Centrocampista
+178,"
+Salih Özcan ",€13.00m ,25,Borussia Dortmund,Centrocampista
+179,"
+Ellyes Skhiri ",€13.00m ,28,Eintracht Frankfurt,Centrocampista
+180,"
+Florian Neuhaus ",€12.00m ,26,Borussia Mönchengladbach,Centrocampista
+181,"
+Robert Andrich ",€11.00m ,29,Bayer 04 Leverkusen,Centrocampista
+182,"
+Aïssa Laïdouni ",€10.00m ,26,1.FC Union Berlin,Centrocampista
+183,"
+Dejan Ljubicic ",€10.00m ,26,1.FC Köln,Centrocampista
+184,"
+Alex Kral ",€10.00m ,25,1.FC Union Berlin,Centrocampista
+185,"
+Junior Dina Ebimbe ",€10.00m ,22,Eintracht Frankfurt,Centrocampista
+186,"
+Maximilian Eggestein ",€10.00m ,26,SC Freiburg,Centrocampista
+187,"
+Julian Weigl ",€10.00m ,28,Borussia Mönchengladbach,Centrocampista
+188,"
+Rani Khedira ",€10.00m ,29,1.FC Union Berlin,Centrocampista
+189,"
+Naby Keïta ",€9.00m ,28,SV Werder Bremen,Centrocampista
+190,"
+Mario Götze ",€9.00m ,31,Eintracht Frankfurt,Centrocampista
+191,"
+Eric Martel ",€9.00m ,21,1.FC Köln,Centrocampista
+192,"
+Aster Vranckx ",€8.50m ,21,VfL Wolfsburg,Centrocampista
+193,"
+Daniel-Kofi Kyereh ",€8.00m ,27,SC Freiburg,Centrocampista
+194,"
+Ansgar Knauff ",€8.00m ,21,Eintracht Frankfurt,Centrocampista
+195,"
+Angelo Stiller ",€7.50m ,22,VfB Stuttgart,Centrocampista
+196,"
+Arne Engels ",€7.50m ,20,FC Augsburg,Centrocampista
+197,"
+Grischa Prömel ",€7.00m ,28,TSG 1899 Hoffenheim,Centrocampista
+198,"
+Niklas Dorsch ",€7.00m ,25,FC Augsburg,Centrocampista
+199,"
+Emil Forsberg ",€7.00m ,32,RB Leipzig,Centrocampista
+203,"
+Lucas Tousart ",€7.00m ,26,1.FC Union Berlin,Centrocampista
+204,"
+Florian Grillitsch ",€6.50m ,28,TSG 1899 Hoffenheim,Centrocampista
+205,"
+Robert Skov ",€6.50m ,27,TSG 1899 Hoffenheim,Centrocampista
+206,"
+Yannick Gerhardt ",€6.00m ,29,VfL Wolfsburg,Centrocampista
+207,"
+Tom Krauß ",€5.50m ,22,1.FSV Mainz 05,Centrocampista
+208,"
+Denis Huseinbasic ",€5.00m ,22,1.FC Köln,Centrocampista
+209,"
+Kevin Paredes ",€5.00m ,20,VfL Wolfsburg,Centrocampista
+210,"
+Jens Stage ",€5.00m ,27,SV Werder Bremen,Centrocampista
+211,"
+Dennis Geiger ",€5.00m ,25,TSG 1899 Hoffenheim,Centrocampista
+212,"
+Atakan Karazor ",€5.00m ,27,VfB Stuttgart,Centrocampista
+213,"
+Paxten Aaronson ",€4.50m ,20,Eintracht Frankfurt,Centrocampista
+214,"
+Romano Schmid ",€4.50m ,23,SV Werder Bremen,Centrocampista
+215,"
+Arne Maier ",€4.50m ,24,FC Augsburg,Centrocampista
+216,"
+Olivier Deman ",€4.50m ,23,SV Werder Bremen,Centrocampista
+217,"
+Rocco Reitz ",€4.00m ,21,Borussia Mönchengladbach,Centrocampista
+218,"
+Patrick Osterhage ",€4.00m ,23,VfL Bochum,Centrocampista
+219,"
+Yannik Keitel ",€4.00m ,23,SC Freiburg,Centrocampista
+220,"
+András Schäfer ",€4.00m ,24,1.FC Union Berlin,Centrocampista
+221,"
+Senne Lynen ",€4.00m ,24,SV Werder Bremen,Centrocampista
+222,"
+Nadiem Amiri ",€4.00m ,27,Bayer 04 Leverkusen,Centrocampista
+223,"
+Ilaix Moriba ",€4.00m ,20,RB Leipzig,Centrocampista
+224,"
+Tim Breithaupt ",€3.50m ,21,FC Augsburg,Centrocampista
+225,"
+Lennard Maloney ",€3.50m ,24,1.FC Heidenheim 1846,Centrocampista
+226,"
+Dominik Kohr ",€3.50m ,29,1.FSV Mainz 05,Centrocampista
+227,"
+Kevin Kampl ",€3.50m ,33,RB Leipzig,Centrocampista
+228,"
+Elvis Rexhbecaj ",€3.50m ,26,FC Augsburg,Centrocampista
+229,"
+Tom Bischof ",€3.50m ,18,TSG 1899 Hoffenheim,Centrocampista
+230,"
+Matus Bero ",€3.50m ,28,VfL Bochum,Centrocampista
+231,"
+Marco Richter ",€3.50m ,25,1.FSV Mainz 05,Centrocampista
+232,"
+Woo-yeong Jeong ",€3.50m ,24,VfB Stuttgart,Centrocampista
+233,"
+Kevin Stöger ",€3.00m ,30,VfL Bochum,Centrocampista
+234,"
+Noah Mbamba ",€3.00m ,18,Bayer 04 Leverkusen,Centrocampista
+235,"
+Merlin Röhl ",€3.00m ,21,SC Freiburg,Centrocampista
+236,"
+Marvin Mehlem ",€3.00m ,26,SV Darmstadt 98,Centrocampista
+237,"
+Bartol Franjic ",€3.00m ,23,SV Darmstadt 98,Centrocampista
+238,"
+Diadié Samassékou ",€3.00m ,27,TSG 1899 Hoffenheim,Centrocampista
+239,"
+Jae-sung Lee ",€3.00m ,31,1.FSV Mainz 05,Centrocampista
+240,"
+Philipp Förster ",€2.80m ,28,VfL Bochum,Centrocampista
+241,"
+Leonardo Bittencourt ",€2.80m ,29,SV Werder Bremen,Centrocampista
+242,"
+Finn Ole Becker ",€2.50m ,23,TSG 1899 Hoffenheim,Centrocampista
+243,"
+Fredrik Jensen ",€2.50m ,26,FC Augsburg,Centrocampista
+244,"
+Nicolas Höfler ",€2.50m ,33,SC Freiburg,Centrocampista
+245,"
+Christoph Kramer ",€2.50m ,32,Borussia Mönchengladbach,Centrocampista
+246,"
+Jacob Christensen ",€2.50m ,22,1.FC Köln,Centrocampista
+247,"
+Masaya Okugawa ",€2.50m ,27,FC Augsburg,Centrocampista
+248,"
+Aymen Barkok ",€2.00m ,25,1.FSV Mainz 05,Centrocampista
+249,"
+Josuha Guilavogui ",€2.00m ,33,1.FSV Mainz 05,Centrocampista
+250,"
+Harry Kane ",€110.00m ,30,Bayern Munich,Delantero
+251,"
+Leroy Sané ",€75.00m ,27,Bayern Munich,Delantero
+252,"
+Xavi Simons ",€70.00m ,20,RB Leipzig,Delantero
+253,"
+Kingsley Coman ",€65.00m ,27,Bayern Munich,Delantero
+254,"
+Serge Gnabry ",€55.00m ,28,Bayern Munich,Delantero
+255,"
+Mathys Tel ",€50.00m ,18,Bayern Munich,Delantero
+256,"
+Loïs Openda ",€45.00m ,23,RB Leipzig,Delantero
+257,"
+Serhou Guirassy ",€40.00m ,27,VfB Stuttgart,Delantero
+258,"
+Victor Boniface ",€40.00m ,22,Bayer 04 Leverkusen,Delantero
+259,"
+Donyell Malen ",€35.00m ,24,Borussia Dortmund,Delantero
+260,"
+Karim Adeyemi ",€35.00m ,21,Borussia Dortmund,Delantero
+261,"
+Youssoufa Moukoko ",€30.00m ,18,Borussia Dortmund,Delantero
+262,"
+Benjamin Sesko ",€30.00m ,20,RB Leipzig,Delantero
+263,"
+Patrik Schick ",€25.00m ,27,Bayer 04 Leverkusen,Delantero
+264,"
+Amine Adli ",€25.00m ,23,Bayer 04 Leverkusen,Delantero
+265,"
+Sébastien Haller ",€25.00m ,29,Borussia Dortmund,Delantero
+266,"
+Nathan Tella ",€23.00m ,24,Bayer 04 Leverkusen,Delantero
+267,"
+Jonas Wind ",€22.00m ,24,VfL Wolfsburg,Delantero
+268,"
+Timo Werner ",€20.00m ,27,RB Leipzig,Delantero
+269,"
+Ritsu Doan ",€18.00m ,25,SC Freiburg,Delantero
+270,"
+Jamie Bynoe-Gittens ",€18.00m ,19,Borussia Dortmund,Delantero
+271,"
+Adam Hlozek ",€18.00m ,21,Bayer 04 Leverkusen,Delantero
+272,"
+Patrick Wimmer ",€18.00m ,22,VfL Wolfsburg,Delantero
+273,"
+Sheraldo Becker ",€17.00m ,28,1.FC Union Berlin,Delantero
+274,"
+Mergim Berisha ",€14.00m ,25,TSG 1899 Hoffenheim,Delantero
+275,"
+Ermedin Demirovic ",€14.00m ,25,FC Augsburg,Delantero
+276,"
+Niclas Füllkrug ",€13.00m ,30,Borussia Dortmund,Delantero
+277,"
+Jonas Hofmann ",€13.00m ,31,Bayer 04 Leverkusen,Delantero
+278,"
+Tomas Cvancara ",€12.00m ,23,Borussia Mönchengladbach,Delantero
+279,"
+Lukas Nmecha ",€12.00m ,24,VfL Wolfsburg,Delantero
+280,"
+Roland Sallai ",€12.00m ,26,SC Freiburg,Delantero
+281,"
+Jakub Kaminski ",€12.00m ,21,VfL Wolfsburg,Delantero
+282,"
+Chris Führich ",€12.00m ,25,VfB Stuttgart,Delantero
+283,"
+Thomas Müller ",€12.00m ,34,Bayern Munich,Delantero
+284,"
+Vincenzo Grifo ",€12.00m ,30,SC Freiburg,Delantero
+285,"
+David Datro Fofana ",€10.00m ,20,1.FC Union Berlin,Delantero
+286,"
+Franck Honorat ",€10.00m ,27,Borussia Mönchengladbach,Delantero
+287,"
+Farès Chaïbi ",€10.00m ,20,Eintracht Frankfurt,Delantero
+288,"
+Deniz Undav ",€10.00m ,27,VfB Stuttgart,Delantero
+289,"
+Rafael Borré ",€9.00m ,28,SV Werder Bremen,Delantero
+290,"
+Ludovic Ajorque ",€9.00m ,29,1.FSV Mainz 05,Delantero
+291,"
+Wout Weghorst ",€9.00m ,31,TSG 1899 Hoffenheim,Delantero
+292,"
+Julien Duranville ",€8.50m ,17,Borussia Dortmund,Delantero
+293,"
+Amin Sarr ",€8.00m ,22,VfL Wolfsburg,Delantero
+294,"
+Silas ",€8.00m ,25,VfB Stuttgart,Delantero
+295,"
+Omar Marmoush ",€8.00m ,24,Eintracht Frankfurt,Delantero
+296,"
+Alassane Plea ",€8.00m ,30,Borussia Mönchengladbach,Delantero
+297,"
+Michael Gregoritsch ",€8.00m ,29,SC Freiburg,Delantero
+298,"
+Maximilian Beier ",€8.00m ,21,TSG 1899 Hoffenheim,Delantero
+299,"
+Andrej Kramaric ",€8.00m ,32,TSG 1899 Hoffenheim,Delantero
+300,"
+Junior Adamu ",€8.00m ,22,SC Freiburg,Delantero
+301,"
+Tiago Tomás ",€8.00m ,21,VfL Wolfsburg,Delantero
+302,"
+Vaclav Cerny ",€8.00m ,26,VfL Wolfsburg,Delantero
+303,"
+Marvin Ducksch ",€7.50m ,29,SV Werder Bremen,Delantero
+304,"
+Ihlas Bebou ",€7.00m ,29,TSG 1899 Hoffenheim,Delantero
+305,"
+Jan-Niklas Beste ",€7.00m ,24,1.FC Heidenheim 1846,Delantero
+306,"
+Jonathan Burkardt ",€7.00m ,23,1.FSV Mainz 05,Delantero
+307,"
+Yussuf Poulsen ",€7.00m ,29,RB Leipzig,Delantero
+308,"
+Rubén Vargas ",€6.50m ,25,FC Augsburg,Delantero
+309,"
+Jan Thielmann ",€6.50m ,21,1.FC Köln,Delantero
+310,"
+Dion Beljo ",€6.50m ,21,FC Augsburg,Delantero
+311,"
+Kevin Volland ",€6.00m ,31,1.FC Union Berlin,Delantero
+312,"
+Jordan ",€6.00m ,27,Borussia Mönchengladbach,Delantero
+313,"
+Linton Maina ",€6.00m ,24,1.FC Köln,Delantero
+314,"
+Lucas Höler ",€5.00m ,29,SC Freiburg,Delantero
+315,"
+Nelson Weiper ",€5.00m ,18,1.FSV Mainz 05,Delantero
+316,"
+Tim Kleindienst ",€5.00m ,28,1.FC Heidenheim 1846,Delantero
+317,"
+Jessic Ngankam ",€5.00m ,23,Eintracht Frankfurt,Delantero
+318,"
+Nathan Ngoumou ",€5.00m ,23,Borussia Mönchengladbach,Delantero
+319,"
+Eric Maxim Choupo-Moting ",€5.00m ,34,Bayern Munich,Delantero
+320,"
+Florian Kainz ",€5.00m ,31,1.FC Köln,Delantero
+321,"
+Brajan Gruda ",€5.00m ,19,1.FSV Mainz 05,Delantero
+322,"
+Noah Weißhaupt ",€4.00m ,22,SC Freiburg,Delantero
+323,"
+Kevin Behrens ",€4.00m ,32,1.FC Union Berlin,Delantero
+324,"
+Takuma Asano ",€4.00m ,28,VfL Bochum,Delantero
+325,"
+Davie Selke ",€3.50m ,28,1.FC Köln,Delantero
+326,"
+Karim Onisiwo ",€3.50m ,31,1.FSV Mainz 05,Delantero
+327,"
+Dawid Kownacki ",€3.50m ,26,SV Werder Bremen,Delantero
+328,"
+Nathanaël Mbuku ",€3.00m ,21,FC Augsburg,Delantero
+329,"
+Justin Njinmah ",€3.00m ,22,SV Werder Bremen,Delantero
+330,"
+Luca Waldschmidt ",€3.00m ,27,1.FC Köln,Delantero
+331,"
+Phillip Tietz ",€3.00m ,26,FC Augsburg,Delantero
+332,"
+Robin Hack ",€3.00m ,25,Borussia Mönchengladbach,Delantero
+333,"
+Eren Dinkçi ",€3.00m ,21,1.FC Heidenheim 1846,Delantero
+334,"
+Marius Bülter ",€3.00m ,30,TSG 1899 Hoffenheim,Delantero
+335,"
+Nacho Ferri ",€3.00m ,19,Eintracht Frankfurt,Delantero
+336,"
+Jamie Leweling ",€3.00m ,22,VfB Stuttgart,Delantero
+337,"
+Philipp Hofmann ",€2.80m ,30,VfL Bochum,Delantero
+338,"
+Mikkel Kaufmann ",€2.70m ,22,1.FC Union Berlin,Delantero
+339,"
+Faride Alidou ",€2.50m ,22,1.FC Köln,Delantero
+340,"
+Marvin Pieringer ",€2.50m ,24,1.FC Heidenheim 1846,Delantero
+341,"
+Steffen Tigges ",€2.50m ,25,1.FC Köln,Delantero
+342,"
+Lucas Alario ",€2.50m ,31,Eintracht Frankfurt,Delantero
+343,"
+Irvin Cardona ",€2.50m ,26,FC Augsburg,Delantero
+344,"
+Jens Petter Hauge ",€2.50m ,24,Eintracht Frankfurt,Delantero
+345,"
+Christopher Antwi-Adjei ",€2.20m ,29,VfL Bochum,Delantero
+346,"
+Oscar Vilhelmsson ",€2.00m ,20,SV Darmstadt 98,Delantero
+347,"
+Nick Woltemade ",€2.00m ,21,SV Werder Bremen,Delantero
+348,"
+Gonçalo Paciência ",€2.00m ,29,VfL Bochum,Delantero
+349,"
+Tim Skarke ",€2.00m ,27,SV Darmstadt 98,Delantero

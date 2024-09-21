@@ -1,0 +1,695 @@
+,Player,value,age,club,position
+0,"
+Justin Bijlow ",€15.00m ,25,Feyenoord Rotterdam,Portero
+1,"
+Walter Benítez ",€12.00m ,30,PSV Eindhoven,Portero
+2,"
+Gerónimo Rulli ",€10.00m ,31,Ajax Amsterdam,Portero
+3,"
+Mathew Ryan ",€4.00m ,31,AZ Alkmaar,Portero
+4,"
+Nick Olij ",€4.00m ,28,Sparta Rotterdam,Portero
+5,"
+Lars Unnerstall ",€3.20m ,33,Twente Enschede FC,Portero
+6,"
+Andries Noppert ",€3.00m ,29,SC Heerenveen,Portero
+7,"
+Timon Wellenreuther ",€3.00m ,27,Feyenoord Rotterdam,Portero
+8,"
+Jasper Cillessen ",€2.50m ,34,NEC Nijmegen,Portero
+9,"
+Joël Drommel ",€2.50m ,26,PSV Eindhoven,Portero
+10,"
+Ivor Pandur ",€2.00m ,23,Fortuna Sittard,Portero
+11,"
+Jay Gorter ",€2.00m ,23,Ajax Amsterdam,Portero
+12,"
+Vasilios Barkas ",€2.00m ,29,FC Utrecht,Portero
+13,"
+Diant Ramaj ",€1.00m ,22,Ajax Amsterdam,Portero
+14,"
+Etienne Vaessen ",€1.00m ,28,RKC Waalwijk,Portero
+15,"
+Stijn van Gassel ",€900k ,27,Excelsior Rotterdam,Portero
+16,"
+Jeffrey de Lange ",€750k ,25,Go Ahead Eagles,Portero
+17,"
+Fabian de Keijzer ",€700k ,23,Heracles Almelo,Portero
+18,"
+Mattijs Branderhorst ",€700k ,29,FC Utrecht,Portero
+19,"
+Mio Backhaus ",€700k ,19,FC Volendam,Portero
+20,"
+Jasper Schendelaar ",€700k ,23,PEC Zwolle,Portero
+21,"
+Nordin Bakker ",€650k ,26,Almere City FC,Portero
+22,"
+Eloy Room ",€600k ,34,Vitesse Arnhem,Portero
+23,"
+Samuel Sahin-Radlinger ",€600k ,31,Almere City FC,Portero
+24,"
+Mickey van der Hart ",€600k ,29,SC Heerenveen,Portero
+26,"
+Michael Brouwer ",€550k ,30,Heracles Almelo,Portero
+27,"
+Sem Westerveld ",€500k ,21,AZ Alkmaar,Portero
+28,"
+Kjell Peersman ",€400k ,19,PSV Eindhoven,Portero
+29,"
+Markus Schubert ",€400k ,25,Vitesse Arnhem,Portero
+30,"
+Robin Roefs ",€400k ,20,NEC Nijmegen,Portero
+31,"
+Rome Jayden Owusu-Oduro ",€400k ,19,AZ Alkmaar,Portero
+32,"
+Mikki van Sas ",€400k ,19,Feyenoord Rotterdam,Portero
+33,"
+Kostas Lamprou ",€350k ,32,Feyenoord Rotterdam,Portero
+34,"
+Norbert Alblas ",€250k ,28,Excelsior Rotterdam,Portero
+35,"
+Remko Pasveer ",€250k ,40,Ajax Amsterdam,Portero
+36,"
+Jeroen Houwen ",€250k ,27,RKC Waalwijk,Portero
+37,"
+Erwin Mulder ",€250k ,34,Go Ahead Eagles,Portero
+38,"
+Luuk Koopmans ",€225k ,29,Fortuna Sittard,Portero
+39,"
+Calvin Raatsie ",€200k ,21,FC Utrecht,Portero
+40,"
+Delano van Crooij ",€200k ,32,Sparta Rotterdam,Portero
+41,"
+Kenneth Vermeer ",€175k ,37,PEC Zwolle,Portero
+42,"
+Barry Lauwers ",€175k ,23,FC Volendam,Portero
+43,"
+Youri Schoonderwaldt ",€150k ,23,Sparta Rotterdam,Portero
+44,"
+Przemyslaw Tyton ",€150k ,36,Twente Enschede FC,Portero
+45,"
+Pascal Kuiper ",€125k ,19,Excelsior Rotterdam,Portero
+46,"
+Daniël Virginio Deen ",€125k ,20,AZ Alkmaar,Portero
+47,"
+Mark Spenkelink ",€100k ,26,RKC Waalwijk,Portero
+48,"
+Mike Hauptmeijer ",€75k ,26,PEC Zwolle,Portero
+49,"
+Boy Waterman ",€75k ,39,PSV Eindhoven,Portero
+50,"
+Lutsharel Geertruida ",€35.00m ,23,Feyenoord Rotterdam,Defensa
+51,"
+David Hancko ",€30.00m ,25,Feyenoord Rotterdam,Defensa
+52,"
+Quilindschy Hartman ",€20.00m ,21,Feyenoord Rotterdam,Defensa
+53,"
+Armel Bella-Kotchap ",€20.00m ,21,PSV Eindhoven,Defensa
+54,"
+Josip Sutalo ",€18.00m ,23,Ajax Amsterdam,Defensa
+55,"
+Sergiño Dest ",€13.00m ,23,PSV Eindhoven,Defensa
+56,"
+Borna Sosa ",€12.00m ,25,Ajax Amsterdam,Defensa
+57,"
+Jorrel Hato ",€10.00m ,17,Ajax Amsterdam,Defensa
+58,"
+Olivier Boscagli ",€10.00m ,25,PSV Eindhoven,Defensa
+59,"
+Yukinari Sugawara ",€10.00m ,23,AZ Alkmaar,Defensa
+60,"
+Jordan Teze ",€9.00m ,24,PSV Eindhoven,Defensa
+61,"
+Devyne Rensch ",€8.00m ,20,Ajax Amsterdam,Defensa
+62,"
+Gastón Ávila ",€6.00m ,22,Ajax Amsterdam,Defensa
+63,"
+Gijs Smal ",€6.00m ,26,Twente Enschede FC,Defensa
+64,"
+Gernot Trauner ",€5.00m ,31,Feyenoord Rotterdam,Defensa
+65,"
+Mauro Júnior ",€5.00m ,24,PSV Eindhoven,Defensa
+66,"
+Ahmetcan Kaplan ",€5.00m ,20,Ajax Amsterdam,Defensa
+67,"
+Mees Hilgers ",€4.50m ,22,Twente Enschede FC,Defensa
+68,"
+Armando Obispo ",€4.50m ,24,PSV Eindhoven,Defensa
+69,"
+Hugo Novoa ",€4.30m ,20,FC Utrecht,Defensa
+70,"
+Alexandre Penetra ",€4.00m ,22,AZ Alkmaar,Defensa
+71,"
+Joshua Brenet ",€4.00m ,29,Twente Enschede FC,Defensa
+72,"
+David Møller Wolfe ",€4.00m ,21,AZ Alkmaar,Defensa
+73,"
+Marcos López ",€4.00m ,23,Feyenoord Rotterdam,Defensa
+74,"
+Pawel Bochniewicz ",€3.00m ,27,SC Heerenveen,Defensa
+75,"
+Patrick van Aanholt ",€3.00m ,33,PSV Eindhoven,Defensa
+76,"
+Shurandy Sambo ",€3.00m ,22,PSV Eindhoven,Defensa
+77,"
+André Ramalho ",€3.00m ,31,PSV Eindhoven,Defensa
+78,"
+Thomas Beelen ",€3.00m ,22,Feyenoord Rotterdam,Defensa
+79,"
+Bart Nieuwkoop ",€3.00m ,27,Feyenoord Rotterdam,Defensa
+80,"
+Robin Pröpper ",€2.50m ,30,Twente Enschede FC,Defensa
+81,"
+Modibo Sagnan ",€2.50m ,24,FC Utrecht,Defensa
+82,"
+Alfons Sampsted ",€2.50m ,25,Twente Enschede FC,Defensa
+83,"
+Ryan Flamingo ",€2.50m ,20,FC Utrecht,Defensa
+84,"
+Loïc Mbe Soh ",€2.00m ,22,Almere City FC,Defensa
+85,"
+Rodrigo Guth ",€2.00m ,22,Fortuna Sittard,Defensa
+86,"
+Xavier Mbuyamba ",€2.00m ,21,FC Volendam,Defensa
+87,"
+Jakov Medic ",€2.00m ,25,Ajax Amsterdam,Defensa
+88,"
+Wouter Goes ",€2.00m ,19,AZ Alkmaar,Defensa
+89,"
+Bruno Martins Indi ",€2.00m ,31,AZ Alkmaar,Defensa
+90,"
+Anton Gaaei ",€2.00m ,20,Ajax Amsterdam,Defensa
+91,"
+Philippe Sandler ",€1.80m ,26,NEC Nijmegen,Defensa
+92,"
+Denso Kasius ",€1.70m ,21,AZ Alkmaar,Defensa
+93,"
+Mathias Ross ",€1.50m ,22,NEC Nijmegen,Defensa
+94,"
+Mats Köhlert ",€1.50m ,25,SC Heerenveen,Defensa
+95,"
+Maxim Dekker ",€1.50m ,19,AZ Alkmaar,Defensa
+96,"
+Carlens Arcus ",€1.50m ,27,Vitesse Arnhem,Defensa
+97,"
+Mees de Wit ",€1.50m ,25,AZ Alkmaar,Defensa
+98,"
+Lennart Czyborra ",€1.40m ,24,PEC Zwolle,Defensa
+99,"
+Souffian El Karouani ",€1.40m ,23,FC Utrecht,Defensa
+100,"
+Hidde ter Avest ",€1.30m ,26,FC Utrecht,Defensa
+101,"
+Justin Hoogma ",€1.20m ,25,Heracles Almelo,Defensa
+102,"
+Mike van der Hoorn ",€1.00m ,31,FC Utrecht,Defensa
+103,"
+Sven van Beek ",€1.00m ,29,SC Heerenveen,Defensa
+104,"
+Mitchell Dijks ",€1.00m ,30,Fortuna Sittard,Defensa
+105,"
+Ramon Hendriks ",€1.00m ,22,Vitesse Arnhem,Defensa
+106,"
+Alec Van Hoorenbeeck ",€900k ,24,Twente Enschede FC,Defensa
+107,"
+Django Warmerdam ",€900k ,28,Sparta Rotterdam,Defensa
+108,"
+Siebe Horemans ",€900k ,25,Excelsior Rotterdam,Defensa
+109,"
+Mica Pinto ",€900k ,30,Vitesse Arnhem,Defensa
+110,"
+Mike Eerdhuijzen ",€900k ,23,Sparta Rotterdam,Defensa
+111,"
+Kik Pierie ",€900k ,23,Excelsior Rotterdam,Defensa
+112,"
+Bart van Rooij ",€900k ,22,NEC Nijmegen,Defensa
+113,"
+Shawn Adewoye ",€900k ,23,RKC Waalwijk,Defensa
+114,"
+Youri Baas ",€900k ,20,NEC Nijmegen,Defensa
+115,"
+George Cox ",€850k ,25,FC Volendam,Defensa
+116,"
+Arthur Zagré ",€850k ,22,Excelsior Rotterdam,Defensa
+117,"
+Djevencio van der Kust ",€850k ,22,Sparta Rotterdam,Defensa
+118,"
+Casper Widell ",€800k ,20,Excelsior Rotterdam,Defensa
+119,"
+Calvin Verdonk ",€800k ,26,NEC Nijmegen,Defensa
+120,"
+Anass Salah-Eddine ",€800k ,21,Ajax Amsterdam,Defensa
+121,"
+Sherel Floranus ",€800k ,25,Almere City FC,Defensa
+122,"
+Bram Nuytinck ",€800k ,33,NEC Nijmegen,Defensa
+123,"
+Jamal Amofa ",€750k ,24,Go Ahead Eagles,Defensa
+124,"
+Syb van Ottele ",€750k ,21,SC Heerenveen,Defensa
+125,"
+Bas Kuipers ",€700k ,29,Go Ahead Eagles,Defensa
+126,"
+Benaissa Benamar ",€700k ,26,FC Volendam,Defensa
+127,"
+Mimeirhel Benita ",€700k ,19,Excelsior Rotterdam,Defensa
+128,"
+Anselmo García MacNulty ",€700k ,20,PEC Zwolle,Defensa
+129,"
+Thomas Lam ",€700k ,29,PEC Zwolle,Defensa
+130,"
+Jetro Willems ",€700k ,29,Heracles Almelo,Defensa
+131,"
+Mats Deijl ",€700k ,26,Go Ahead Eagles,Defensa
+132,"
+Sadik Fofana ",€700k ,20,Fortuna Sittard,Defensa
+133,"
+Julian Lelieveld ",€700k ,25,RKC Waalwijk,Defensa
+134,"
+Rémy Vita ",€700k ,22,Fortuna Sittard,Defensa
+135,"
+Redouan El Yaakoubi ",€700k ,27,Excelsior Rotterdam,Defensa
+136,"
+Tijs Velthuis ",€650k ,21,Sparta Rotterdam,Defensa
+137,"
+Nick Viergever ",€650k ,34,FC Utrecht,Defensa
+138,"
+Joris Kramer ",€650k ,27,Go Ahead Eagles,Defensa
+139,"
+Fredrik Oppegård ",€650k ,21,PSV Eindhoven,Defensa
+140,"
+Saïd Bakari ",€650k ,29,Sparta Rotterdam,Defensa
+141,"
+Brayann Pereira ",€600k ,20,NEC Nijmegen,Defensa
+142,"
+Brian Plat ",€600k ,23,FC Volendam,Defensa
+143,"
+Dominik Oroz ",€600k ,23,Vitesse Arnhem,Defensa
+144,"
+Denzel Hall ",€600k ,22,SC Heerenveen,Defensa
+145,"
+Enzo Cornelisse ",€550k ,21,Vitesse Arnhem,Defensa
+146,"
+Dario Van den Buijs ",€550k ,28,RKC Waalwijk,Defensa
+147,"
+Damon Mirani ",€550k ,27,FC Volendam,Defensa
+148,"
+Ivo Pinto ",€500k ,33,Fortuna Sittard,Defensa
+149,"
+Gerrit Nauber ",€500k ,31,Go Ahead Eagles,Defensa
+150,"
+Joey Veerman ",€20.00m ,24,PSV Eindhoven,Centrocampista
+151,"
+Jerdy Schouten ",€16.00m ,26,PSV Eindhoven,Centrocampista
+152,"
+Mats Wieffer ",€15.00m ,23,Feyenoord Rotterdam,Centrocampista
+153,"
+Quinten Timber ",€12.00m ,22,Feyenoord Rotterdam,Centrocampista
+154,"
+Calvin Stengs ",€10.00m ,24,Feyenoord Rotterdam,Centrocampista
+155,"
+Kenneth Taylor ",€10.00m ,21,Ajax Amsterdam,Centrocampista
+156,"
+Steven Berghuis ",€9.00m ,31,Ajax Amsterdam,Centrocampista
+157,"
+Branco van den Boomen ",€9.00m ,28,Ajax Amsterdam,Centrocampista
+158,"
+Malik Tillman ",€8.00m ,21,PSV Eindhoven,Centrocampista
+159,"
+Ramiz Zerrouki ",€8.00m ,25,Feyenoord Rotterdam,Centrocampista
+160,"
+Sivert Mannsverk ",€6.50m ,21,Ajax Amsterdam,Centrocampista
+161,"
+Sven Mijnans ",€6.00m ,23,AZ Alkmaar,Centrocampista
+162,"
+Guus Til ",€6.00m ,25,PSV Eindhoven,Centrocampista
+163,"
+Michal Sadilek ",€5.00m ,24,Twente Enschede FC,Centrocampista
+164,"
+Dani de Wit ",€5.00m ,25,AZ Alkmaar,Centrocampista
+165,"
+Benjamin Tahirovic ",€5.00m ,20,Ajax Amsterdam,Centrocampista
+166,"
+Ismael Saibari ",€5.00m ,22,PSV Eindhoven,Centrocampista
+167,"
+Kacper Kozlowski ",€5.00m ,20,Vitesse Arnhem,Centrocampista
+168,"
+Joshua Kitolano ",€4.50m ,22,Sparta Rotterdam,Centrocampista
+169,"
+Can Bozdoğan ",€4.50m ,22,FC Utrecht,Centrocampista
+170,"
+Michel Vlap ",€4.00m ,26,Twente Enschede FC,Centrocampista
+171,"
+Ondrej Lingr ",€4.00m ,25,Feyenoord Rotterdam,Centrocampista
+172,"
+Djordje Mihailovic ",€3.50m ,24,AZ Alkmaar,Centrocampista
+173,"
+Silvano Vos ",€3.00m ,18,Ajax Amsterdam,Centrocampista
+174,"
+Dirk Proper ",€3.00m ,21,NEC Nijmegen,Centrocampista
+175,"
+Isaac Babadi ",€3.00m ,18,PSV Eindhoven,Centrocampista
+176,"
+Sem Steijn ",€3.00m ,21,Twente Enschede FC,Centrocampista
+177,"
+Jordy Clasie ",€3.00m ,32,AZ Alkmaar,Centrocampista
+180,"
+Riechedly Bazoer ",€2.80m ,27,AZ Alkmaar,Centrocampista
+181,"
+Carel Eiting ",€2.50m ,25,Twente Enschede FC,Centrocampista
+182,"
+Thom Haye ",€2.50m ,28,SC Heerenveen,Centrocampista
+183,"
+Bart Ramselaar ",€2.30m ,27,FC Utrecht,Centrocampista
+184,"
+Thomas van den Belt ",€2.30m ,22,Feyenoord Rotterdam,Centrocampista
+185,"
+Arno Verschueren ",€2.30m ,26,Sparta Rotterdam,Centrocampista
+186,"
+Rober González ",€2.00m ,22,NEC Nijmegen,Centrocampista
+187,"
+Melle Meulensteen ",€2.00m ,24,Vitesse Arnhem,Centrocampista
+188,"
+Oscar Fraulo ",€2.00m ,19,FC Utrecht,Centrocampista
+189,"
+Mathias Kjölö ",€1.80m ,22,Twente Enschede FC,Centrocampista
+190,"
+Philippe Rommens ",€1.60m ,26,Go Ahead Eagles,Centrocampista
+191,"
+Zakaria Labyad ",€1.60m ,30,FC Utrecht,Centrocampista
+192,"
+Kenzo Goudmijn ",€1.30m ,21,AZ Alkmaar,Centrocampista
+193,"
+Simon Olsson ",€1.30m ,26,SC Heerenveen,Centrocampista
+194,"
+Marco van Ginkel ",€1.30m ,30,Vitesse Arnhem,Centrocampista
+195,"
+Kian Fitz-Jim ",€1.30m ,20,Excelsior Rotterdam,Centrocampista
+196,"
+Ryan Thomas ",€1.30m ,28,PEC Zwolle,Centrocampista
+197,"
+Metinho ",€1.20m ,20,Sparta Rotterdam,Centrocampista
+198,"
+Anas Tahiri ",€1.20m ,28,SC Heerenveen,Centrocampista
+199,"
+Antoni Milambo ",€1.00m ,18,Feyenoord Rotterdam,Centrocampista
+200,"
+Victor Jensen ",€1.00m ,23,FC Utrecht,Centrocampista
+201,"
+Alen Halilovic ",€1.00m ,27,Fortuna Sittard,Centrocampista
+202,"
+Younes Taha ",€1.00m ,20,Twente Enschede FC,Centrocampista
+203,"
+Zidane Iqbal ",€1.00m ,20,FC Utrecht,Centrocampista
+204,"
+Cisse Sandra ",€1.00m ,19,Excelsior Rotterdam,Centrocampista
+205,"
+Loreintz Rosier ",€1.00m ,25,Fortuna Sittard,Centrocampista
+206,"
+Younes Namli ",€900k ,29,PEC Zwolle,Centrocampista
+207,"
+Pelle van Amersfoort ",€900k ,27,SC Heerenveen,Centrocampista
+208,"
+Luuk Brouwers ",€850k ,25,SC Heerenveen,Centrocampista
+209,"
+Kristian Hlynsson ",€850k ,19,Ajax Amsterdam,Centrocampista
+210,"
+Mees Hoedemakers ",€850k ,25,NEC Nijmegen,Centrocampista
+211,"
+Yassin Oukili ",€800k ,22,RKC Waalwijk,Centrocampista
+212,"
+Luke Le Roux ",€800k ,23,FC Volendam,Centrocampista
+213,"
+Toni Domgjoni ",€800k ,25,Vitesse Arnhem,Centrocampista
+214,"
+Julian Baas ",€800k ,21,Excelsior Rotterdam,Centrocampista
+215,"
+Deroy Duarte ",€800k ,24,Fortuna Sittard,Centrocampista
+216,"
+Brian De Keersmaecker ",€750k ,23,Heracles Almelo,Centrocampista
+217,"
+Davy van den Berg ",€750k ,23,PEC Zwolle,Centrocampista
+218,"
+Jens Toornstra ",€750k ,34,FC Utrecht,Centrocampista
+219,"
+Evert Linthorst ",€700k ,23,Go Ahead Eagles,Centrocampista
+220,"
+Zico Buurmeester ",€700k ,21,PEC Zwolle,Centrocampista
+221,"
+Oğuzhan Özyakup ",€700k ,31,Fortuna Sittard,Centrocampista
+222,"
+Stije Resink ",€700k ,20,Almere City FC,Centrocampista
+223,"
+Peer Koopmeiners ",€700k ,23,Almere City FC,Centrocampista
+224,"
+Mathijs Tielemans ",€700k ,21,Vitesse Arnhem,Centrocampista
+225,"
+Pelle Clement ",€700k ,27,Sparta Rotterdam,Centrocampista
+226,"
+Anas Ouahim ",€700k ,26,Heracles Almelo,Centrocampista
+227,"
+Calvin Twigt ",€650k ,20,FC Volendam,Centrocampista
+228,"
+Anthony Fontana ",€650k ,24,PEC Zwolle,Centrocampista
+229,"
+Robin Maulun ",€650k ,26,FC Volendam,Centrocampista
+230,"
+Odysseus Velanas ",€600k ,25,PEC Zwolle,Centrocampista
+231,"
+Arianit Ferati ",€600k ,26,Fortuna Sittard,Centrocampista
+232,"
+Eliano Reijnders ",€600k ,23,PEC Zwolle,Centrocampista
+233,"
+Lance Duijvestijn ",€600k ,24,Almere City FC,Centrocampista
+234,"
+Gjivai Zechiël ",€600k ,19,Feyenoord Rotterdam,Centrocampista
+235,"
+Davy Pröpper ",€600k ,32,Vitesse Arnhem,Centrocampista
+236,"
+Godfried Roemeratoe ",€550k ,24,RKC Waalwijk,Centrocampista
+237,"
+Dean Huiberts ",€550k ,23,PEC Zwolle,Centrocampista
+238,"
+Enric Llansana ",€500k ,22,Go Ahead Eagles,Centrocampista
+239,"
+Lennard Hartjes ",€500k ,20,Excelsior Rotterdam,Centrocampista
+240,"
+Lewis Schouten ",€500k ,19,AZ Alkmaar,Centrocampista
+241,"
+Noah Naujoks ",€450k ,21,Excelsior Rotterdam,Centrocampista
+242,"
+Álvaro Peña ",€450k ,32,Almere City FC,Centrocampista
+243,"
+Kodai Sano ",€450k ,20,NEC Nijmegen,Centrocampista
+244,"
+Adrian Fein ",€450k ,24,Excelsior Rotterdam,Centrocampista
+245,"
+Jochem Ritmeester van de Kamp ",€400k ,20,Almere City FC,Centrocampista
+246,"
+Charlie Webster ",€400k ,19,SC Heerenveen,Centrocampista
+247,"
+Zach Booth ",€400k ,19,FC Volendam,Centrocampista
+248,"
+Milan de Haan ",€400k ,19,FC Volendam,Centrocampista
+249,"
+Thomas Bruns ",€400k ,31,Heracles Almelo,Centrocampista
+250,"
+Santiago Gimenez ",€40.00m ,22,Feyenoord Rotterdam,Delantero
+251,"
+Johan Bakayoko ",€25.00m ,20,PSV Eindhoven,Delantero
+252,"
+Hirving Lozano ",€22.00m ,28,PSV Eindhoven,Delantero
+253,"
+Steven Bergwijn ",€20.00m ,26,Ajax Amsterdam,Delantero
+254,"
+Vangelis Pavlidis ",€20.00m ,24,AZ Alkmaar,Delantero
+255,"
+Noa Lang ",€20.00m ,24,PSV Eindhoven,Delantero
+256,"
+Igor Paixão ",€15.00m ,23,Feyenoord Rotterdam,Delantero
+257,"
+Chuba Akpom ",€12.00m ,28,Ajax Amsterdam,Delantero
+258,"
+Brian Brobbey ",€12.00m ,21,Ajax Amsterdam,Delantero
+259,"
+Luka Ivanusec ",€12.00m ,24,Feyenoord Rotterdam,Delantero
+260,"
+Georges Mikautadze ",€10.00m ,23,Ajax Amsterdam,Delantero
+261,"
+Carlos Forbs ",€10.00m ,19,Ajax Amsterdam,Delantero
+262,"
+Ricardo Pepi ",€9.00m ,20,PSV Eindhoven,Delantero
+263,"
+Yankuba Minteh ",€8.00m ,19,Feyenoord Rotterdam,Delantero
+264,"
+Ayase Ueda ",€8.00m ,25,Feyenoord Rotterdam,Delantero
+265,"
+Osame Sahraoui ",€5.00m ,22,SC Heerenveen,Delantero
+266,"
+Myron van Brederode ",€5.00m ,20,AZ Alkmaar,Delantero
+267,"
+Taylor Booth ",€5.00m ,22,FC Utrecht,Delantero
+268,"
+Jens Odgaard ",€4.50m ,24,AZ Alkmaar,Delantero
+269,"
+Troy Parrott ",€4.00m ,21,Excelsior Rotterdam,Delantero
+270,"
+Alireza Jahanbakhsh ",€4.00m ,30,Feyenoord Rotterdam,Delantero
+271,"
+Javairô Dilrosun ",€4.00m ,25,Feyenoord Rotterdam,Delantero
+272,"
+Luuk de Jong ",€4.00m ,33,PSV Eindhoven,Delantero
+273,"
+Patrik Walemark ",€4.00m ,22,SC Heerenveen,Delantero
+274,"
+Yorbe Vertessen ",€3.80m ,22,PSV Eindhoven,Delantero
+275,"
+Million Manhoef ",€3.50m ,21,Vitesse Arnhem,Delantero
+276,"
+Manfred Ugalde ",€3.00m ,21,Twente Enschede FC,Delantero
+277,"
+Leo Sauer ",€3.00m ,17,Feyenoord Rotterdam,Delantero
+278,"
+Mayckel Lahdo ",€3.00m ,20,AZ Alkmaar,Delantero
+279,"
+Tobias Lauritsen ",€3.00m ,26,Sparta Rotterdam,Delantero
+280,"
+Ibrahim Sadiq ",€3.00m ,23,AZ Alkmaar,Delantero
+281,"
+Koki Saito ",€3.00m ,22,Sparta Rotterdam,Delantero
+282,"
+Naci Ünüvar ",€2.50m ,20,Twente Enschede FC,Delantero
+283,"
+Othmane Boussaid ",€2.20m ,23,FC Utrecht,Delantero
+284,"
+Yoann Cathline ",€2.00m ,21,Almere City FC,Delantero
+285,"
+Ruben van Bommel ",€2.00m ,19,AZ Alkmaar,Delantero
+286,"
+Emil Hansson ",€2.00m ,25,Heracles Almelo,Delantero
+287,"
+Marko Lazetić ",€2.00m ,19,Fortuna Sittard,Delantero
+288,"
+Alexis Tibidi ",€2.00m ,20,NEC Nijmegen,Delantero
+289,"
+Marouan Azarkan ",€2.00m ,21,FC Utrecht,Delantero
+290,"
+Daan Rots ",€2.00m ,22,Twente Enschede FC,Delantero
+291,"
+Iñigo Córdoba ",€1.80m ,26,Fortuna Sittard,Delantero
+292,"
+Nico Serrano ",€1.50m ,20,PEC Zwolle,Delantero
+293,"
+Said Hamulic ",€1.50m ,22,Vitesse Arnhem,Delantero
+294,"
+Filip Stevanović ",€1.50m ,21,RKC Waalwijk,Delantero
+295,"
+Daniel Karlsbakk ",€1.50m ,20,SC Heerenveen,Delantero
+296,"
+Mexx Meerdink ",€1.50m ,20,AZ Alkmaar,Delantero
+297,"
+Elayis Tavsan ",€1.40m ,22,NEC Nijmegen,Delantero
+298,"
+Magnus Mattsson ",€1.30m ,24,NEC Nijmegen,Delantero
+299,"
+Oliver Valaker Edvardsen ",€1.30m ,24,Go Ahead Eagles,Delantero
+300,"
+Ole Romeny ",€1.30m ,23,FC Utrecht,Delantero
+301,"
+Bas Dost ",€1.30m ,34,NEC Nijmegen,Delantero
+302,"
+Willum Thór Willumsson ",€1.30m ,25,Go Ahead Eagles,Delantero
+303,"
+Sontje Hansen ",€1.20m ,21,NEC Nijmegen,Delantero
+304,"
+Mats Seuntjens ",€1.20m ,31,FC Utrecht,Delantero
+305,"
+Kaj Sierhuis ",€1.20m ,25,Fortuna Sittard,Delantero
+306,"
+Mitchell van Bergen ",€1.20m ,24,Twente Enschede FC,Delantero
+307,"
+Koki Ogawa ",€1.20m ,26,NEC Nijmegen,Delantero
+308,"
+Victor Edvardsen ",€1.20m ,27,Go Ahead Eagles,Delantero
+309,"
+Mika Godts ",€1.00m ,18,Ajax Amsterdam,Delantero
+310,"
+Amine Boutrah ",€1.00m ,23,Vitesse Arnhem,Delantero
+311,"
+Ion Nicolaescu ",€1.00m ,25,SC Heerenveen,Delantero
+312,"
+Jason van Duiven ",€1.00m ,18,PSV Eindhoven,Delantero
+313,"
+Ferdy Druijf ",€1.00m ,25,PEC Zwolle,Delantero
+314,"
+Tijjani Noslin ",€900k ,24,Fortuna Sittard,Delantero
+315,"
+Ernest Poku ",€900k ,19,AZ Alkmaar,Delantero
+316,"
+Oscar Uddenäs ",€900k ,21,Excelsior Rotterdam,Delantero
+317,"
+Nikolai Laursen ",€900k ,25,Heracles Almelo,Delantero
+318,"
+Couhaib Driouech ",€900k ,21,Excelsior Rotterdam,Delantero
+319,"
+Yann Kitala ",€900k ,25,Almere City FC,Delantero
+320,"
+Lars Olden Larsen ",€900k ,25,NEC Nijmegen,Delantero
+321,"
+Bobby Adekanye ",€800k ,24,Go Ahead Eagles,Delantero
+322,"
+Thibo Baeten ",€800k ,21,Go Ahead Eagles,Delantero
+323,"
+Garang Kuol ",€800k ,19,FC Volendam,Delantero
+324,"
+Nikolas Agrafiotis ",€800k ,23,Excelsior Rotterdam,Delantero
+325,"
+Isac Lidberg ",€750k ,25,FC Utrecht,Delantero
+326,"
+Bryan Limbombe ",€700k ,22,Heracles Almelo,Delantero
+327,"
+Mohamed Sankoh ",€700k ,20,Heracles Almelo,Delantero
+328,"
+Ché Nunnely ",€700k ,24,SC Heerenveen,Delantero
+329,"
+Ricky van Wolfswinkel ",€650k ,34,Twente Enschede FC,Delantero
+330,"
+Thomas Buitink ",€650k ,23,Vitesse Arnhem,Delantero
+331,"
+Lennart Thy ",€600k ,31,PEC Zwolle,Delantero
+332,"
+Lazaros Lamprou ",€600k ,25,Excelsior Rotterdam,Delantero
+333,"
+Camiel Neghli ",€600k ,22,Sparta Rotterdam,Delantero
+334,"
+Joel Voelkerling Persson ",€600k ,20,Vitesse Arnhem,Delantero
+335,"
+Jizz Hornkamp ",€600k ,25,Heracles Almelo,Delantero
+336,"
+Iman Griffith ",€600k ,21,Fortuna Sittard,Delantero
+337,"
+Charles-Andreas Brym ",€550k ,25,Sparta Rotterdam,Delantero
+338,"
+Agustín Anello ",€550k ,21,Sparta Rotterdam,Delantero
+339,"
+Sylla Sow ",€550k ,27,Go Ahead Eagles,Delantero
+340,"
+Derensili Sanches Fernandes ",€500k ,22,Excelsior Rotterdam,Delantero
+341,"
+Bilal Ould-Chikh ",€500k ,26,FC Volendam,Delantero
+342,"
+Anthony Descotte ",€500k ,20,FC Utrecht,Delantero
+343,"
+Denilho Cleonise ",€500k ,21,RKC Waalwijk,Delantero
+344,"
+Amourricho van Axel Dongen ",€500k ,19,Ajax Amsterdam,Delantero
+345,"
+Finn Stokkers ",€450k ,27,Go Ahead Eagles,Delantero
+346,"
+Richie Omorowa ",€450k ,19,Excelsior Rotterdam,Delantero
+347,"
+Ragnar Oratmangoen ",€450k ,25,Fortuna Sittard,Delantero
+348,"
+Jakob Breum ",€450k ,19,Go Ahead Eagles,Delantero
+349,"
+Mouhamed Belkheir ",€400k ,24,Fortuna Sittard,Delantero

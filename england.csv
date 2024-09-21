@@ -1,0 +1,697 @@
+,Player,value,age,club,position
+0,"
+André Onana ",€40.00m ,27,Manchester United,Portero
+1,"
+Ederson ",€40.00m ,30,Manchester City,Portero
+2,"
+Alisson ",€35.00m ,31,Liverpool FC,Portero
+3,"
+David Raya ",€32.00m ,28,Arsenal FC,Portero
+4,"
+Aaron Ramsdale ",€32.00m ,25,Arsenal FC,Portero
+5,"
+Robert Sánchez ",€28.00m ,25,Chelsea FC,Portero
+6,"
+Emiliano Martínez ",€28.00m ,31,Aston Villa,Portero
+7,"
+Jordan Pickford ",€22.00m ,29,Everton FC,Portero
+8,"
+Guglielmo Vicario ",€20.00m ,27,Tottenham Hotspur,Portero
+9,"
+Nick Pope ",€20.00m ,31,Newcastle United,Portero
+10,"
+Dean Henderson ",€18.00m ,26,Crystal Palace,Portero
+11,"
+José Sá ",€18.00m ,30,Wolverhampton Wanderers,Portero
+12,"
+Bart Verbruggen ",€15.00m ,21,Brighton & Hove Albion,Portero
+13,"
+Caoimhín Kelleher ",€15.00m ,24,Liverpool FC,Portero
+14,"
+James Trafford ",€15.00m ,21,Burnley FC,Portero
+15,"
+Mark Flekken ",€12.00m ,30,Brentford FC,Portero
+16,"
+Bernd Leno ",€12.00m ,31,Fulham FC,Portero
+17,"
+Odysseas Vlachodimos ",€10.00m ,29,Nottingham Forest,Portero
+18,"
+Altay Bayındır ",€10.00m ,25,Manchester United,Portero
+19,"
+Matt Turner ",€10.00m ,29,Nottingham Forest,Portero
+20,"
+Sam Johnstone ",€10.00m ,30,Crystal Palace,Portero
+21,"
+Alphonse Areola ",€10.00m ,30,West Ham United,Portero
+22,"
+Stefan Ortega ",€9.00m ,31,Manchester City,Portero
+23,"
+Djordje Petrovic ",€9.00m ,24,Chelsea FC,Portero
+24,"
+Arijanet Muric ",€9.00m ,25,Burnley FC,Portero
+25,"
+Jason Steele ",€4.00m ,33,Brighton & Hove Albion,Portero
+26,"
+Ionut Radu ",€3.50m ,26,AFC Bournemouth,Portero
+27,"
+Mark Travers ",€3.50m  ,24,AFC Bournemouth,Portero
+28,"
+Zack Steffen ",€3.50m ,28,Manchester City,Portero
+29,"
+Thomas Strakosha ",€3.50m ,28,Brentford FC,Portero
+30,"
+Marek Rodak ",€3.00m ,26,Fulham FC,Portero
+31,"
+Thomas Kaminski ",€2.80m ,31,Luton Town,Portero
+32,"
+Neto ",€2.50m ,34,AFC Bournemouth,Portero
+33,"
+Daniel Bentley ",€2.00m ,30,Wolverhampton Wanderers,Portero
+34,"
+Hugo Lloris ",€2.00m ,36,Tottenham Hotspur,Portero
+35,"
+Fraser Forster ",€1.50m ,35,Tottenham Hotspur,Portero
+36,"
+Ethan Horvath ",€1.50m ,28,Nottingham Forest,Portero
+37,"
+Martin Dúbravka ",€1.50m ,34,Newcastle United,Portero
+38,"
+Karl Hein ",€1.50m ,21,Arsenal FC,Portero
+39,"
+Robin Olsen ",€1.50m ,33,Aston Villa,Portero
+40,"
+Marcus Bettinelli ",€1.50m ,31,Chelsea FC,Portero
+41,"
+Loris Karius ",€1.20m ,30,Newcastle United,Portero
+42,"
+Steven Benda ",€1.00m ,25,Fulham FC,Portero
+43,"
+Joe Whitworth ",€900k ,19,Crystal Palace,Portero
+44,"
+Lukasz Fabianski ",€900k ,38,West Ham United,Portero
+45,"
+Adrián ",€800k ,36,Liverpool FC,Portero
+46,"
+Wes Foderingham ",€700k ,32,Sheffield United,Portero
+47,"
+João Virgínia ",€600k ,24,Everton FC,Portero
+48,"
+Brandon Austin ",€600k ,24,Tottenham Hotspur,Portero
+49,"
+Tim Krul ",€600k ,35,Luton Town,Portero
+50,"
+Josko Gvardiol ",€80.00m ,21,Manchester City,Defensa
+51,"
+Rúben Dias ",€80.00m ,26,Manchester City,Defensa
+52,"
+William Saliba ",€70.00m ,22,Arsenal FC,Defensa
+53,"
+Trent Alexander-Arnold ",€65.00m ,25,Liverpool FC,Defensa
+54,"
+Cristian Romero ",€60.00m ,25,Tottenham Hotspur,Defensa
+55,"
+Gabriel Magalhães ",€55.00m ,25,Arsenal FC,Defensa
+56,"
+Reece James ",€55.00m ,23,Chelsea FC,Defensa
+57,"
+Ben White ",€55.00m ,26,Arsenal FC,Defensa
+58,"
+Lisandro Martínez ",€50.00m ,25,Manchester United,Defensa
+59,"
+Sven Botman ",€45.00m ,23,Newcastle United,Defensa
+60,"
+Pau Torres ",€45.00m ,26,Aston Villa,Defensa
+61,"
+Jurrien Timber ",€42.00m ,22,Arsenal FC,Defensa
+62,"
+Nathan Aké ",€42.00m ,28,Manchester City,Defensa
+63,"
+Oleksandr Zinchenko ",€42.00m ,26,Arsenal FC,Defensa
+64,"
+Luke Shaw ",€42.00m ,28,Manchester United,Defensa
+65,"
+Levi Colwill ",€42.00m ,20,Chelsea FC,Defensa
+66,"
+Pedro Porro ",€40.00m ,24,Tottenham Hotspur,Defensa
+67,"
+Axel Disasi ",€40.00m ,25,Chelsea FC,Defensa
+68,"
+Benoît Badiashile ",€40.00m ,22,Chelsea FC,Defensa
+69,"
+Micky van de Ven ",€40.00m ,22,Tottenham Hotspur,Defensa
+70,"
+John Stones ",€40.00m ,29,Manchester City,Defensa
+71,"
+Andrew Robertson ",€40.00m ,29,Liverpool FC,Defensa
+72,"
+Diogo Dalot ",€40.00m ,24,Manchester United,Defensa
+73,"
+Wesley Fofana ",€40.00m ,22,Chelsea FC,Defensa
+74,"
+Ibrahima Konaté ",€38.00m ,24,Liverpool FC,Defensa
+75,"
+Destiny Udogie ",€38.00m ,20,Tottenham Hotspur,Defensa
+76,"
+Manuel Akanji ",€38.00m ,28,Manchester City,Defensa
+77,"
+Marc Guéhi ",€35.00m ,23,Crystal Palace,Defensa
+78,"
+Virgil van Dijk ",€35.00m ,32,Liverpool FC,Defensa
+79,"
+Pervis Estupiñán ",€35.00m ,25,Brighton & Hove Albion,Defensa
+80,"
+Raphaël Varane ",€35.00m ,30,Manchester United,Defensa
+81,"
+Nayef Aguerd ",€35.00m ,27,West Ham United,Defensa
+82,"
+Ben Chilwell ",€35.00m ,26,Chelsea FC,Defensa
+83,"
+Max Kilman ",€35.00m ,26,Wolverhampton Wanderers,Defensa
+84,"
+Tino Livramento ",€30.00m ,20,Newcastle United,Defensa
+85,"
+Aaron Hickey ",€30.00m ,21,Brentford FC,Defensa
+86,"
+Joachim Andersen ",€30.00m ,27,Crystal Palace,Defensa
+87,"
+Marc Cucurella ",€28.00m ,25,Chelsea FC,Defensa
+88,"
+Rico Henry ",€28.00m ,26,Brentford FC,Defensa
+89,"
+Rayan Aït-Nouri ",€25.00m ,22,Wolverhampton Wanderers,Defensa
+90,"
+Matty Cash ",€25.00m ,26,Aston Villa,Defensa
+91,"
+Malo Gusto ",€25.00m ,20,Chelsea FC,Defensa
+92,"
+Jakub Kiwior ",€25.00m ,23,Arsenal FC,Defensa
+93,"
+Adam Webster ",€25.00m ,28,Brighton & Hove Albion,Defensa
+94,"
+Vitaliy Mykolenko ",€25.00m ,24,Everton FC,Defensa
+95,"
+Aaron Wan-Bissaka ",€25.00m ,25,Manchester United,Defensa
+96,"
+Takehiro Tomiyasu ",€25.00m ,25,Arsenal FC,Defensa
+97,"
+Ezri Konsa ",€25.00m ,26,Aston Villa,Defensa
+98,"
+Kurt Zouma ",€22.00m ,29,West Ham United,Defensa
+99,"
+Tyrell Malacia ",€22.00m ,24,Manchester United,Defensa
+100,"
+Tyrone Mings ",€22.00m ,30,Aston Villa,Defensa
+101,"
+Tyrick Mitchell ",€22.00m ,24,Crystal Palace,Defensa
+102,"
+Marcos Senesi ",€22.00m ,26,AFC Bournemouth,Defensa
+103,"
+Issa Diop ",€22.00m ,26,Fulham FC,Defensa
+104,"
+Nathan Collins ",€22.00m ,22,Brentford FC,Defensa
+105,"
+Joe Gomez ",€22.00m ,26,Liverpool FC,Defensa
+106,"
+Ian Maatsen ",€20.00m ,21,Chelsea FC,Defensa
+107,"
+Emerson Royal ",€20.00m ,24,Tottenham Hotspur,Defensa
+108,"
+Neco Williams ",€20.00m ,22,Nottingham Forest,Defensa
+109,"
+Ilya Zabarnyi ",€20.00m ,21,AFC Bournemouth,Defensa
+110,"
+Rico Lewis ",€20.00m ,18,Manchester City,Defensa
+111,"
+Anel Ahmedhodzic ",€20.00m ,24,Sheffield United,Defensa
+112,"
+Harry Maguire ",€20.00m ,30,Manchester United,Defensa
+113,"
+Jarrad Branthwaite ",€18.00m ,21,Everton FC,Defensa
+114,"
+Lloyd Kelly ",€18.00m ,25,AFC Bournemouth,Defensa
+115,"
+Konstantinos Tsimikas ",€18.00m ,27,Liverpool FC,Defensa
+116,"
+Trevoh Chalobah ",€18.00m ,24,Chelsea FC,Defensa
+117,"
+Victor Lindelöf ",€18.00m ,29,Manchester United,Defensa
+118,"
+James Tarkowski ",€18.00m ,30,Everton FC,Defensa
+119,"
+Nuno Tavares ",€18.00m ,23,Nottingham Forest,Defensa
+120,"
+Milos Kerkez ",€18.00m ,20,AFC Bournemouth,Defensa
+121,"
+Eric Dier ",€18.00m ,29,Tottenham Hotspur,Defensa
+122,"
+Lewis Hall ",€18.00m ,19,Newcastle United,Defensa
+123,"
+Diego Carlos ",€18.00m ,30,Aston Villa,Defensa
+124,"
+Moussa Niakhaté ",€18.00m ,27,Nottingham Forest,Defensa
+125,"
+Timothy Castagne ",€17.00m ,27,Fulham FC,Defensa
+126,"
+Jordan Beyer ",€16.00m ,23,Burnley FC,Defensa
+127,"
+Kristoffer Ajer ",€16.00m ,25,Brentford FC,Defensa
+128,"
+Lewis Dunk ",€16.00m ,31,Brighton & Hove Albion,Defensa
+129,"
+Nathan Patterson ",€16.00m ,22,Everton FC,Defensa
+130,"
+Max Aarons ",€16.00m ,23,AFC Bournemouth,Defensa
+131,"
+Konstantinos Mavropanos ",€15.00m ,25,West Ham United,Defensa
+132,"
+Antonee Robinson ",€15.00m ,26,Fulham FC,Defensa
+133,"
+Álex Moreno ",€15.00m ,30,Aston Villa,Defensa
+134,"
+Calvin Bassey ",€15.00m ,23,Fulham FC,Defensa
+135,"
+Kenny Tete ",€15.00m ,28,Fulham FC,Defensa
+136,"
+Igor ",€15.00m ,25,Brighton & Hove Albion,Defensa
+137,"
+Nélson Semedo ",€15.00m ,29,Wolverhampton Wanderers,Defensa
+138,"
+Ben Davies ",€15.00m ,30,Tottenham Hotspur,Defensa
+139,"
+Lucas Digne ",€15.00m ,30,Aston Villa,Defensa
+140,"
+Ethan Pinnock ",€14.00m ,30,Brentford FC,Defensa
+141,"
+Sergio Gómez ",€13.00m ,23,Manchester City,Defensa
+142,"
+Matt Targett ",€13.00m ,28,Newcastle United,Defensa
+143,"
+Kyle Walker ",€13.00m ,33,Manchester City,Defensa
+144,"
+Ben Godfrey ",€13.00m ,25,Everton FC,Defensa
+145,"
+Jonny Otto ",€13.00m ,29,Wolverhampton Wanderers,Defensa
+146,"
+Thilo Kehrer ",€13.00m ,27,West Ham United,Defensa
+147,"
+Gonzalo Montiel ",€12.00m ,26,Nottingham Forest,Defensa
+148,"
+Luke Thomas ",€12.00m ,22,Sheffield United,Defensa
+149,"
+Joe Worrall ",€12.00m ,26,Nottingham Forest,Defensa
+150,"
+Rodri ",€100.00m ,27,Manchester City,Centrocampista
+151,"
+Declan Rice ",€100.00m ,24,Arsenal FC,Centrocampista
+152,"
+Moisés Caicedo ",€90.00m ,22,Chelsea FC,Centrocampista
+153,"
+Martin Ødegaard ",€90.00m ,24,Arsenal FC,Centrocampista
+154,"
+Bruno Guimarães ",€85.00m ,25,Newcastle United,Centrocampista
+155,"
+Enzo Fernández ",€80.00m ,22,Chelsea FC,Centrocampista
+156,"
+Bernardo Silva ",€80.00m ,29,Manchester City,Centrocampista
+157,"
+Christopher Nkunku ",€80.00m ,25,Chelsea FC,Centrocampista
+158,"
+Bruno Fernandes ",€75.00m ,29,Manchester United,Centrocampista
+159,"
+Dominik Szoboszlai ",€70.00m ,23,Liverpool FC,Centrocampista
+160,"
+Kevin De Bruyne ",€70.00m ,32,Manchester City,Centrocampista
+161,"
+James Maddison ",€70.00m ,26,Tottenham Hotspur,Centrocampista
+162,"
+Lucas Paquetá ",€65.00m ,26,West Ham United,Centrocampista
+163,"
+Alexis Mac Allister ",€65.00m ,24,Liverpool FC,Centrocampista
+164,"
+Mason Mount ",€60.00m ,24,Manchester United,Centrocampista
+165,"
+Sandro Tonali ",€60.00m ,23,Newcastle United,Centrocampista
+166,"
+Kai Havertz ",€60.00m ,24,Arsenal FC,Centrocampista
+167,"
+Douglas Luiz ",€55.00m ,25,Aston Villa,Centrocampista
+168,"
+João Palhinha ",€55.00m ,28,Fulham FC,Centrocampista
+169,"
+Matheus Nunes ",€55.00m ,25,Manchester City,Centrocampista
+170,"
+Roméo Lavia ",€50.00m ,19,Chelsea FC,Centrocampista
+171,"
+Amadou Onana ",€50.00m ,22,Everton FC,Centrocampista
+172,"
+Eberechi Eze ",€48.00m ,25,Crystal Palace,Centrocampista
+173,"
+Jacob Ramsey ",€42.00m ,22,Aston Villa,Centrocampista
+174,"
+Joelinton ",€42.00m ,27,Newcastle United,Centrocampista
+175,"
+Casemiro ",€40.00m ,31,Manchester United,Centrocampista
+176,"
+Mohammed Kudus ",€40.00m ,23,West Ham United,Centrocampista
+177,"
+Rodrigo Bentancur ",€40.00m ,26,Tottenham Hotspur,Centrocampista
+178,"
+Morgan Gibbs-White ",€40.00m ,23,Nottingham Forest,Centrocampista
+179,"
+Conor Gallagher ",€40.00m ,23,Chelsea FC,Centrocampista
+180,"
+Mateo Kovacic ",€38.00m ,29,Manchester City,Centrocampista
+181,"
+James Ward-Prowse ",€38.00m ,29,West Ham United,Centrocampista
+182,"
+Joe Willock ",€38.00m ,24,Newcastle United,Centrocampista
+183,"
+Pape Matar Sarr ",€35.00m ,21,Tottenham Hotspur,Centrocampista
+184,"
+Ibrahim Sangaré ",€35.00m ,25,Nottingham Forest,Centrocampista
+185,"
+Ryan Gravenberch ",€35.00m ,21,Liverpool FC,Centrocampista
+186,"
+Thomas Partey ",€35.00m ,30,Arsenal FC,Centrocampista
+187,"
+Tomas Soucek ",€35.00m ,28,West Ham United,Centrocampista
+188,"
+Harvey Elliott ",€35.00m ,20,Liverpool FC,Centrocampista
+189,"
+Edson Álvarez ",€35.00m ,26,West Ham United,Centrocampista
+190,"
+Cheick Doucouré ",€35.00m ,23,Crystal Palace,Centrocampista
+191,"
+Cole Palmer ",€32.00m ,21,Chelsea FC,Centrocampista
+192,"
+Pierre-Emile Højbjerg ",€32.00m ,28,Tottenham Hotspur,Centrocampista
+193,"
+Boubacar Kamara ",€30.00m ,23,Aston Villa,Centrocampista
+194,"
+Emile Smith Rowe ",€30.00m ,23,Arsenal FC,Centrocampista
+195,"
+Curtis Jones ",€30.00m ,22,Liverpool FC,Centrocampista
+196,"
+Yves Bissouma ",€30.00m ,27,Tottenham Hotspur,Centrocampista
+197,"
+Sofyan Amrabat ",€30.00m ,27,Manchester United,Centrocampista
+198,"
+Alex Iwobi ",€28.00m ,27,Fulham FC,Centrocampista
+199,"
+Danilo ",€28.00m ,22,Nottingham Forest,Centrocampista
+200,"
+Kalvin Phillips ",€28.00m ,27,Manchester City,Centrocampista
+201,"
+Mathias Jensen ",€28.00m ,27,Brentford FC,Centrocampista
+202,"
+John McGinn ",€27.00m ,29,Aston Villa,Centrocampista
+203,"
+Nicolò Zaniolo ",€27.00m ,24,Aston Villa,Centrocampista
+204,"
+Lesley Ugochukwu ",€25.00m ,19,Chelsea FC,Centrocampista
+205,"
+Sean Longstaff ",€25.00m ,26,Newcastle United,Centrocampista
+206,"
+Fábio Vieira ",€25.00m ,23,Arsenal FC,Centrocampista
+207,"
+Scott McTominay ",€25.00m ,26,Manchester United,Centrocampista
+208,"
+João Gomes ",€22.00m ,22,Wolverhampton Wanderers,Centrocampista
+209,"
+Hamed Junior Traorè ",€22.00m ,23,AFC Bournemouth,Centrocampista
+210,"
+Pablo Fornals ",€22.00m ,27,West Ham United,Centrocampista
+211,"
+Alex Scott ",€20.00m ,20,AFC Bournemouth,Centrocampista
+212,"
+Orel Mangala ",€20.00m ,25,Nottingham Forest,Centrocampista
+213,"
+Philip Billing ",€20.00m ,27,AFC Bournemouth,Centrocampista
+214,"
+Sander Berge ",€20.00m ,25,Burnley FC,Centrocampista
+215,"
+Tyler Adams ",€20.00m ,24,AFC Bournemouth,Centrocampista
+216,"
+Vitaly Janelt ",€20.00m ,25,Brentford FC,Centrocampista
+217,"
+Jefferson Lerma ",€20.00m ,29,Crystal Palace,Centrocampista
+218,"
+Carlos Baleba ",€20.00m ,19,Brighton & Hove Albion,Centrocampista
+219,"
+Youri Tielemans ",€20.00m ,26,Aston Villa,Centrocampista
+220,"
+Josh Brownhill ",€18.00m ,27,Burnley FC,Centrocampista
+221,"
+Christian Eriksen ",€18.00m ,31,Manchester United,Centrocampista
+222,"
+Billy Gilmour ",€18.00m ,22,Brighton & Hove Albion,Centrocampista
+223,"
+Andreas Pereira ",€18.00m ,27,Fulham FC,Centrocampista
+224,"
+Ryan Sessegnon ",€18.00m ,23,Tottenham Hotspur,Centrocampista
+225,"
+Harrison Reed ",€18.00m ,28,Fulham FC,Centrocampista
+226,"
+Marcus Tavernier ",€17.00m ,24,AFC Bournemouth,Centrocampista
+227,"
+Nicolás Domínguez ",€17.00m ,25,Nottingham Forest,Centrocampista
+228,"
+James Garner ",€16.00m ,22,Everton FC,Centrocampista
+229,"
+Christian Nørgaard ",€16.00m ,29,Brentford FC,Centrocampista
+230,"
+Gustavo Hamer ",€16.00m ,26,Sheffield United,Centrocampista
+231,"
+André Gomes ",€16.00m ,30,Everton FC,Centrocampista
+232,"
+Josh Dasilva ",€16.00m ,25,Brentford FC,Centrocampista
+233,"
+Jorginho ",€15.00m ,31,Arsenal FC,Centrocampista
+234,"
+Matheus França ",€15.00m ,19,Crystal Palace,Centrocampista
+235,"
+Andrey Santos ",€15.00m ,19,Nottingham Forest,Centrocampista
+236,"
+Leander Dendoncker ",€15.00m ,28,Aston Villa,Centrocampista
+237,"
+Carney Chukwuemeka ",€15.00m ,20,Chelsea FC,Centrocampista
+238,"
+Aaron Ramsey ",€15.00m ,20,Burnley FC,Centrocampista
+239,"
+Oliver Skipp ",€15.00m ,23,Tottenham Hotspur,Centrocampista
+240,"
+Albert Sambi Lokonga ",€15.00m ,24,Luton Town,Centrocampista
+241,"
+Jean-Ricner Bellegarde ",€15.00m ,25,Wolverhampton Wanderers,Centrocampista
+242,"
+Giovani Lo Celso ",€14.00m ,27,Tottenham Hotspur,Centrocampista
+243,"
+Josh Cullen ",€13.00m ,27,Burnley FC,Centrocampista
+244,"
+Elliot Anderson ",€13.00m ,21,Newcastle United,Centrocampista
+245,"
+Stefan Bajcetic ",€13.00m ,19,Liverpool FC,Centrocampista
+246,"
+Wataru Endo ",€13.00m ,30,Liverpool FC,Centrocampista
+247,"
+Mahmoud Dahoud ",€12.00m ,27,Brighton & Hove Albion,Centrocampista
+248,"
+Sasa Lukic ",€12.00m ,27,Fulham FC,Centrocampista
+249,"
+Hannibal ",€12.00m ,20,Manchester United,Centrocampista
+250,"
+Erling Haaland ",€180.00m ,23,Manchester City,Delantero
+251,"
+Bukayo Saka ",€120.00m ,22,Arsenal FC,Delantero
+252,"
+Phil Foden ",€110.00m ,23,Manchester City,Delantero
+253,"
+Julián Álvarez ",€80.00m ,23,Manchester City,Delantero
+254,"
+Gabriel Martinelli ",€80.00m ,22,Arsenal FC,Delantero
+255,"
+Luis Díaz ",€75.00m ,26,Liverpool FC,Delantero
+256,"
+Jack Grealish ",€75.00m ,28,Manchester City,Delantero
+257,"
+Gabriel Jesus ",€75.00m ,26,Arsenal FC,Delantero
+258,"
+Marcus Rashford ",€75.00m ,26,Manchester United,Delantero
+259,"
+Alexander Isak ",€70.00m ,24,Newcastle United,Delantero
+260,"
+Evan Ferguson ",€65.00m ,19,Brighton & Hove Albion,Delantero
+261,"
+Rasmus Højlund ",€65.00m ,20,Manchester United,Delantero
+262,"
+Darwin Núñez ",€65.00m ,24,Liverpool FC,Delantero
+263,"
+Mohamed Salah ",€65.00m ,31,Liverpool FC,Delantero
+264,"
+Jérémy Doku ",€60.00m ,21,Manchester City,Delantero
+265,"
+Cody Gakpo ",€55.00m ,24,Liverpool FC,Delantero
+266,"
+Ollie Watkins ",€55.00m ,27,Aston Villa,Delantero
+267,"
+Moussa Diaby ",€55.00m ,24,Aston Villa,Delantero
+268,"
+Antony ",€50.00m ,23,Manchester United,Delantero
+269,"
+Michael Olise ",€50.00m ,21,Crystal Palace,Delantero
+270,"
+Heung-min Son ",€50.00m ,31,Tottenham Hotspur,Delantero
+271,"
+Raheem Sterling ",€50.00m ,28,Chelsea FC,Delantero
+272,"
+Kaoru Mitoma ",€50.00m ,26,Brighton & Hove Albion,Delantero
+273,"
+Diogo Jota ",€50.00m ,26,Liverpool FC,Delantero
+274,"
+Dejan Kulusevski ",€50.00m ,23,Tottenham Hotspur,Delantero
+275,"
+Brennan Johnson ",€48.00m ,22,Tottenham Hotspur,Delantero
+276,"
+Jarrod Bowen ",€48.00m ,26,West Ham United,Delantero
+277,"
+Mykhaylo Mudryk ",€45.00m ,22,Chelsea FC,Delantero
+278,"
+Anthony Gordon ",€45.00m ,22,Newcastle United,Delantero
+279,"
+Richarlison ",€40.00m ,26,Tottenham Hotspur,Delantero
+280,"
+Leandro Trossard ",€35.00m ,28,Arsenal FC,Delantero
+281,"
+Ivan Toney ",€35.00m ,27,Brentford FC,Delantero
+282,"
+Harvey Barnes ",€35.00m ,25,Newcastle United,Delantero
+283,"
+Nicolas Jackson ",€35.00m ,22,Chelsea FC,Delantero
+284,"
+Bryan Mbeumo ",€35.00m ,24,Brentford FC,Delantero
+285,"
+Ansu Fati ",€35.00m ,21,Brighton & Hove Albion,Delantero
+286,"
+Pedro Neto ",€32.00m ,23,Wolverhampton Wanderers,Delantero
+287,"
+João Pedro ",€32.00m ,22,Brighton & Hove Albion,Delantero
+288,"
+Miguel Almirón ",€32.00m ,29,Newcastle United,Delantero
+289,"
+Jadon Sancho ",€32.00m ,23,Manchester United,Delantero
+290,"
+Noni Madueke ",€30.00m ,21,Chelsea FC,Delantero
+291,"
+Taiwo Awoniyi ",€30.00m ,26,Nottingham Forest,Delantero
+292,"
+Eddie Nketiah ",€30.00m ,24,Arsenal FC,Delantero
+293,"
+Emiliano Buendía ",€28.00m ,26,Aston Villa,Delantero
+294,"
+Matheus Cunha ",€28.00m ,24,Wolverhampton Wanderers,Delantero
+295,"
+Armando Broja ",€28.00m ,22,Chelsea FC,Delantero
+296,"
+Leon Bailey ",€28.00m ,26,Aston Villa,Delantero
+297,"
+Dango Ouattara ",€25.00m ,21,AFC Bournemouth,Delantero
+298,"
+Saïd Benrahma ",€25.00m ,28,West Ham United,Delantero
+299,"
+Beto ",€25.00m ,25,Everton FC,Delantero
+300,"
+Alejandro Garnacho ",€25.00m ,19,Manchester United,Delantero
+301,"
+Dominic Calvert-Lewin ",€25.00m ,26,Everton FC,Delantero
+302,"
+Kevin Schade ",€25.00m ,21,Brentford FC,Delantero
+303,"
+Jack Harrison ",€22.00m ,26,Everton FC,Delantero
+304,"
+Julio Enciso ",€22.00m ,19,Brighton & Hove Albion,Delantero
+305,"
+Solly March ",€22.00m ,29,Brighton & Hove Albion,Delantero
+306,"
+Odsonne Edouard ",€20.00m ,25,Crystal Palace,Delantero
+307,"
+Dominic Solanke ",€20.00m ,26,AFC Bournemouth,Delantero
+308,"
+Dwight McNeil ",€20.00m ,23,Everton FC,Delantero
+309,"
+Luis Sinisterra ",€20.00m ,24,AFC Bournemouth,Delantero
+310,"
+Arnaut Danjuma ",€20.00m ,26,Everton FC,Delantero
+311,"
+Amad Diallo ",€18.00m ,21,Manchester United,Delantero
+312,"
+Anthony Elanga ",€18.00m ,21,Nottingham Forest,Delantero
+313,"
+Yoane Wissa ",€18.00m ,27,Brentford FC,Delantero
+314,"
+Hee-chan Hwang ",€18.00m ,27,Wolverhampton Wanderers,Delantero
+315,"
+Manor Solomon ",€18.00m ,24,Tottenham Hotspur,Delantero
+316,"
+Cameron Archer ",€18.00m ,21,Sheffield United,Delantero
+317,"
+Jhon Durán ",€17.00m ,19,Aston Villa,Delantero
+318,"
+Harry Wilson ",€16.00m ,26,Fulham FC,Delantero
+319,"
+Callum Wilson ",€16.00m ,31,Newcastle United,Delantero
+320,"
+Jacob Murphy ",€15.00m ,28,Newcastle United,Delantero
+321,"
+Fábio Silva ",€15.00m ,21,Wolverhampton Wanderers,Delantero
+322,"
+Zeki Amdouni ",€15.00m ,22,Burnley FC,Delantero
+323,"
+Bryan Gil ",€15.00m ,22,Tottenham Hotspur,Delantero
+324,"
+Simon Adingra ",€15.00m ,21,Brighton & Hove Albion,Delantero
+327,"
+Pablo Sarabia ",€14.00m ,31,Wolverhampton Wanderers,Delantero
+328,"
+Justin Kluivert ",€14.00m ,24,AFC Bournemouth,Delantero
+329,"
+Lyle Foster ",€13.00m ,23,Burnley FC,Delantero
+330,"
+Mikkel Damsgaard ",€13.00m ,23,Brentford FC,Delantero
+331,"
+Reiss Nelson ",€12.00m ,23,Arsenal FC,Delantero
+332,"
+Danny Ings ",€12.00m ,31,West Ham United,Delantero
+333,"
+Sasa Kalajdzic ",€12.00m ,26,Wolverhampton Wanderers,Delantero
+334,"
+Maxwel Cornet ",€12.00m ,27,West Ham United,Delantero
+335,"
+Anass Zaroury ",€12.00m ,23,Burnley FC,Delantero
+336,"
+Keane Lewis-Potter ",€12.00m ,22,Brentford FC,Delantero
+337,"
+Bertrand Traoré ",€12.00m ,28,Aston Villa,Delantero
+338,"
+Callum Hudson-Odoi ",€12.00m ,23,Nottingham Forest,Delantero
+339,"
+David Brooks ",€12.00m ,26,AFC Bournemouth,Delantero
+340,"
+Alejo Véliz ",€11.00m ,20,Tottenham Hotspur,Delantero
+341,"
+Ben Doak ",€10.00m ,17,Liverpool FC,Delantero
+342,"
+Nathan Redmond ",€10.00m ,29,Burnley FC,Delantero
+343,"
+Adama Traoré ",€10.00m ,27,Fulham FC,Delantero
+344,"
+Carlton Morris ",€10.00m ,27,Luton Town,Delantero
+345,"
+Neal Maupay ",€10.00m ,27,Brentford FC,Delantero
+346,"
+Oscar Bobb ",€10.00m ,20,Manchester City,Delantero
+347,"
+Wilson Odobert ",€9.00m ,18,Burnley FC,Delantero
+348,"
+Deivid Washington ",€9.00m ,18,Chelsea FC,Delantero
+349,"
+Chermiti ",€9.00m ,19,Everton FC,Delantero

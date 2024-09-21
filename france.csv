@@ -1,0 +1,697 @@
+,Player,value,age,club,position
+0,"
+Gianluigi Donnarumma ",€45.00m ,24,Paris Saint-Germain,Portero
+1,"
+Brice Samba ",€15.00m ,29,RC Lens,Portero
+2,"
+Pau López ",€14.00m ,28,Olympique Marseille,Portero
+3,"
+Alban Lafont ",€13.00m ,24,FC Nantes,Portero
+4,"
+Lucas Chevalier ",€10.00m ,22,LOSC Lille,Portero
+5,"
+Yehvann Diouf ",€10.00m ,23,Stade Reims,Portero
+6,"
+Guillaume Restes ",€9.00m ,18,FC Toulouse,Portero
+7,"
+Matz Sels ",€7.00m ,31,RC Strasbourg Alsace,Portero
+8,"
+Marcin Bulka ",€7.00m ,24,OGC Nice,Portero
+9,"
+Philipp Köhn ",€7.00m ,25,AS Monaco,Portero
+10,"
+Anthony Lopes ",€6.00m ,33,Olympique Lyon,Portero
+11,"
+Arnau Tenas ",€5.00m ,22,Paris Saint-Germain,Portero
+12,"
+Benjamin Lecomte ",€4.00m ,32,Montpellier HSC,Portero
+13,"
+Wuilker Fariñez ",€3.50m ,25,RC Lens,Portero
+14,"
+Yvon Mvogo ",€3.50m ,29,FC Lorient,Portero
+15,"
+Marco Bizot ",€3.50m ,32,Stade Brestois 29,Portero
+16,"
+Rubén Blanco ",€3.00m ,28,Olympique Marseille,Portero
+17,"
+Keylor Navas ",€3.00m ,36,Paris Saint-Germain,Portero
+18,"
+Sergio Rico ",€3.00m ,30,Paris Saint-Germain,Portero
+19,"
+Radoslaw Majecki ",€2.00m ,23,AS Monaco,Portero
+20,"
+Mory Diaw ",€2.00m ,30,Clermont Foot 63,Portero
+21,"
+Gauthier Gallon ",€2.00m ,30,Stade Rennais FC,Portero
+22,"
+Alfred Gomis ",€2.00m ,30,FC Lorient,Portero
+23,"
+Arthur Desmas ",€1.50m ,29,Le Havre AC,Portero
+24,"
+Dimitry Bertaud ",€1.50m ,25,Montpellier HSC,Portero
+25,"
+Rémy Descamps ",€1.50m ,27,FC Nantes,Portero
+26,"
+Steve Mandanda ",€1.00m ,38,Stade Rennais FC,Portero
+27,"
+Guillaume Dietsch ",€700k ,22,FC Metz,Portero
+28,"
+Alexandre Olliero ",€600k ,27,Stade Reims,Portero
+29,"
+Massamba N'Diaye ",€500k ,22,Clermont Foot 63,Portero
+30,"
+Salvatore Sirigu ",€500k ,36,OGC Nice,Portero
+31,"
+Alexandre Oukidja ",€500k ,35,FC Metz,Portero
+32,"
+Marc-Aurèle Caillard ",€500k ,29,FC Metz,Portero
+33,"
+Simon Ngapandouetnbu ",€400k ,20,Olympique Marseille,Portero
+34,"
+Rémy Riou ",€400k ,36,Olympique Lyon,Portero
+35,"
+Vito Mannone ",€300k ,35,LOSC Lille,Portero
+36,"
+Dominique Youfeigane ",€300k ,23,FC Lorient,Portero
+37,"
+Álex Domínguez ",€300k ,25,FC Toulouse,Portero
+38,"
+Adam Jakubech ",€300k ,26,LOSC Lille,Portero
+39,"
+Alexandre Letellier ",€300k ,32,Paris Saint-Germain,Portero
+40,"
+Yan Marillat ",€200k ,29,Stade Brestois 29,Portero
+41,"
+Belmin Dizdarevic ",€200k ,22,Montpellier HSC,Portero
+42,"
+Mathieu Gorgelin ",€200k ,33,Le Havre AC,Portero
+43,"
+Alaa Bellaarouch ",€200k ,21,RC Strasbourg Alsace,Portero
+44,"
+Yann Lienard ",€200k ,20,AS Monaco,Portero
+45,"
+Jean-Louis Leca ",€200k ,38,RC Lens,Portero
+46,"
+Grégoire Coudert ",€150k ,24,Stade Brestois 29,Portero
+47,"
+Yannick Pandor ",€150k ,22,RC Lens,Portero
+48,"
+Thomas Himeur ",€150k ,22,FC Toulouse,Portero
+49,"
+Jelle Van Neck ",€150k ,19,Olympique Marseille,Portero
+50,"
+Achraf Hakimi ",€65.00m ,25,Paris Saint-Germain,Defensa
+51,"
+Nuno Mendes ",€65.00m ,21,Paris Saint-Germain,Defensa
+52,"
+Marquinhos ",€65.00m ,29,Paris Saint-Germain,Defensa
+53,"
+Milan Skriniar ",€50.00m ,28,Paris Saint-Germain,Defensa
+54,"
+Lucas Hernández ",€45.00m ,27,Paris Saint-Germain,Defensa
+55,"
+Jean-Clair Todibo ",€30.00m ,23,OGC Nice,Defensa
+56,"
+Arthur Theate ",€22.00m ,23,Stade Rennais FC,Defensa
+57,"
+Facundo Medina ",€22.00m ,24,RC Lens,Defensa
+58,"
+Presnel Kimpembe ",€22.00m ,28,Paris Saint-Germain,Defensa
+59,"
+Kevin Danso ",€22.00m ,25,RC Lens,Defensa
+60,"
+Renan Lodi ",€20.00m ,25,Olympique Marseille,Defensa
+61,"
+Vanderson ",€20.00m ,22,AS Monaco,Defensa
+62,"
+Caio Henrique ",€20.00m ,26,AS Monaco,Defensa
+63,"
+Mohammed Salisu ",€18.00m ,24,AS Monaco,Defensa
+64,"
+Adrien Truffert ",€18.00m ,21,Stade Rennais FC,Defensa
+65,"
+Leny Yoro ",€18.00m ,17,LOSC Lille,Defensa
+66,"
+Tiago Djaló ",€16.00m ,23,LOSC Lille,Defensa
+67,"
+Chancel Mbemba ",€15.00m ,29,Olympique Marseille,Defensa
+68,"
+Bafodé Diakité ",€15.00m ,22,LOSC Lille,Defensa
+69,"
+Wilfried Singo ",€15.00m ,22,AS Monaco,Defensa
+70,"
+Abakar Sylla ",€15.00m ,20,RC Strasbourg Alsace,Defensa
+71,"
+Jonathan Clauss ",€14.00m ,31,Olympique Marseille,Defensa
+72,"
+Nordi Mukiele ",€14.00m ,26,Paris Saint-Germain,Defensa
+73,"
+Romain Perraud ",€12.00m ,26,OGC Nice,Defensa
+74,"
+Saël Kumbedi ",€12.00m ,18,Olympique Lyon,Defensa
+75,"
+Quentin Merlin ",€10.00m ,21,FC Nantes,Defensa
+76,"
+Samuel Gigot ",€10.00m ,30,Olympique Marseille,Defensa
+77,"
+Soungoutou Magassa ",€10.00m ,20,AS Monaco,Defensa
+78,"
+Lorenz Assignon ",€10.00m ,23,Stade Rennais FC,Defensa
+79,"
+Guillermo Maripán ",€10.00m ,29,AS Monaco,Defensa
+80,"
+Leonardo Balerdi ",€10.00m ,24,Olympique Marseille,Defensa
+81,"
+Warmed Omari ",€10.00m ,23,Stade Rennais FC,Defensa
+82,"
+Nicolás Tagliafico ",€9.00m ,31,Olympique Lyon,Defensa
+83,"
+Ismaël Doukouré ",€9.00m ,20,RC Strasbourg Alsace,Defensa
+84,"
+Melvin Bard ",€9.00m ,23,OGC Nice,Defensa
+85,"
+Joseph Okumu ",€9.00m ,26,Stade Reims,Defensa
+86,"
+Duje Caleta-Car ",€9.00m ,27,Olympique Lyon,Defensa
+87,"
+Sinaly Diomandé ",€9.00m ,22,Olympique Lyon,Defensa
+88,"
+Montassar Talbi ",€8.00m ,25,FC Lorient,Defensa
+89,"
+Isaak Touré ",€8.00m ,20,FC Lorient,Defensa
+90,"
+Arouna Sangante ",€8.00m ,21,Le Havre AC,Defensa
+91,"
+Jordan Lotomba ",€8.00m ,25,OGC Nice,Defensa
+92,"
+Emmanuel Agbadou ",€7.50m ,26,Stade Reims,Defensa
+93,"
+Jeanuël Belocian ",€7.00m ,18,Stade Rennais FC,Defensa
+94,"
+Youcef Atal ",€7.00m ,27,OGC Nice,Defensa
+95,"
+Maxime Estève ",€7.00m ,21,Montpellier HSC,Defensa
+96,"
+Lilian Brassier ",€7.00m ,24,Stade Brestois 29,Defensa
+97,"
+Alidu Seidu ",€7.00m ,23,Clermont Foot 63,Defensa
+98,"
+Junior Mwanga ",€6.00m ,20,RC Strasbourg Alsace,Defensa
+99,"
+Faitout Maouassa ",€6.00m ,25,RC Lens,Defensa
+100,"
+Thomas Foket ",€6.00m ,29,Stade Reims,Defensa
+101,"
+Chrislain Matsima ",€6.00m ,21,AS Monaco,Defensa
+102,"
+Christopher Wooh ",€6.00m ,22,Stade Rennais FC,Defensa
+103,"
+Ruben Aguilar ",€6.00m ,30,RC Lens,Defensa
+104,"
+Rasmus Nicolaisen ",€6.00m ,26,FC Toulouse,Defensa
+105,"
+Ismail Jakobs ",€6.00m ,24,AS Monaco,Defensa
+106,"
+Formose Mendy ",€5.00m ,22,FC Lorient,Defensa
+107,"
+Brendan Chardonnet ",€5.00m ,28,Stade Brestois 29,Defensa
+108,"
+Jonathan Gradit ",€5.00m ,30,RC Lens,Defensa
+109,"
+Kiki Kouyaté ",€5.00m ,26,Montpellier HSC,Defensa
+110,"
+Alexsandro ",€5.00m ,24,LOSC Lille,Defensa
+111,"
+Tiago Santos ",€5.00m ,21,LOSC Lille,Defensa
+112,"
+Gerzino Nyamsi ",€5.00m ,26,RC Strasbourg Alsace,Defensa
+113,"
+Bradley Locko ",€5.00m ,21,Stade Brestois 29,Defensa
+114,"
+Becir Omeragic ",€5.00m ,21,Montpellier HSC,Defensa
+115,"
+Gédéon Kalulu ",€5.00m ,26,FC Lorient,Defensa
+116,"
+Gabriel Gudmundsson ",€4.50m ,24,LOSC Lille,Defensa
+117,"
+Clinton Mata ",€4.50m ,31,Olympique Lyon,Defensa
+118,"
+Frédéric Guilbert ",€4.50m ,28,RC Strasbourg Alsace,Defensa
+119,"
+Deiver Machado ",€4.00m ,30,RC Lens,Defensa
+120,"
+Logan Costa ",€4.00m ,22,FC Toulouse,Defensa
+121,"
+Ronaël Pierre-Gabriel ",€4.00m ,25,FC Nantes,Defensa
+122,"
+Neto Borges ",€4.00m ,27,Clermont Foot 63,Defensa
+123,"
+Samuel Umtiti ",€4.00m ,29,LOSC Lille,Defensa
+124,"
+Jean-Kévin Duverne ",€4.00m ,26,FC Nantes,Defensa
+125,"
+Falaye Sacko ",€4.00m ,28,Montpellier HSC,Defensa
+126,"
+Fabien Centonze ",€4.00m ,27,FC Nantes,Defensa
+127,"
+Bamo Meïté ",€4.00m ,21,Olympique Marseille,Defensa
+128,"
+Andy Pelmard ",€4.00m ,23,Clermont Foot 63,Defensa
+129,"
+Christopher Jullien ",€3.50m ,30,Montpellier HSC,Defensa
+130,"
+Jean-Charles Castelletto ",€3.50m ,28,FC Nantes,Defensa
+131,"
+Eray Cömert ",€3.50m ,25,FC Nantes,Defensa
+132,"
+Layvin Kurzawa ",€3.00m ,31,Paris Saint-Germain,Defensa
+133,"
+Saïdou Sow ",€3.00m ,21,RC Strasbourg Alsace,Defensa
+134,"
+Thibault De Smet ",€3.00m ,25,Stade Reims,Defensa
+135,"
+Benjamin Mendy ",€3.00m ,29,FC Lorient,Defensa
+136,"
+Amir Murillo ",€3.00m ,27,Olympique Marseille,Defensa
+137,"
+Lucas Perrin ",€3.00m ,24,RC Strasbourg Alsace,Defensa
+138,"
+Massadio Haidara ",€3.00m ,30,RC Lens,Defensa
+139,"
+Maximiliano Caufriez ",€3.00m ,26,Clermont Foot 63,Defensa
+140,"
+Fali Candé ",€2.50m ,25,FC Metz,Defensa
+141,"
+Enzo Tchato ",€2.50m ,20,Montpellier HSC,Defensa
+142,"
+Eduard Sobol ",€2.50m ,28,RC Strasbourg Alsace,Defensa
+143,"
+Ismaily ",€2.50m ,33,LOSC Lille,Defensa
+144,"
+Mikkel Desler ",€2.50m ,28,FC Toulouse,Defensa
+145,"
+Issiaga Sylla ",€2.50m ,29,Montpellier HSC,Defensa
+146,"
+Julien Laporte ",€2.50m ,30,FC Lorient,Defensa
+147,"
+Maxime Busi ",€2.50m ,24,Stade Reims,Defensa
+148,"
+Matthieu Udol ",€2.50m ,27,FC Metz,Defensa
+149,"
+Ayoub Amraoui ",€2.50m ,19,OGC Nice,Defensa
+150,"
+Manuel Ugarte ",€55.00m ,22,Paris Saint-Germain,Centrocampista
+151,"
+Warren Zaïre-Emery ",€50.00m ,17,Paris Saint-Germain,Centrocampista
+152,"
+Vitinha ",€45.00m ,23,Paris Saint-Germain,Centrocampista
+153,"
+Khéphren Thuram ",€40.00m ,22,OGC Nice,Centrocampista
+154,"
+Rayan Cherki ",€30.00m ,20,Olympique Lyon,Centrocampista
+155,"
+Mohamed Camara ",€30.00m ,23,AS Monaco,Centrocampista
+156,"
+Aleksandr Golovin ",€30.00m ,27,AS Monaco,Centrocampista
+157,"
+Fabián Ruiz ",€30.00m ,27,Paris Saint-Germain,Centrocampista
+158,"
+Youssouf Fofana ",€25.00m ,24,AS Monaco,Centrocampista
+159,"
+Kang-in Lee ",€22.00m ,22,Paris Saint-Germain,Centrocampista
+160,"
+Maxence Caqueret ",€22.00m ,23,Olympique Lyon,Centrocampista
+161,"
+Ludovic Blas ",€22.00m ,25,Stade Rennais FC,Centrocampista
+162,"
+Denis Zakaria ",€20.00m ,26,AS Monaco,Centrocampista
+163,"
+Carlos Soler ",€20.00m ,26,Paris Saint-Germain,Centrocampista
+164,"
+Enzo Le Fée ",€20.00m ,23,Stade Rennais FC,Centrocampista
+165,"
+Valentin Rongier ",€20.00m ,28,Olympique Marseille,Centrocampista
+166,"
+Salis Abdul Samed ",€18.00m ,23,RC Lens,Centrocampista
+167,"
+Eliesse Ben Seghir ",€18.00m ,18,AS Monaco,Centrocampista
+168,"
+Angel Gomes ",€18.00m ,23,LOSC Lille,Centrocampista
+169,"
+Benjamin Bourigeaud ",€18.00m ,29,Stade Rennais FC,Centrocampista
+170,"
+Habib Diarra ",€18.00m ,19,RC Strasbourg Alsace,Centrocampista
+171,"
+Jordan Veretout ",€16.00m ,30,Olympique Marseille,Centrocampista
+172,"
+Fabian Rieder ",€15.00m ,21,Stade Rennais FC,Centrocampista
+173,"
+Romain Faivre ",€15.00m ,25,FC Lorient,Centrocampista
+174,"
+Désiré Doué ",€15.00m ,18,Stade Rennais FC,Centrocampista
+176,"
+Geoffrey Kondogbia ",€14.00m ,30,Olympique Marseille,Centrocampista
+177,"
+Andy Diouf ",€13.00m ,20,RC Lens,Centrocampista
+178,"
+Baptiste Santamaria ",€12.00m ,28,Stade Rennais FC,Centrocampista
+179,"
+Azzedine Ounahi ",€12.00m ,23,Olympique Marseille,Centrocampista
+180,"
+Amine Harit ",€12.00m ,26,Olympique Marseille,Centrocampista
+181,"
+Jean-Victor Makengo ",€10.00m ,25,FC Lorient,Centrocampista
+182,"
+Danilo Pereira ",€10.00m ,32,Paris Saint-Germain,Centrocampista
+183,"
+Pape Gueye ",€10.00m ,24,Olympique Marseille,Centrocampista
+184,"
+Téji Savanier ",€10.00m ,31,Montpellier HSC,Centrocampista
+185,"
+Marshall Munetsi ",€10.00m ,27,Stade Reims,Centrocampista
+186,"
+Daler Kuzyaev ",€10.00m ,30,Le Havre AC,Centrocampista
+187,"
+Przemyslaw Frankowski ",€9.00m ,28,RC Lens,Centrocampista
+188,"
+Angelo Fulgini ",€9.00m ,27,RC Lens,Centrocampista
+189,"
+Azor Matusiwa ",€9.00m ,25,Stade Reims,Centrocampista
+190,"
+Yusuf Yazıcı ",€9.00m ,26,LOSC Lille,Centrocampista
+191,"
+Joris Chotard ",€9.00m ,22,Montpellier HSC,Centrocampista
+192,"
+Benjamin André ",€9.00m ,33,LOSC Lille,Centrocampista
+193,"
+Hicham Boudaoui ",€8.00m ,24,OGC Nice,Centrocampista
+194,"
+Eli Junior Kroupi ",€8.00m ,17,FC Lorient,Centrocampista
+195,"
+Maghnes Akliouche ",€8.00m ,21,AS Monaco,Centrocampista
+196,"
+Johann Lepenant ",€8.00m ,21,Olympique Lyon,Centrocampista
+197,"
+David Pereira da Costa ",€8.00m ,22,RC Lens,Centrocampista
+198,"
+Corentin Tolisso ",€8.00m ,29,Olympique Lyon,Centrocampista
+199,"
+Nabil Bentaleb ",€7.00m ,28,LOSC Lille,Centrocampista
+200,"
+Pierre Lees-Melou ",€7.00m ,30,Stade Brestois 29,Centrocampista
+202,"
+Morgan Sanson ",€7.00m ,29,OGC Nice,Centrocampista
+203,"
+Adson ",€6.00m ,23,FC Nantes,Centrocampista
+204,"
+Pablo Rosario ",€6.00m ,26,OGC Nice,Centrocampista
+205,"
+Muhammed Cham ",€6.00m ,23,Clermont Foot 63,Centrocampista
+206,"
+Teddy Teuma ",€6.00m ,30,Stade Reims,Centrocampista
+207,"
+Pedro Chirivella ",€6.00m ,26,FC Nantes,Centrocampista
+208,"
+Adrien Thomasson ",€6.00m ,29,RC Lens,Centrocampista
+209,"
+Ainsley Maitland-Niles ",€6.00m ,26,Olympique Lyon,Centrocampista
+210,"
+Ibrahima Sissoko ",€6.00m ,26,RC Strasbourg Alsace,Centrocampista
+211,"
+Mahdi Camara ",€5.00m ,25,Stade Brestois 29,Centrocampista
+212,"
+Samuel Moutoussamy ",€5.00m ,27,FC Nantes,Centrocampista
+213,"
+Rémy Cabella ",€5.00m ,33,LOSC Lille,Centrocampista
+214,"
+Stijn Spierings ",€5.00m ,27,FC Toulouse,Centrocampista
+215,"
+Jordan Ferri ",€5.00m ,31,Montpellier HSC,Centrocampista
+216,"
+Alexis Claude-Maurice ",€4.50m ,25,OGC Nice,Centrocampista
+217,"
+Khalil Fayad ",€4.50m ,19,Montpellier HSC,Centrocampista
+218,"
+Douglas Augusto ",€4.50m ,26,FC Nantes,Centrocampista
+219,"
+Ignacio Miramón ",€4.00m ,20,LOSC Lille,Centrocampista
+220,"
+Nemanja Matic ",€4.00m ,35,Stade Rennais FC,Centrocampista
+221,"
+Skelly Alvero ",€4.00m ,21,Olympique Lyon,Centrocampista
+222,"
+Alexis Beka Beka ",€4.00m ,22,OGC Nice,Centrocampista
+223,"
+Cher Ndour ",€4.00m ,19,Paris Saint-Germain,Centrocampista
+224,"
+Rassoul Ndiaye ",€4.00m ,21,Le Havre AC,Centrocampista
+225,"
+Paul Akouokou ",€3.50m ,25,Olympique Lyon,Centrocampista
+226,"
+Yassine Kechta ",€3.50m ,21,Le Havre AC,Centrocampista
+227,"
+Jimmy Cabot ",€3.50m ,29,RC Lens,Centrocampista
+228,"
+Cristian Cásseres Jr. ",€3.50m ,23,FC Toulouse,Centrocampista
+229,"
+Amir Richardson ",€3.50m ,21,Stade Reims,Centrocampista
+230,"
+Hugo Magnetti ",€3.00m ,25,Stade Brestois 29,Centrocampista
+231,"
+Julien Ponceau ",€3.00m ,22,FC Lorient,Centrocampista
+232,"
+Sanjin Prcic ",€3.00m ,29,RC Strasbourg Alsace,Centrocampista
+233,"
+Théo Le Bris ",€3.00m ,21,FC Lorient,Centrocampista
+234,"
+Laurent Abergel ",€3.00m ,30,FC Lorient,Centrocampista
+235,"
+Niklas Schmidt ",€2.50m ,25,FC Toulouse,Centrocampista
+236,"
+Kamory Doumbia ",€2.50m ,20,Stade Brestois 29,Centrocampista
+237,"
+Nampalys Mendy ",€2.50m ,31,RC Lens,Centrocampista
+238,"
+Yohann Magnin ",€2.50m ,26,Clermont Foot 63,Centrocampista
+239,"
+Tiemoué Bakayoko ",€2.50m ,29,FC Lorient,Centrocampista
+240,"
+Habib Maïga ",€2.50m ,27,FC Metz,Centrocampista
+241,"
+Jean-Eudes Aholou ",€2.50m ,29,RC Strasbourg Alsace,Centrocampista
+242,"
+Mathias Pereira Lage ",€2.00m ,26,Stade Brestois 29,Centrocampista
+243,"
+Edan Diop ",€2.00m ,19,AS Monaco,Centrocampista
+244,"
+Jessy Deminguet ",€2.00m ,25,RC Strasbourg Alsace,Centrocampista
+245,"
+Bonke Innocent ",€2.00m ,27,FC Lorient,Centrocampista
+246,"
+Danley Jean Jacques ",€2.00m ,23,FC Metz,Centrocampista
+247,"
+Vincent Sierro ",€2.00m ,28,FC Toulouse,Centrocampista
+248,"
+Florent Mollet ",€2.00m ,31,FC Nantes,Centrocampista
+249,"
+Mohamed El Arouch ",€2.00m ,19,Olympique Lyon,Centrocampista
+250,"
+Kylian Mbappé ",€180.00m ,24,Paris Saint-Germain,Delantero
+251,"
+Randal Kolo Muani ",€80.00m ,24,Paris Saint-Germain,Delantero
+252,"
+Ousmane Dembélé ",€60.00m ,26,Paris Saint-Germain,Delantero
+253,"
+Jonathan David ",€60.00m ,23,LOSC Lille,Delantero
+254,"
+Gonçalo Ramos ",€50.00m ,22,Paris Saint-Germain,Delantero
+255,"
+Elye Wahi ",€40.00m ,20,RC Lens,Delantero
+256,"
+Amine Gouiri ",€35.00m ,23,Stade Rennais FC,Delantero
+257,"
+Bradley Barcola ",€35.00m ,21,Paris Saint-Germain,Delantero
+258,"
+Folarin Balogun ",€30.00m ,22,AS Monaco,Delantero
+259,"
+Martin Terrier ",€30.00m ,26,Stade Rennais FC,Delantero
+260,"
+Marco Asensio ",€25.00m ,27,Paris Saint-Germain,Delantero
+261,"
+Terem Moffi ",€25.00m ,24,OGC Nice,Delantero
+262,"
+Arnaud Kalimuendo ",€22.00m ,21,Stade Rennais FC,Delantero
+263,"
+Ismaïla Sarr ",€20.00m ,25,Olympique Marseille,Delantero
+264,"
+Ernest Nuamah ",€20.00m ,20,Olympique Lyon,Delantero
+265,"
+Iliman Ndiaye ",€18.00m ,23,Olympique Marseille,Delantero
+266,"
+Gaëtan Laborde ",€16.00m ,29,OGC Nice,Delantero
+267,"
+Hugo Ekitiké ",€15.00m ,21,Paris Saint-Germain,Delantero
+268,"
+Breel Embolo ",€15.00m ,26,AS Monaco,Delantero
+269,"
+Sofiane Diop ",€15.00m ,23,OGC Nice,Delantero
+270,"
+Ângelo ",€15.00m ,18,RC Strasbourg Alsace,Delantero
+271,"
+Vitinha ",€15.00m ,23,Olympique Marseille,Delantero
+272,"
+Jérémie Boga ",€14.00m ,26,OGC Nice,Delantero
+273,"
+Krépin Diatta ",€13.00m ,24,AS Monaco,Delantero
+274,"
+Alexandre Lacazette ",€12.00m ,32,Olympique Lyon,Delantero
+275,"
+Keito Nakamura ",€12.00m ,23,Stade Reims,Delantero
+276,"
+Wissam Ben Yedder ",€12.00m ,33,AS Monaco,Delantero
+277,"
+Thijs Dallinga ",€12.00m ,23,FC Toulouse,Delantero
+278,"
+Joaquín Correa ",€12.00m ,29,Olympique Marseille,Delantero
+279,"
+Emanuel Emegha ",€11.00m ,20,RC Strasbourg Alsace,Delantero
+280,"
+Zakaria Aboukhlal ",€10.00m ,23,FC Toulouse,Delantero
+281,"
+Mohamed Daramy ",€10.00m ,21,Stade Reims,Delantero
+282,"
+Takumi Minamino ",€10.00m ,28,AS Monaco,Delantero
+283,"
+Hákon Arnar Haraldsson ",€10.00m ,20,LOSC Lille,Delantero
+284,"
+Marquinhos ",€10.00m ,20,FC Nantes,Delantero
+285,"
+Junya Ito ",€10.00m ,30,Stade Reims,Delantero
+286,"
+Mostafa Mohamed ",€9.00m ,25,FC Nantes,Delantero
+287,"
+Moses Simon ",€9.00m ,28,FC Nantes,Delantero
+288,"
+Mama Baldé ",€8.00m ,28,Olympique Lyon,Delantero
+289,"
+Edon Zhegrova ",€8.00m ,24,LOSC Lille,Delantero
+290,"
+Akor Adams ",€8.00m ,23,Montpellier HSC,Delantero
+291,"
+Bamba Dieng ",€8.00m ,23,FC Lorient,Delantero
+292,"
+Arnaud Nordin ",€7.00m ,25,Montpellier HSC,Delantero
+293,"
+Adam Ounas ",€7.00m ,26,LOSC Lille,Delantero
+294,"
+Dilane Bakwa ",€7.00m ,21,RC Strasbourg Alsace,Delantero
+295,"
+Martín Satriano ",€7.00m ,22,Stade Brestois 29,Delantero
+296,"
+Myron Boadu ",€7.00m ,22,AS Monaco,Delantero
+297,"
+Mohamed Bayo ",€6.00m ,25,Le Havre AC,Delantero
+298,"
+Jeffinho ",€6.00m ,23,Olympique Lyon,Delantero
+299,"
+Ibrahim Salah ",€6.00m ,22,Stade Rennais FC,Delantero
+300,"
+Badredine Bouanani ",€6.00m ,18,OGC Nice,Delantero
+301,"
+Steve Mounié ",€5.00m ,29,Stade Brestois 29,Delantero
+302,"
+Óscar Estupiñán ",€5.00m ,26,FC Metz,Delantero
+303,"
+Romain Del Castillo ",€5.00m ,27,Stade Brestois 29,Delantero
+304,"
+Mousa Al-Tamari ",€5.00m ,26,Montpellier HSC,Delantero
+305,"
+Billal Brahimi ",€5.00m ,23,Stade Brestois 29,Delantero
+306,"
+Evann Guessand ",€4.50m ,22,OGC Nice,Delantero
+307,"
+Joel Mvuka ",€4.50m ,20,FC Lorient,Delantero
+308,"
+Matthis Abline ",€4.50m ,20,FC Nantes,Delantero
+309,"
+Shamar Nicholson ",€4.50m ,26,Clermont Foot 63,Delantero
+310,"
+Jérémy Le Douaron ",€4.50m ,25,Stade Brestois 29,Delantero
+311,"
+Óscar Cortés ",€4.20m ,19,RC Lens,Delantero
+312,"
+Aron Dønnum ",€4.00m ,25,FC Toulouse,Delantero
+313,"
+Aiyegun Tosin ",€4.00m ,25,FC Lorient,Delantero
+314,"
+Nabil Alioui ",€4.00m ,24,Le Havre AC,Delantero
+315,"
+Pierre-Emerick Aubameyang ",€4.00m ,34,Olympique Marseille,Delantero
+316,"
+Florian Sotoca ",€4.00m ,33,RC Lens,Delantero
+317,"
+Ignatius Ganago ",€4.00m ,24,FC Nantes,Delantero
+318,"
+Bertuğ Yıldırım ",€4.00m ,21,Stade Rennais FC,Delantero
+319,"
+Morgan Guilavogui ",€4.00m ,25,RC Lens,Delantero
+320,"
+Alan Virginius ",€4.00m ,20,LOSC Lille,Delantero
+321,"
+Kelvin Yeboah ",€3.50m ,23,Montpellier HSC,Delantero
+322,"
+Tino Kadewere ",€3.00m ,27,Olympique Lyon,Delantero
+323,"
+Diego Moreira ",€3.00m ,19,Olympique Lyon,Delantero
+324,"
+Amine Salama ",€3.00m ,23,Stade Reims,Delantero
+325,"
+Gelson Martins ",€3.00m ,28,AS Monaco,Delantero
+326,"
+Moïse Sahi Dion ",€3.00m ,21,RC Strasbourg Alsace,Delantero
+327,"
+Wahbi Khazri ",€2.50m ,32,Montpellier HSC,Delantero
+328,"
+Ivan Cavaleiro ",€2.50m ,30,LOSC Lille,Delantero
+329,"
+Oumar Diakité ",€2.50m ,19,Stade Reims,Delantero
+330,"
+Grejohn Kyei ",€2.50m ,28,Clermont Foot 63,Delantero
+331,"
+Bilal Boutobba ",€2.50m ,25,Clermont Foot 63,Delantero
+332,"
+Ibrahim Cissoko ",€2.50m ,20,FC Toulouse,Delantero
+333,"
+Frank Magri ",€2.50m ,24,FC Toulouse,Delantero
+334,"
+Elbasan Rashani ",€2.00m ,30,Clermont Foot 63,Delantero
+335,"
+Wesley Saïd ",€2.00m ,28,RC Lens,Delantero
+336,"
+Samuel Grandsir ",€2.00m ,27,Le Havre AC,Delantero
+337,"
+Josué Casimir ",€1.80m ,22,Le Havre AC,Delantero
+338,"
+Komnen Andric ",€1.80m ,28,Clermont Foot 63,Delantero
+339,"
+Adrian Grbic ",€1.50m ,27,FC Lorient,Delantero
+340,"
+Jérémie Bela ",€1.50m ,30,Clermont Foot 63,Delantero
+341,"
+Lebo Mothiba ",€1.50m ,27,RC Strasbourg Alsace,Delantero
+342,"
+Cheikh Sabaly ",€1.50m ,24,FC Metz,Delantero
+343,"
+Benjamin Tetteh ",€1.50m ,26,FC Metz,Delantero
+344,"
+Pablo Pagis ",€1.50m ,20,FC Lorient,Delantero
+345,"
+Ablie Jallow ",€1.50m ,24,FC Metz,Delantero
+346,"
+Joel Asoro ",€1.50m ,24,FC Metz,Delantero
+347,"
+Kévin Gameiro ",€1.20m ,36,RC Strasbourg Alsace,Delantero
+348,"
+Marcus Coco ",€1.20m ,27,FC Nantes,Delantero
+349,"
+Aliou Baldé ",€1.20m ,20,OGC Nice,Delantero
